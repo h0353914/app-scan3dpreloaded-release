@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Pomagajte nam izboljšati mehanizem za skeniranje 3D-ustvarjalnika tako, da družbi Sony Mobile pošljete slikovne podatke s svojih skeniranih slik. Podatki bodo preneseni samo prek omrežja WLAN in bodo po 90 dneh odstranjeni iz naših strežnikov. Sodelovanje lahko kadar koli prekličete v nastavitvah varnostnega kopiranja in sinhronizacije.</string>
+    <string name="dialog_data_traffic_body">3-ustvarjalnik za nadaljevanje potrebuje dostop do omrežja WLAN in mobilne podatkovne povezave</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sinhronizirajte samo prek omrežja WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Samo WLAN</string>
+    <string name="post_process_privacy_description">Vaš sken in dodatni podatki o sliki bodo preneseni v naše strežnike z namenom izboljšanja modela. Podatki bodo preneseni le prek omrežja WLAN in bodo čez 90 dni odstranjeni iz naših strežnikov.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Če želite izboljšati model, vzpostavite povezavo z omrežjem WLAN</string>
+    <string name="viewer_hint_improve_promo_description">"Ta model in dodatne podatke o sliki bomo prenesli v svoje strežnike prek omrežja WLAN.
+
+zaradi količine prostora, ki ga dodatni podatki o sliki zasedejo v vaši napravi, se shranijo le podatki iz zadnjih petih skeniranj. Starejših modelov ni mogoče izboljšati."</string>
+</resources>

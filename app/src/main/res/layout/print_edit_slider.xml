@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/toolbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:padding="@dimen/icon_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrows_vert_white_24dp" />
+    <SeekBar android:layout_gravity="center_vertical" android:id="@id/seekBar" android:layout_width="fill_parent" android:layout_height="@dimen/editor_bottombar_effects_slider_height" android:contentDescription="@string/accessibility_slider" style="@style/SphinxSeekBar" />
+</LinearLayout>

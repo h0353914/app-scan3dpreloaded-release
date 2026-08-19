@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?android:dialogPreferredPadding" android:paddingEnd="?android:dialogPreferredPadding">
+        <TextView android:id="@id/created" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/details_text_margin_top" android:text="@string/details_fragment_created" style="@style/DetailsDialogText" />
+        <TextView android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/details_text_margin_top" android:text="@string/details_fragment_filesize" style="@style/DetailsDialogText" />
+        <TextView android:id="@id/triangle_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/details_text_margin_top" android:text="@string/details_fragment_number_triangles" style="@style/DetailsDialogText" />
+        <TextView android:id="@id/vertex_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/details_text_margin_top" android:text="@string/details_fragment_number_vertices" style="@style/DetailsDialogText" />
+        <TextView android:id="@id/is_improved" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/details_text_margin_top" android:text="@string/details_fragment_is_improved" style="@style/DetailsDialogText" />
+    </LinearLayout>
+</ScrollView>

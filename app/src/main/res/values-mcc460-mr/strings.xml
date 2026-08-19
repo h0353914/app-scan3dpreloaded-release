@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">आपल्या स्कॅनमधून प्रतिमा डेटासह Sony Mobile प्रदान करून 3D क्रिएटरच्या स्कॅनिंग इंजिनमध्ये सुधारणा करण्यासाठी आम्हाला मदत करा. डेटा केवळ WLAN द्वारे अपलोड करता येईल आणि 90 दिवसांनंतर आमच्या सर्व्हरवरून काढून टाकला जाईल. आपण कोणत्याही क्षणी राखीव प्रत आणि संकलन सेटिंगमधून बाहेर पडू शकता.</string>
+    <string name="dialog_data_traffic_body">3D क्रिएटरला पुढे जाण्यासाठी WLAN आणि मोबाईल डेटामध्ये प्रवेश मिळविणे आवश्यक आहे</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">केवळ WLAN वर समक्र करा</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">केवळ WLAN</string>
+    <string name="post_process_privacy_description">आपले मॉडेल सुधारण्यासाठी आपले स्कॅन आणि अतिरिक्त प्रतिमा डेटा आमच्या सर्व्हर्सवर अपलोड केले जातील. डेटा केवळ WLAN वर अपलोड केला जाईल आणि 90 दिवसांनंतर आमच्या सर्व्हरवरून काढून टाकला जाईल.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">आपले मॉडेल सुधारण्यासाठी WLAN शी जोडणी करा</string>
+    <string name="viewer_hint_improve_promo_description">"आम्ही WLAN द्वारे आमच्या सर्व्हरवर हे मॉडेल आणि अतिरिक्त प्रतिमेचा डेटा अपलोड करू.
+
+आपल्या उपकरणावर अतिरिक्त प्रतिमेचा डेटाने जास्त प्रमाणामध्ये जागा व्यापल्याने, केवळ सर्वात अलीकडीच्या पाच स्कॅन्स मधील डेटा जतन केला जातो. जुन्या मॉडेल्समध्ये सुधारणा केली जाऊ शकत नाही."</string>
+</resources>

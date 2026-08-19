@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:id="@id/webicon_parent" android:padding="@dimen/icon_button_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/viewer_activity_navigation_button_margin" android:minWidth="@dimen/viewer_activity_minimal_touch_size" android:minHeight="@dimen/viewer_activity_minimal_touch_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_public_24dp" android:contentDescription="@string/accessibility_public_button" />
+</FrameLayout>

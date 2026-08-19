@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrintListItem">
+        <item name="android:layout_width">328.0dip</item>
+        <item name="android:layout_height">64.0dip</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="SphinxAppTheme.AnimProgress" parent="@style/SphinxAppTheme">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+</resources>

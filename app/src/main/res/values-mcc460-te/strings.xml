@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">మీ స్కాన్‌ల నుండి చిత్రం డేటాతో Sony Mobile అందించడం ద్వారా 3D క్రియేటర్ స్కానింగ్ ఇంజిన్‌ను మెరుగుపరచడంలో మాకు సహాయపడండి. డేటా WLAN ద్వారా మాత్రమే అప్‌లోడ్ చేయబడుతుంది మరియు మా సర్వర్ల నుండి 90 రోజుల తర్వాత తొలగించబడుతుంది. మీరు బ్యాకప్ మరియు సమకాలీకరణ సెట్టింగ్‌లు ద్వారా ఏ సమయంలోనైనా నిలిపివేయవచ్చు</string>
+    <string name="dialog_data_traffic_body">కొనసాగించడానికి 3D క్రియేటర్‌కి WLAN మరియు మొబైల్ డేటా యాక్సెస్ అవసరం</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">WLAN ద్వారా మాత్రమే సమకాలీకరించు</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN మాత్రమే</string>
+    <string name="post_process_privacy_description">మీ మోడల్‌ను మెరుగుపరచడానికి మీ స్కాన్ మరియు అదనపు చిత్ర డేటా మా సర్వర్‌లకు అప్‌లోడ్ చేయబడతాయి. డేటా WLAN ద్వారా మాత్రమే అప్‌లోడ్ చేయబడుతుంది మరియు 90 రోజుల తర్వాత మా సర్వర్‌ల నుండి తొలగించబడుతుంది.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">మీ మోడల్‌ను మెరుగుపరచడానికి WLANకు కనెక్ట్ చేయండి</string>
+    <string name="viewer_hint_improve_promo_description">"మేము ఈ మోడల్ మరియు అదనపు చిత్ర డేటాను WLAN ద్వారా మా సర్వర్‌లకు అప్‌లోడ్ చేస్తాము.
+
+మీ పరికరంలో అదనపు చిత్ర డేటాకు పట్టే మొత్తం స్థలం కారణంగా, కేవలం ఐదు తాజా స్కాన్‌ల డేటా సేవ్ చేయబడుతుంది. పాత మోడల్‌లు మెరుగుపరచబడవు."</string>
+</resources>

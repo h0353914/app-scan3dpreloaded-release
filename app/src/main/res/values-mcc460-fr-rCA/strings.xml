@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">"Aidez-nous à améliorer le moteur de numérisation 3D Creator en fournissant à Sony Mobile des données d'image de vos numérisations. Les données seront téléchargées uniquement via WLAN et seront supprimées de nos serveurs après 90 jours. Vous pouvez vous désinscrire à tout moment à l'aide des paramètres de sauvegarde et de synchronisation"</string>
+    <string name="dialog_data_traffic_body">3D Creator doit avoir accès au WLAN et aux données mobiles pour continuer</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Synch. uniquement sur WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN uniquement</string>
+    <string name="post_process_privacy_description">"Votre numérisation et les données d'images supplémentaires seront téléversées sur nos serveurs afin d'améliorer votre modèle. Les données seront téléchargées sur WLAN seulement et seront supprimées de nos serveurs après 90 jours."</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">"Connectez-vous au WLAN afin d'améliorer votre modèle"</string>
+    <string name="viewer_hint_improve_promo_description">"Nous allons téléverser ce modèle et des données d'image supplémentaires sur nos serveurs par WLAN.
+
+En raison de l'espace occupé par les données d'image supplémentaires sur votre appareil, seules les données des cinq dernières numérisations sont enregistrées. Les anciens modèles ne peuvent pas être améliorés."</string>
+</resources>

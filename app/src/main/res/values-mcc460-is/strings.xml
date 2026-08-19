@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Hjálpaðu okkur að bæta skönnunarvél 3D hönnuðarins með því að útvega Sony Mobile myndgögn frá skönnunum þínum. Gögnin hlaðast aðeins upp gegnum WLAN og verður þeim eytt út af netþjónum okkar að 90 dögum liðnum. Þú getur hætt við hvenær sem er í stillingum fyrir afrit og samhæfingu</string>
+    <string name="dialog_data_traffic_body">3D-hönnuður þarf aðgang að WLAN og gagnatengingu til að halda áfram</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Upphal, niðurhal og uppfærslur á skönnunum eru ekki virk nema WLAN sé tiltækt.</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Aðeins WLAN</string>
+    <string name="post_process_privacy_description">Skönnun þinni og viðbótargögnum myndarinnar verður hlaðið upp á netþjóna okkar til að endurbæta líkanið. Gögnunum verður aðeins hlaðið upp með WLAN og þau verða fjarlægð af netþjónum okkar eftir 90 daga.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Tengdu þig við WLAN til að endurbæta líkanið þitt</string>
+    <string name="viewer_hint_improve_promo_description">"Við hlöðum upp þessu líkani og viðbótargögnum um myndina inn á netþjóna okkar með WLAN.
+
+Vegna þess hve mikið geymslurými þessi viðbótargögn taka er aðeins hægt að vista síðustu fimm skannanirnar. Ekki er hægt að gera endurbætur á eldri líkönum."</string>
+</resources>

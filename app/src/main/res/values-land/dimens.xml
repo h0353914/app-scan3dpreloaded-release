@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <dimen name="button_in_text_margin_top">16.0dip</dimen>
+    <dimen name="scan_mode_item_button_width">108.0dip</dimen>
+    <dimen name="scan_mode_item_height">248.0dip</dimen>
+    <dimen name="scan_mode_item_text_area_margin_end">8.0dip</dimen>
+    <dimen name="scan_mode_item_text_area_margin_start">12.0dip</dimen>
+    <dimen name="scan_mode_item_width">392.0dip</dimen>
+    <dimen name="scan_toast_max_width">200.0dip</dimen>
+    <dimen name="sign_in_padding">40.0dip</dimen>
+    <dimen name="sign_in_title_margin">30.0dip</dimen>
+    <dimen name="start_stop_button_margin_bottom">16.0dip</dimen>
+    <dimen name="start_stop_button_margin_end">16.0dip</dimen>
+</resources>

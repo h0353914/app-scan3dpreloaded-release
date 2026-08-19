@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">s3.amazon.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/aws_intermediate" />
+        </trust-anchors>
+        <pin-set expiration="2025-05-10">
+            <pin digest="SHA-256">56higu/MFWb/c2b0avLE5oN2ECS2C43RvzSUgx/2xIE=</pin>
+        </pin-set>
+    </domain-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="false">stage.synchub-stage.sonymobile.com</domain>
+        <domain includeSubdomains="false">live.synchub.sonymobile.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/synchub_intermediate" />
+        </trust-anchors>
+        <pin-set expiration="2028-10-22">
+            <pin digest="SHA-256">k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws=</pin>
+        </pin-set>
+    </domain-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+</network-security-config>

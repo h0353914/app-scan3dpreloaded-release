@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Pomóż nam doskonalić mechanizm skanujący aplikacji Kreator 3D, udostępniając firmie Sony Mobile dane obrazów ze swoich skanów. Dane będą przesyłane tylko przez sieć WLAN i usuwane z naszych serwerów po 90 dniach. W dowolnej chwili możesz zrezygnować w ustawieniach Kopii zapasowej i synchronizacji</string>
+    <string name="dialog_data_traffic_body">Aby kontynuować, Kreator 3D potrzebuje dostępu do transmisji danych w sieci WLAN i komórkowej</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Synchronizuj tylko przez sieć WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Tylko WLAN</string>
+    <string name="post_process_privacy_description">Skan i dodatkowe dane obrazu zostaną wysłane na nasze serwery w celu ulepszenia modelu. Dane będą przesyłane tylko przez sieć WLAN i usuwane z naszych serwerów po 90 dniach.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Połącz się z WLAN, aby ulepszyć swój model</string>
+    <string name="viewer_hint_improve_promo_description">"Ten model i dodatkowe dane obrazu prześlemy na nasze serwery przez sieć WLAN.
+
+Ze względu na ilość miejsca zajmowanego przez dodatkowe dane obrazu na urządzeniu zapisywane są tylko dane z pięciu ostatnich skanów. Starszych modeli nie można ulepszyć."</string>
+</resources>

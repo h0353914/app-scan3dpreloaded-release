@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sonymobile.scan3d.widgets.SphinxProgressIndicator android:layout_gravity="top" android:id="@id/sphinx_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sphinx_progress_indicator" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/sphinx_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sphinx.ProgressIndicator" />
+    </com.sonymobile.scan3d.widgets.SphinxProgressIndicator>
+    <ProgressBar android:layout_gravity="center" android:id="@id/sphinx_progress" style="@style/SphinxProgress" />
+    <TextView android:textColor="@android:color/black" android:layout_gravity="center|bottom" android:background="@drawable/toast_bg" android:padding="@dimen/scan_progress_wait_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wait_progress" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="focus_entries">
+        <item>@string/focus_type_fixed</item>
+        <item>@string/focus_type_auto</item>
+        <item>@string/focus_type_manual</item>
+        <item>@string/focus_type_tof</item>
+    </string-array>
+    <array name="provider_blacklist" />
+</resources>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sonymobile.scan3d.storageservice.ui.component.UploadIndicator android:layout_gravity="center" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sync_24dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

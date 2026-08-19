@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Poskytněte společnosti Sony Mobile data obrázků ze svých skenů a pomozte nám vylepšit skenovací modul aplikace 3D Creator. Data budou nahrána pouze prostřednictvím WLAN a za 90 dní budou odebrána z našich serverů. Své rozhodnutí můžete kdykoliv změnit v nastavení zálohování a synchronizace.</string>
+    <string name="dialog_data_traffic_body">Aplikace 3D autor potřebuje přístup k WLAN a mobilním datům</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Synchronizace pouze přes WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Pouze WLAN</string>
+    <string name="post_process_privacy_description">Váš sken a doplňující data obrázku budou nahrána na naše servery za účelem vylepšení modelu. Data budou nahrána pouze prostřednictvím WLAN a za 90 dní budou z našich serverů odebrána.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Pokud chcete model vylepšit, připojte se k WLAN</string>
+    <string name="viewer_hint_improve_promo_description">"Tento model a doplňující data obrázku nahrajeme na naše servery prostřednictvím WLAN.
+
+Z důvodu místa, které doplňující data obrázku na vašem zařízení zabírají, se uloží data pouze z pěti posledních skenování. Starší modely vylepšit nelze."</string>
+</resources>

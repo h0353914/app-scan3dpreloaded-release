@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/save_as_container" android:background="@android:color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/face_blend_save_as_title" style="@style/FaceBlendTextView" />
+    <TextView android:id="@id/save_as_image" android:layout_width="fill_parent" android:layout_height="56.0dip" android:foreground="@drawable/light_background_item_ripple" android:text="@string/face_blend_save_as_image" android:drawablePadding="32.0dip" android:drawableStart="@drawable/ic_photo_black" style="@style/FaceBlendTextView" />
+    <TextView android:id="@id/save_as_video" android:layout_width="fill_parent" android:layout_height="56.0dip" android:foreground="@drawable/light_background_item_ripple" android:text="@string/face_blend_save_as_video" android:drawablePadding="32.0dip" android:drawableStart="@drawable/ic_videocam_black" style="@style/FaceBlendTextView" />
+</LinearLayout>

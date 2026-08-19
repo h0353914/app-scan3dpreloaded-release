@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TipCategories>
+    <TipCategory backgroundColor="@color/quicktip_category_what" description="@string/tips_category_what_description" image="@drawable/tip_category_what" imageSmall="@drawable/tip_category_what_small" screenEvent="@string/screen_event_tips_what_to_scan" title="@string/tips_category_what_title">
+        <Tip description="@string/wizard_tip_suitable_objects_description" dialogPositiveAction="@string/tip_dialog_action_open_wizard" dialogPositiveButton="@string/tip_dialog_button_learn_more" image="@drawable/tip_what_suitable_objects" keptScanOnly="true" scanType="0,1,0x100,0x101,0x200" shortDesc="@string/wizard_tip_suitable_objects_short_desc" title="@string/wizard_tip_suitable_objects_title" />
+        <Tip description="@string/wizard_tip_be_still_description" dialogPositiveAction="@string/tip_dialog_action_open_wizard" dialogPositiveButton="@string/tip_dialog_button_learn_more" image="@drawable/tip_what_be_still" scanPolicy="4" scanType="0,1,0x100,0x101" shortDesc="@string/wizard_tip_be_still_short_desc" title="@string/wizard_tip_be_still_title" />
+        <Tip description="@string/wizard_tip_no_glasses_description" image="@drawable/tip_what_no_glasses" title="@string/wizard_tip_no_glasses_title" />
+        <Tip description="@string/tip_hairstyles_description" dialogPositiveAction="@string/tip_dialog_action_open_wizard" dialogPositiveButton="@string/tip_dialog_button_learn_more" image="@drawable/tip_what_hairstyles" scanPolicy="4" scanType="0x100,0x101" shortDesc="@string/tip_hairstyles_short_desc" title="@string/tip_hairstyles_title" />
+    </TipCategory>
+    <TipCategory backgroundColor="@color/quicktip_category_where" description="@string/tips_category_where_description" image="@drawable/tip_category_where" imageSmall="@drawable/tip_category_where_small" screenEvent="@string/screen_event_tips_where_to_scan" title="@string/tips_category_where_title">
+        <Tip description="@string/wizard_tip_ambient_light_description" dialogPositiveAction="@string/tip_dialog_action_open_wizard" dialogPositiveButton="@string/tip_dialog_button_learn_more" image="@drawable/ic_tip_where_ambient_light" scanType="0,1,0x100,0x101,0x200" shortDesc="@string/wizard_tip_ambient_light_short_desc" title="@string/wizard_tip_ambient_light_title" />
+        <Tip description="@string/wizard_tip_avoid_backlight_description" dialogPositiveAction="@string/tip_dialog_action_open_wizard" dialogPositiveButton="@string/tip_dialog_button_learn_more" image="@drawable/ic_tip_where_sharp_light" scanType="0,1,0x100,0x101,0x200" shortDesc="@string/wizard_tip_avoid_backlight_short_desc" title="@string/wizard_tip_avoid_backlight_title" />
+        <Tip description="@string/wizard_tip_space_description" image="@drawable/ic_tip_where_space" title="@string/wizard_tip_space_title" />
+        <Tip description="@string/wizard_tip_surfaces_description" image="@drawable/ic_tip_where_surfaces" title="@string/wizard_tip_surfaces_title" />
+        <Tip description="@string/wizard_tip_background_movement_description" image="@drawable/ic_tip_where_background_movement" title="@string/wizard_tip_background_movement_title" />
+    </TipCategory>
+    <TipCategory backgroundColor="@color/quicktip_category_how" description="@string/tips_category_how_description" image="@drawable/tip_category_how" imageSmall="@drawable/tip_category_how_small" screenEvent="@string/screen_event_tips_how_to_scan" title="@string/tips_category_how_title">
+        <Tip description="@string/tip_calibration_description_first" image="@drawable/tip_how_calibration_first" title="@string/tip_calibration_title" />
+        <Tip description="@string/tip_calibration_description_second" image="@drawable/tip_how_calibration_second" title="@string/tip_calibration_title" />
+        <Tip description="@string/tip_sculpting_description_first" image="@drawable/tip_how_sculpting_first" title="@string/tip_sculpting_title" />
+        <Tip description="@string/tip_sculpting_description_second" image="@drawable/tip_how_sculpting_second" title="@string/tip_sculpting_title" />
+    </TipCategory>
+    <TipCategory actionUrl="@string/youtube_tutorial_video_url" backgroundColor="@color/quicktip_category_see_how_it_works" description="@string/tips_category_how_it_works_description" image="@drawable/tip_category_video" imageSmall="@drawable/tip_category_video_small" isGoogleDependant="true" screenEvent="@string/screen_event_tips_how_it_works" title="@string/tips_category_how_it_works_title" wizardType="@string/wizard_type_action" />
+    <TipCategory backgroundColor="@color/quicktip_category_troubleshooting" description="@string/tips_category_troubleshooting_description" image="@drawable/tip_category_troubleshooting" imageSmall="@drawable/tip_category_troubleshooting_small" screenEvent="@string/screen_event_tips_troubleshooting" title="@string/tips_category_troubleshooting_title" wizardType="@string/wizard_type_list">
+        <Tip description="@string/tip_performance_issues_description" title="@string/tip_performance_issues_title" />
+        <Tip description="@string/tip_model_destroyed_description" image="@drawable/tip_troubleshooting_destroyed" title="@string/tip_model_destroyed_title" />
+        <Tip description="@string/tip_degrade_issues_description" title="@string/tip_degrade_issues_title" />
+        <Tip description="@string/tip_pause_sculpt_issues_description" image="@drawable/tip_troubleshoot_bad_pose" title="@string/tip_pause_sculpt_issues_title" />
+    </TipCategory>
+    <TipCategory backgroundColor="@color/quicktip_category_about_technology" description="@string/tips_category_about_technology_description" image="@drawable/tip_category_technology" imageSmall="@drawable/tip_category_technology_small" screenEvent="@string/screen_event_tips_technology" title="@string/tips_category_about_technology_title" wizardType="@string/wizard_type_about_technology" />
+</TipCategories>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">"Sony Mobile'a taramalarınızdan resim verilerini sağlayarak 3D Oluşturucu'nun tarama motorunu iyileştirmemizde bize yardımcı olun. Veriler yalnızca WLAN üzerinden yüklenir ve 90 gün sonra sunucularımızdan kaldırılır. Dilediğiniz zaman Yedekleme ve senkronizasyon ayarlarından kapsam dışı kalmayı seçebilirsiniz"</string>
+    <string name="dialog_data_traffic_body">"Devam etmek için 3D Oluşturucu'nun WLAN ve mobil veriye erişmesi gerekiyor"</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Yalnızca WLAN üzerinden senkronize edin</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Yalnızca WLAN</string>
+    <string name="post_process_privacy_description">Taramanız ve ek görsel verileri, modelinizi iyileştirmek için sunucularımıza yüklenecek. Veriler yalnızca WLAN üzerinden yüklenir ve 90 gün sonra sunucularımızdan kaldırılır.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Modelinizi geliştirmek için WLAN ağına bağlanın</string>
+    <string name="viewer_hint_improve_promo_description">"Bu modeli ve ek görsel verilerini WLAN üzerinden sunucularımıza yükleyeceğiz.
+
+Ek görsel verilerinin cihazınızda kapladığı alan miktarı nedeniyle, yalnızca son beş taramanın verileri kaydedilir. Daha eski modeller iyileştirilemez."</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/viewer_bottom_bar_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/discard" android:background="@drawable/white_icon_ripple" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/viewer_activity_bottom_bar_button_text_size" android:textColor="@android:color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discard_scan" android:drawablePadding="@dimen/viewer_activity_textview_drawable_padding" android:drawableStart="@drawable/ic_delete_24dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/keep" android:background="@drawable/white_icon_ripple" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/viewer_activity_bottom_bar_button_text_size" android:textColor="@android:color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_scan" android:drawablePadding="@dimen/viewer_activity_textview_drawable_padding" android:drawableStart="@drawable/ic_check_24dp" />
+    </FrameLayout>
+</LinearLayout>

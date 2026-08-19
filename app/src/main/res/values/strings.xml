@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="about_dialog_privacy">"By signing in, you accept that Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to backup your content. Sony Mobile will handle your data per our &lt;a href='%2$s'>Privacy Policy&lt;/a>."</string>
+    <string name="about_dialog_privacy_labs">"By signing in, you accept that Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to backup your content and analyze your scans. Sony Mobile will handle your data per our &lt;a href='%2$s'>Privacy Policy&lt;/a>."</string>
+    <string name="about_open_source">Open source licenses</string>
+    <string name="about_software_version">Software version</string>
+    <string name="about_technology_intro">"3D Creator is a real-time 3D scanning system based on a single camera. It consists mainly of three mathematical parts:
+
+1) Positioning in 3D space using only camera
+
+2) Point cloud calculation based on two pictures
+
+3) A 3D sculpting algorithm creating the 3D model in real time"</string>
+    <string name="about_technology_point_cloud_description">Based on the camera orientation and the captured images we create a <b>point cloud</b>. The point cloud is quite rough, and consists only of points in 3D space and no color. Based on the point cloud information, a <b>mesh</b> is created. This mesh, or \"lump of clay\", is what we will bring to the next stage of the process - the sculpting.</string>
+    <string name="about_technology_point_cloud_title">Creating a point cloud</string>
+    <string name="about_technology_positioning_description">The first part of the scanning is the calibration step. As you circulate slowly around the object, the camera takes images of the object. The algorithm at work looks for things that stand out in the images. Anything that can be identified and saved as a feature of the object or the surrounding environment, is a <b>feature point</b>. Feature points are used to calculate where in the room the camera is located in relation to the scanned object.</string>
+    <string name="about_technology_positioning_title">Positioning in 3D space</string>
+    <string name="about_technology_sculpting_description">The mesh is, simply speaking, a bunch of 3D points connected with a wireframe. These points are called <b>vertices</b>. Using the points from the point cloud, the algorithm pulls and pushes the vertices trying to find a nice average place, thus allowing the mesh to shape itself better after the object.</string>
+    <string name="about_technology_sculpting_title">Sculpting the mesh</string>
+    <string name="about_technology_texture_description">Lastly, the app creates the <b>texture</b>. The texture in this context is the colors of the object. Using a few of the images captured during the sculpting, the colors are projected onto the mesh from different perspectives.</string>
+    <string name="about_technology_texture_title">Adding texture</string>
+    <string name="about_terms_of_use_url">http://www.sonymobile.com/terms-of-use-applications</string>
+    <string name="accessibility_apply_button">Apply</string>
+    <string name="accessibility_back_button">Navigate up</string>
+    <string name="accessibility_close_button">Close</string>
+    <string name="accessibility_face_mimic_select_other_model">Select other model</string>
+    <string name="accessibility_face_mimic_show_picture">Show picture</string>
+    <string name="accessibility_face_mimic_show_video">Show video</string>
+    <string name="accessibility_face_mimic_start_recording">Start recording</string>
+    <string name="accessibility_face_mimic_stop_recording">Stop recording</string>
+    <string name="accessibility_face_mimic_take_picture">Take picture</string>
+    <string name="accessibility_face_mimic_toggle_audio">Audio On/Off</string>
+    <string name="accessibility_face_mimic_use_current_model">Use current model</string>
+    <string name="accessibility_face_mimic_use_manga_model">Use manga model</string>
+    <string name="accessibility_face_mimic_use_monster_model">Use monster model</string>
+    <string name="accessibility_mesh_slider">Mesh</string>
+    <string name="accessibility_new_scan_button">3D Scan</string>
+    <string name="accessibility_overflow_menu">More options</string>
+    <string name="accessibility_public_button">Public</string>
+    <string name="accessibility_slider">Effect</string>
+    <string name="accessibility_texture_button">Texture</string>
+    <string name="accessibility_texture_slider">Texture</string>
+    <string name="accessibility_turn_off_animation">Turn off animation</string>
+    <string name="accessibility_turn_on_animation">Turn on animation</string>
+    <string name="action_reg">Ceres: Action Regularization</string>
+    <string name="action_share_button">SHARE</string>
+    <string name="action_whats_new_face_blend">whats_new_start_face_blend_flow</string>
+    <string name="action_whats_new_face_mimic">whats_new_start_face_mimic_flow</string>
+    <string name="action_whats_new_learn_how_to_scan">whats_new_start_learn_how_to_scan</string>
+    <string name="adv_sharing_checkbox_title">Which format do you want to share the model in?</string>
+    <string name="animate_before_share_desc">%1$s works best with animated models. Would you like to animate your model?</string>
+    <string name="animate_before_share_title">Animate your model?</string>
+    <string name="animation_face_angry">Angry</string>
+    <string name="animation_face_blink">Blink</string>
+    <string name="animation_face_frown">Frown</string>
+    <string name="animation_face_idle">Idle</string>
+    <string name="animation_face_laugh">Laugh</string>
+    <string name="animation_face_none">None</string>
+    <string name="animation_face_sad">Sad</string>
+    <string name="animation_face_scared">Scared</string>
+    <string name="animation_face_smile">Smile</string>
+    <string name="animation_face_surprised">Surprised</string>
+    <string name="animation_face_wink">Wink</string>
+    <string name="animation_face_yawn">Yawn</string>
+    <string name="animation_ongoing">Animating model</string>
+    <string name="animation_preview_before_sharing_title">Preview</string>
+    <string name="animation_rigging_failure">Model could not be animated</string>
+    <string name="animation_selection_animations">ANIMATION</string>
+    <string name="animation_selection_background">BACKGROUND</string>
+    <string name="animation_selection_settings">SETTINGS</string>
+    <string name="animation_title">Animate</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="application_name">3D Creator</string>
+    <string name="attention_dialog_title_txt">Note</string>
+    <string name="audio_permissons_needed">To record audio, you need to grant 3D Creator permission to use the microphone.</string>
+    <string name="backup_sync_account_category">Account</string>
+    <string name="backup_sync_delete">Delete account</string>
+    <string name="backup_sync_delete_dialog_button">DELETE</string>
+    <string name="backup_sync_delete_dialog_text">"Synced models and all other data associated with your account will be deleted from our servers.
+
+Warning! This cannot be undone.
+
+Models stored on this device will not be deleted."</string>
+    <string name="backup_sync_delete_dialog_title">Delete account?</string>
+    <string name="backup_sync_delete_ongoing">Deleting account</string>
+    <string name="backup_sync_export">Export scanned models and data</string>
+    <string name="backup_sync_export_dialog_button">EXPORT</string>
+    <string name="backup_sync_export_dialog_text">Export your scanned models and all other data associated with your account.&lt;br>&lt;br>A download link will be emailed to &lt;b>&lt;xliff:g id=\"email\">%1$s&lt;/xliff:g>&lt;/b>.</string>
+    <string name="backup_sync_export_dialog_title">Export data</string>
+    <string name="backup_sync_export_summary">We are gathering your data and will email a download link to you shortly</string>
+    <string name="backup_sync_logfile_data">Image data upload</string>
+    <string name="backup_sync_logfile_data_off">Off</string>
+    <string name="backup_sync_logfile_data_on">On</string>
+    <string name="backup_sync_logfile_images">Images</string>
+    <string name="backup_sync_logfile_scanning_metadata">Scanning metadata</string>
+    <string name="backup_sync_monitor_done">All your models are synced</string>
+    <string name="backup_sync_monitor_syncing">Syncing</string>
+    <string name="backup_sync_opt_in_description">"Help us to improve 3D Creator's scanning engine by providing Sony Mobile with image data from your scans. The data will be uploaded only via Wi-Fi and will be removed from our servers after 90 days. You can opt out at any time via the Backup and sync settings."</string>
+    <string name="backup_sync_opt_in_privacy">"Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to analyze your scans. Sony Mobile will handle your data per our &lt;a href='%2$s'>Privacy Policy&lt;/a>."</string>
+    <string name="backup_sync_opt_in_title">Help improve 3D Creator</string>
+    <string name="backup_sync_partially_finished">%1$d of %2$d are synced</string>
+    <string name="backup_sync_personal_data">Personal data</string>
+    <string name="backup_sync_signed_in">Signed in</string>
+    <string name="backup_sync_signout_text">Sign out</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="button_ratio_1to1">1:1</string>
+    <string name="button_ratio_4to3">4:3</string>
+    <string name="button_text_permissons">PERMISSIONS</string>
+    <string name="ca_privacy_notice">CA Privacy Notice</string>
+    <string name="cannot_animate_title">Cannot animate model</string>
+    <string name="card_learn_howto_scan">Learn more about how to scan</string>
+    <string name="card_whats_new_face_blend">Blend the faces of two models</string>
+    <string name="card_whats_new_face_mimic">Make 3D models mimic your facial expressions</string>
+    <string name="card_whats_new_title">"What's new?"</string>
+    <string name="cards_whats_new_highlighted_title">Highlighted</string>
+    <string name="cards_whats_new_new_title">New</string>
+    <string name="channel_description_error">Displays application errors</string>
+    <string name="channel_description_status">Displays status of application tasks</string>
+    <string name="channel_description_upload">Displays status when uploading a model</string>
+    <string name="channel_name_error">Error</string>
+    <string name="channel_name_status">Information</string>
+    <string name="channel_name_upload">Upload</string>
+    <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="cognito_identity_pool_id">eu-west-1:d111cce4-f815-4954-9d06-496c7aad11d7</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="consent_file_share_description">The recipient will be able to access your shared model</string>
+    <string name="consent_file_share_title">Would you like to share your model?</string>
+    <string name="consent_share_partner_title">Upload your model to %1$s?</string>
+    <string name="consent_share_privacy_policy">"Your model will be uploaded to &lt;xliff:g id=\"partner\">%1$s&lt;/xliff:g> and handled according to their &lt;a href='%2$s'>privacy policy&lt;/a>."</string>
+    <string name="consent_share_webviewer_description">Anyone with the link will be able to access your shared model</string>
+    <string name="consent_share_webviewer_title">Would you like to share your model?</string>
+    <string name="copy">Copy</string>
+    <string name="crop_scan">Crop</string>
+    <string name="default_web_client_id">939005268536-umd6pbhhr3ev5eebqssmmmnfq3q8mnok.apps.googleusercontent.com</string>
+    <string name="details_fragment_created">Created: %1$s</string>
+    <string name="details_fragment_filesize">Size: %1$s</string>
+    <string name="details_fragment_is_improved">This model has been improved</string>
+    <string name="details_fragment_number_triangles">%1$s triangles</string>
+    <string name="details_fragment_number_vertices">%1$s vertices</string>
+    <string name="details_fragment_title">Details</string>
+    <string name="developer_options">Developer Options</string>
+    <string name="dialog_allow_button">ALLOW</string>
+    <string name="dialog_break_scanning_hint_low_battery_message">Please charge your phone and try again</string>
+    <string name="dialog_break_scanning_hint_low_battery_title">Not enough battery</string>
+    <string name="dialog_break_scanning_hint_low_storage_message">Please free up some space on your device and try again</string>
+    <string name="dialog_break_scanning_hint_low_storage_title">Not enough space</string>
+    <string name="dialog_break_scanning_hint_too_hot_message">Please let your phone cool down before you start the scan</string>
+    <string name="dialog_break_scanning_hint_too_hot_title">Phone too hot</string>
+    <string name="dialog_break_scanning_ok">OK</string>
+    <string name="dialog_break_scanning_restart_scan">RESTART</string>
+    <string name="dialog_break_scanning_restart_scanning_message">"Cannot complete the scan. 
+Please start over."</string>
+    <string name="dialog_button_no">NO</string>
+    <string name="dialog_button_yes">YES</string>
+    <string name="dialog_cancel_scan_button">CANCEL SCAN</string>
+    <string name="dialog_cancel_scan_message">Do you want to cancel the scan?</string>
+    <string name="dialog_change_wallpaper_description">This model is currently used as your Live Wallpaper</string>
+    <string name="dialog_change_wallpaper_positive_button_text">CHANGE WALLPAPER</string>
+    <string name="dialog_change_wallpaper_title">Note</string>
+    <string name="dialog_checkbox_text_dont_show_again">"Don't show this again"</string>
+    <string name="dialog_continue_scan_button">CONTINUE SCAN</string>
+    <string name="dialog_cropping_tutorial_move_rotate">Use two fingers to rotate or move model</string>
+    <string name="dialog_cropping_tutorial_reset">Double-tap to reset orientation</string>
+    <string name="dialog_data_traffic_body">3D Creator needs access to Wi-Fi and mobile data to proceed</string>
+    <string name="dialog_delete_animation_description">Remove the animation?</string>
+    <string name="dialog_delete_scan_description">Delete your model?</string>
+    <string name="dialog_deny_button">DENY</string>
+    <string name="dialog_discard_print_description">Discard changes?</string>
+    <string name="dialog_discard_scan_description">Discard your model?</string>
+    <string name="dialog_edit_name_title">Edit name</string>
+    <string name="dialog_edit_text_title">Edit text</string>
+    <string name="dialog_edit_text_too_long_title">This text is too long. Please shorten and try again.</string>
+    <string name="dialog_environment_quality_title">Problems with the surroundings during scan</string>
+    <string name="dialog_environment_warning_continue">CONTINUE ANYWAY</string>
+    <string name="dialog_environment_warning_message">We have detected problems in the environment which may affect the quality of your scan</string>
+    <string name="dialog_environment_warning_new_scan">NEW SCAN</string>
+    <string name="dialog_environment_warning_show_me">SHOW ME</string>
+    <string name="dialog_environment_warning_title">Warning</string>
+    <string name="dialog_improve_select_scan">Select improvement</string>
+    <string name="dialog_newscan_name_hint">Name of your scan</string>
+    <string name="dialog_newscan_title">New scan</string>
+    <string name="dialog_note_title">Note!</string>
+    <string name="dialog_remove_camera_calibration_title">Reset camera calibration?</string>
+    <string name="dialog_remove_camera_calibration_txt">RESET</string>
+    <string name="dialog_scan_mode_adv_scan_description">For experienced users who want more freedom while they scan.</string>
+    <string name="dialog_scan_mode_adv_scan_title">Freeform scan</string>
+    <string name="dialog_scan_mode_button_start_scan">SCAN</string>
+    <string name="dialog_scan_mode_button_view_tutorial">TUTORIAL</string>
+    <string name="dialog_scan_mode_face_scan_description">"A quick and easy way to scan a face.
+
+Face scans are a great way to learn how to scan, and suitable if the surroundings make head scans difficult."</string>
+    <string name="dialog_scan_mode_face_scan_title">Face scan</string>
+    <string name="dialog_scan_mode_food_scan_description">Great for scanning a plate of food, or other objects on a table.</string>
+    <string name="dialog_scan_mode_food_scan_title">Food scan</string>
+    <string name="dialog_scan_mode_head_scan_description">"Capture a full 360 scan of the head.
+
+Be sure to allow enough space to walk around your model."</string>
+    <string name="dialog_scan_mode_head_scan_title">Head scan</string>
+    <string name="dialog_scan_mode_selfie_scan_description">A quick and easy way to scan your own face.</string>
+    <string name="dialog_scan_mode_selfie_scan_title">Selfie scan</string>
+    <string name="dialog_tutorial_accept_button">Got it</string>
+    <string name="dialog_unshare_scan_description">Your model will be deleted from our server. Any previously shared links will stop working.</string>
+    <string name="dialog_unshare_scan_title">Unshare?</string>
+    <string name="dialog_viewer_tutorial_pinch">Pinch to zoom</string>
+    <string name="dialog_viewer_tutorial_rotate">Use one finger to rotate</string>
+    <string name="discard_print_edit">DISCARD</string>
+    <string name="discard_scan">Discard</string>
+    <string name="dmm_make_welcome_description_txt">DMM.make is a platform for printing your models</string>
+    <string name="done">DONE</string>
+    <string name="edit_print_geometry">Edit model</string>
+    <string name="edit_print_text">Edit text</string>
+    <string name="editor_adjust">Adjust</string>
+    <string name="editor_adjust_brightness">Brightness</string>
+    <string name="editor_adjust_contrast">Contrast</string>
+    <string name="editor_adjust_eyes">Eyes</string>
+    <string name="editor_adjust_shadows">Shadows</string>
+    <string name="editor_adjust_smooth">Smoothness</string>
+    <string name="editor_crop">Crop</string>
+    <string name="editor_crop_button">CROP</string>
+    <string name="editor_dialog_discard_button_discard">DISCARD</string>
+    <string name="editor_dialog_discard_button_keep">KEEP EDITING</string>
+    <string name="editor_dialog_discard_description">Discard your changes?</string>
+    <string name="editor_enlarge_eyes">Enlarge eyes</string>
+    <string name="editor_failed_to_save_model">Could not save the model</string>
+    <string name="editor_morph">Morph</string>
+    <string name="editor_morph_alien">Alien</string>
+    <string name="editor_morph_big_chin">Big chin</string>
+    <string name="editor_morph_round">Round</string>
+    <string name="editor_morph_slim">Slim</string>
+    <string name="editor_saving_model_progress">Saving edited model</string>
+    <string name="editor_title">Edit</string>
+    <string name="editor_toolbar_save_button">SAVE AS</string>
+    <string name="expand_button_title">Advanced</string>
+    <string name="expansion_provider_authority">com.sonymobile.scan3d.expansionprovider</string>
+    <string name="explanatory_text_face_blend_another_model_picker">Select another model</string>
+    <string name="explanatory_text_face_blend_picker">Select another model to use in Face blend</string>
+    <string name="explanatory_text_face_blend_picker_whats_new">Select a model to use in face blend</string>
+    <string name="explanatory_text_face_mimic_picker">Select a model to use in Face mimic</string>
+    <string name="explanatory_text_fridge_magnet_picker">Select a model to use as a fridge magnet</string>
+    <string name="explanatory_text_wallpaper_picker">Select a model to use as live wallpaper</string>
+    <string name="fab_new_scan_tip">Tap the button to start a new scan</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="face_animations">Face animations</string>
+    <string name="face_animations_disabled_subtext">Only for animated face and head models</string>
+    <string name="face_blend_button">SELECT ANOTHER MODEL</string>
+    <string name="face_blend_creating_video">Creating video</string>
+    <string name="face_blend_description">"Blend two faces together with 3D Creator's face blend tool"</string>
+    <string name="face_blend_image_created">Image created</string>
+    <string name="face_blend_loading_models">Loading models</string>
+    <string name="face_blend_save_as_image">Image</string>
+    <string name="face_blend_save_as_title">Save as</string>
+    <string name="face_blend_save_as_video">Video</string>
+    <string name="face_blend_title">Face blend</string>
+    <string name="face_blend_video_created">Video created</string>
+    <string name="face_blend_view_video">VIEW</string>
+    <string name="face_mimic_camera_permissions_needed">To use the face mimic feature, you need to grant 3D Creator permission to use the camera.</string>
+    <string name="face_mimic_first_time_info">Look into the front camera to make the model mimic your facial expressions</string>
+    <string name="face_mimic_gallery_text">Make 3D models mimic your facial expressions</string>
+    <string name="face_mimic_lost_face">I can’t see your face</string>
+    <string name="failed_creating_video">Could not create video</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="file_provider_authority">com.sonymobile.scan3d.files</string>
+    <string name="file_set_example_scan_face">Face scan example</string>
+    <string name="file_set_example_scan_food">Food scan example</string>
+    <string name="file_set_example_scan_freeform">Freeform scan example</string>
+    <string name="file_set_example_scan_head">Head scan example</string>
+    <string name="file_set_no_name">Untitled</string>
+    <string name="find_local_printers_url">https://3d-creator.sonymobile.com/printing</string>
+    <string name="find_more_apps">Find more applications</string>
+    <string name="firebase_database_url">https://ace-shine-782.firebaseio.com</string>
+    <string name="first_time_180_scan_lighting_1">Scan in a well-lit environment. For best results, use soft and balanced lights.</string>
+    <string name="first_time_180_scan_lighting_2">The light indicator has to show more than two rays during scan</string>
+    <string name="first_time_180_sculpting_description">Move your phone steadily around the face to add more details</string>
+    <string name="first_time_180_sculpting_title">Finish by sculpting</string>
+    <string name="first_time_adv_calibration">"During freeform calibration you will not be guided through the calibration movement.
+
+Make sure to capture the object from all angles until the object is covered in points."</string>
+    <string name="first_time_adv_done_description">Make sure that the sphere that appears covers the object</string>
+    <string name="first_time_adv_scan_video">Show me how to use freeform scan</string>
+    <string name="first_time_done_button">DONE</string>
+    <string name="first_time_face_calibration_description">Start from the ear of the person you’re scanning and move your phone steadily towards the other ear.</string>
+    <string name="first_time_face_calibration_title">Start with calibration</string>
+    <string name="first_time_face_done_description">"Now you're ready to do your first face scan"</string>
+    <string name="first_time_face_good_job_description">You have completed your first face scan.</string>
+    <string name="first_time_face_scan_environment_1">Make sure the person you are scanning sits still.</string>
+    <string name="first_time_face_scan_environment_2">Remove glasses.</string>
+    <string name="first_time_face_scan_video">Show me how to scan a face</string>
+    <string name="first_time_face_scan_video_link">https://youtu.be/94HEIEp6jGg</string>
+    <string name="first_time_food_calibration_description">Move your phone steadily, connecting all the dots.</string>
+    <string name="first_time_food_calibration_title">Start with calibration</string>
+    <string name="first_time_food_done_description">You are now ready to do your first food scan</string>
+    <string name="first_time_food_good_job_description">You have completed your first food scan</string>
+    <string name="first_time_food_scan_environment_1">Solid and textured objects are suitable for scanning</string>
+    <string name="first_time_food_scan_environment_2">Glossy or transparent objects, or objects with holes in them cannot be scanned.</string>
+    <string name="first_time_food_scan_lighting">"Scan in a well-lit environment. For best results, use soft and balanced lights.
+
+The light indicator has to show more than two rays during scan"</string>
+    <string name="first_time_food_scan_video">Show me how to scan food</string>
+    <string name="first_time_food_scan_video_link">https://youtu.be/xVWurIo6Utk</string>
+    <string name="first_time_food_sculpting_description">"Move your phone steadily around the food. It's important to sculpt the food from different angles."</string>
+    <string name="first_time_food_sculpting_title">Finish by sculpting</string>
+    <string name="first_time_freeform_scan_video_link">https://youtu.be/s4QWWs3bBHw</string>
+    <string name="first_time_good_job_title">Good job!</string>
+    <string name="first_time_head_calibration_description">Circle around your target. Move your phone steadily, connecting all the dots.</string>
+    <string name="first_time_head_calibration_title">Start with calibration</string>
+    <string name="first_time_head_done_description">Now you are ready to do your first head scan</string>
+    <string name="first_time_head_good_job_description">You have completed your first head scan.</string>
+    <string name="first_time_head_scan_text_1">Avoid reflective surfaces in the background.</string>
+    <string name="first_time_head_scan_text_2">No movement in the background.</string>
+    <string name="first_time_head_scan_text_3">Make sure there is enough space around the person so you can circulate freely.</string>
+    <string name="first_time_head_scan_video">Show me how to scan a head</string>
+    <string name="first_time_head_scan_video_link">https://youtu.be/E1qZQiNajUI</string>
+    <string name="first_time_head_sculpting_description">Move your phone steadily around the face, until the model is completely green.</string>
+    <string name="first_time_head_sculpting_title">Finish by sculpting</string>
+    <string name="first_time_selfie_calibration_description">Start in front of your face and move the phone to the left, connecting the dots.</string>
+    <string name="first_time_selfie_calibration_title">Start with calibration</string>
+    <string name="first_time_selfie_done_description">You are now ready to do your first selfie scan</string>
+    <string name="first_time_selfie_good_job_description">You have completed your first selfie scan.</string>
+    <string name="first_time_selfie_scan_environment_1">Sit still while you scan yourself and try to keep a relaxed facial expression during the scan.</string>
+    <string name="first_time_selfie_scan_environment_2">Remove glasses.</string>
+    <string name="first_time_selfie_scan_video">Show me how to scan myself</string>
+    <string name="first_time_selfie_scan_video_link">https://youtu.be/hMJKXIG8yfo</string>
+    <string name="first_time_tutorial_scan_too_long">Tip: Sculpting for too long may damage your scan</string>
+    <string name="focus_type_auto">Auto</string>
+    <string name="focus_type_fixed">Fixed</string>
+    <string name="focus_type_manual">Manual</string>
+    <string name="focus_type_setting">@string/focus_type_auto</string>
+    <string name="focus_type_tof">ToF</string>
+    <string name="gallery_backup_sync_text">Backup and sync</string>
+    <string name="gallery_help_tips_text">Help and tips</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Only sync over Wi-Fi</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Wi-Fi only</string>
+    <string name="gallery_preference_scanning_sound_summary">Play sound feedback during scanning</string>
+    <string name="gallery_preference_scanning_sound_title">Sound</string>
+    <string name="gallery_preference_sync_when_charging_summary">Only sync when the device is charging</string>
+    <string name="gallery_preference_sync_when_charging_title">Only when charging</string>
+    <string name="gallery_settings_text">Settings</string>
+    <string name="gallery_sort_by_date_text">Date</string>
+    <string name="gallery_sort_by_name_text">Name</string>
+    <string name="gallery_sort_by_text">Sort</string>
+    <string name="gallery_wizard_card_title">Help and tips</string>
+    <string name="gcm_defaultSenderId">939005268536</string>
+    <string name="gdpr_execute_job_sqs_url">https://sqs.eu-west-1.amazonaws.com/800270858199/gdpr-prod.fifo</string>
+    <string name="glass_print_rotate_hint">Rotate the model to adjust the orientation of the engraving</string>
+    <string name="go_to_gallery">GO TO GALLERY</string>
+    <string name="google_api_key">AIzaSyB3oDlnBsacxfiZOrr6LDblxOCVIVr520M</string>
+    <string name="google_app_id">1:939005268536:android:5ef567173ef97d2b</string>
+    <string name="google_crash_reporting_api_key">AIzaSyB3oDlnBsacxfiZOrr6LDblxOCVIVr520M</string>
+    <string name="google_play_search_all_plugins">Compatible with 3D Creator from Xperia™</string>
+    <string name="google_storage_bucket">ace-shine-782.appspot.com</string>
+    <string name="help_title_text">Help and tips</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="key_backup_personal_data">key_backup_personal_data</string>
+    <string name="kilobytes_per_second">%1$s KB/s</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="next">NEXT</string>
+    <string name="no_data_connection_description_txt">Could not upload model. Please check internet connection.</string>
+    <string name="no_faces_detected_card">No face detected in the model. Sharing options that require face data will not be available for this model.</string>
+    <string name="no_faces_detected_text">Sharing options that require face data will not be available for this model</string>
+    <string name="no_faces_detected_title">No face detected</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="not_set">Not set</string>
+    <string name="notification_download_complete">Download complete</string>
+    <string name="notification_download_failed">Download unsuccessful</string>
+    <string name="notification_gdpr_delete_account_failed_title">Could not delete account</string>
+    <string name="notification_gdpr_export_data_failed_title">Could not export data</string>
+    <string name="notification_gdpr_failed_subtitle">Tap to try again</string>
+    <string name="notification_improve_completed_subtitle">Tap to view</string>
+    <string name="notification_improve_completed_title">Quality improvements completed</string>
+    <string name="notification_improve_failed_title">The model could not be improved</string>
+    <string name="notification_improve_retry">Tap to try again</string>
+    <string name="notification_wallpaper_not_found_description">Tap to change wallpaper</string>
+    <string name="notification_wallpaper_not_found_title">3D Creator model not found</string>
+    <string name="oauth_callback_url_value">https://scan3d.sonymobile.com</string>
+    <string name="oauth_client_id_key">client_id</string>
+    <string name="oauth_redirect_uri_key">redirect_uri</string>
+    <string name="oauth_response_type_token">token</string>
+    <string name="onboarding_create_description">In 3D Creator, you can easily make 3D scans of people or objects using your phone camera!</string>
+    <string name="onboarding_create_title">Create</string>
+    <string name="onboarding_share_description">Once you’ve captured an object, you can print it in 3D or share it with the world.</string>
+    <string name="onboarding_share_title">Share</string>
+    <string name="options_menu_transparency">Options menu transparency</string>
+    <string name="original_model">Original</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="percent_progress">%d%%</string>
+    <string name="permission_activity_title">3D Creator needs permission(s) to be able to run</string>
+    <string name="permission_camera_description">To scan objects</string>
+    <string name="permission_camera_title">Camera</string>
+    <string name="permission_thermal_mitigation_description">Allows the app to restrict camera functionality, depending on the temperature of the device.</string>
+    <string name="permission_thermal_mitigation_label">restrict camera functionality</string>
+    <string name="permissions_change_button">CHANGE PERMISSION</string>
+    <string name="permissions_settings_toast">Tap Permissions to grant necessary permissions</string>
+    <string name="personal_data_item_account_details">Account details</string>
+    <string name="personal_data_item_email">Email address</string>
+    <string name="personal_data_item_face_scan">Scanned model</string>
+    <string name="personal_data_item_images">Images</string>
+    <string name="personal_data_item_scanning_metadata">Scanning metadata</string>
+    <string name="personal_data_title">Personal data</string>
+    <string name="pos_reg">Ceres: Position Regularization</string>
+    <string name="post_process_privacy_description">Your scan and additional image data will be uploaded to our servers to improve your model. The data will be uploaded over Wi-Fi only and will be removed from our servers after 90 days.</string>
+    <string name="post_process_privacy_disclaimer">"Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to back up your content. Sony Mobile will handle your data per our &lt;a href='%2$s'>Privacy Policy&lt;/a>."</string>
+    <string name="post_process_privacy_title">Additional image data needed to improve the scan</string>
+    <string name="pp_execute_job_sqs_url">https://sqs.eu-west-1.amazonaws.com/800270858199/post-processing-prod.fifo</string>
+    <string name="pp_init_job_sqs_url">https://sqs.eu-west-1.amazonaws.com/800270858199/post-processing-init-prod.fifo</string>
+    <string name="pp_log_bucket">scan3d-post-process-prod</string>
+    <string name="pref_audio_permissions_requested">audio_permissions_requested</string>
+    <string name="pref_awb_lock">Auto white balance lock</string>
+    <string name="pref_awb_lock_summary">When enabled, auto white bealance is locked during scanning.</string>
+    <string name="pref_ca_privacy_notice">pref_ca_privacy_notice</string>
+    <string name="pref_calib_reset">pref_calib_reset</string>
+    <string name="pref_camera_calib_reset">Reset camera calibration</string>
+    <string name="pref_camera_calib_reset_descr">If scan quality starts to decrease then you may need to reset camera calibration. This can happen if the phone has been dropped.</string>
+    <string name="pref_clear_prefs_summary">Clears default app preferences and restarts the app. Current preferences can be restored later.</string>
+    <string name="pref_clear_prefs_title">Clear preferences</string>
+    <string name="pref_clear_prefs_toast">Preferences cleared and backup saved</string>
+    <string name="pref_edge_enhancement">Edge enhancement</string>
+    <string name="pref_edge_enhancement_summary">When enabled, edge enhancement is used in the camera image pipeline.</string>
+    <string name="pref_face_mimic_microphone_on">face_mimic_microphone_on</string>
+    <string name="pref_focus_type">Focus type</string>
+    <string name="pref_focus_type_summary">The type of focusing used by the camera.</string>
+    <string name="pref_key_account">pref_account</string>
+    <string name="pref_key_awb_lock">pref_awb_lock</string>
+    <string name="pref_key_backup_delete_account">key_backup_delete_account</string>
+    <string name="pref_key_backup_export_data">key_backup_export_data</string>
+    <string name="pref_key_boost">key_boost</string>
+    <string name="pref_key_ceres_solver">key_ceres_solver</string>
+    <string name="pref_key_clear_preferences">pref_clear_preferences</string>
+    <string name="pref_key_debug_buttons_enabled">pref_key_debug_buttons_enabled</string>
+    <string name="pref_key_delete_account_ongoing">key_delete_acc_ongoing</string>
+    <string name="pref_key_dev_enabled">dev_enabled</string>
+    <string name="pref_key_dlib">key_dlib</string>
+    <string name="pref_key_edge_enhancement">pref_edge_enhancement</string>
+    <string name="pref_key_eigen">key_eigen</string>
+    <string name="pref_key_excluded_tips">excluded_tips</string>
+    <string name="pref_key_extract_ongoing">key_extract_ongoing</string>
+    <string name="pref_key_first_start">pref_key_first_start</string>
+    <string name="pref_key_first_time_training_mode">pref_key_first_time_training_mode</string>
+    <string name="pref_key_first_time_tutorial">pref_key_first_time_tutorial</string>
+    <string name="pref_key_focus_type">pref_focus_type</string>
+    <string name="pref_key_gallery_sort_type">pref_key_gallery_sort_type</string>
+    <string name="pref_key_gallery_span_count">pref_gallery_span_count</string>
+    <string name="pref_key_jpeg">key_jpeg</string>
+    <string name="pref_key_kept_scan_counter">pref_kept_scan_counter</string>
+    <string name="pref_key_last_scan_mode">pref_key_last_scan_mode</string>
+    <string name="pref_key_loki">key_loki</string>
+    <string name="pref_key_lua">key_lua</string>
+    <string name="pref_key_lw_select_scan">key_lw_select_scan</string>
+    <string name="pref_key_lw_use_movement">key_lw_use_movement</string>
+    <string name="pref_key_mindroid">key_mindroidr</string>
+    <string name="pref_key_minizip">key_minizip</string>
+    <string name="pref_key_noise_reduction">pref_noise_reduction</string>
+    <string name="pref_key_open_source">key_open_source</string>
+    <string name="pref_key_opencv">key_opencv</string>
+    <string name="pref_key_poly2tri">key_poly2tri</string>
+    <string name="pref_key_privacy_post_process_agreed">key_privacy_pp</string>
+    <string name="pref_key_promotion_items">pref_promotion_items</string>
+    <string name="pref_key_pugixml">key_pugixml</string>
+    <string name="pref_key_restore_preferences">pref_restore_preferences</string>
+    <string name="pref_key_run_shared_meshes_sync">key_run_shared_meshes_sync</string>
+    <string name="pref_key_scan_coach_mark_remaining_displays_counter">pref_key_scan_coach_mark_remaining_displays_counter</string>
+    <string name="pref_key_scanning_sound">pref_key_scanning_sound</string>
+    <string name="pref_key_settings">pref_settings</string>
+    <string name="pref_key_show_cta_notification">pref_key_show_cta_notification</string>
+    <string name="pref_key_show_onboarding">pref_show_onboarding</string>
+    <string name="pref_key_show_promo_dismiss_hint">pref_key_show_promo_dismiss_hint</string>
+    <string name="pref_key_sign_out">pref_sign_out</string>
+    <string name="pref_key_skip_tutorials">pref_skip_tutorials</string>
+    <string name="pref_key_sync_over_wifi">pref_sync_over_wifi</string>
+    <string name="pref_key_sync_when_charging">pref_sync_when_charging</string>
+    <string name="pref_key_transfer_monitor">pref_transfer_monitor</string>
+    <string name="pref_key_use_lamp">pref_use_lamp</string>
+    <string name="pref_key_version">pref_version</string>
+    <string name="pref_key_xmltojson">key_xmltojson</string>
+    <string name="pref_live_wallpaper_background">lw_background</string>
+    <string name="pref_live_wallpaper_isanimated">lw_animate</string>
+    <string name="pref_live_wallpaper_rotate">lw_rotate</string>
+    <string name="pref_live_wallpaper_uri">lw_path</string>
+    <string name="pref_lw_select_scan_summary">Select which 3D model to use</string>
+    <string name="pref_lw_select_scan_title">Select 3D model</string>
+    <string name="pref_lw_title">Live wallpaper settings</string>
+    <string name="pref_lw_use_movement_summary">The 3D model will move continuously</string>
+    <string name="pref_lw_use_movement_title">Revolving 3D model</string>
+    <string name="pref_noise_reduction">Noise reduction</string>
+    <string name="pref_noise_reduction_summary">When enabled, noise reduction is used in the camera image pipeline.</string>
+    <string name="pref_restore_prefs_fail_toast">Backup file empty. Nothing to restore.</string>
+    <string name="pref_restore_prefs_summary">Restores preferences that were used before last clear.</string>
+    <string name="pref_restore_prefs_title">Restore preferences</string>
+    <string name="pref_restore_prefs_toast">Preferences restored and backup cleared</string>
+    <string name="pref_show_improvement_hint_promo">pref_show_improvement_hint_promo</string>
+    <string name="pref_skip_face_mimic_info_text">pref_skip_face_mimic_info_text</string>
+    <string name="pref_skip_tutorials_title">Skip tutorials</string>
+    <string name="pref_skip_tutotials_summary">Start scanning without going through the tutorials</string>
+    <string name="pref_use_debug_buttons">Enable debug buttons</string>
+    <string name="pref_use_debug_buttons_summary">Press Camera button to switch sculpting state and Volume down button to show advanced UI during scanning.</string>
+    <string name="pref_use_lamp">Use lamp</string>
+    <string name="pref_use_lamp_summary">Use extra light when scanning.</string>
+    <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
+    <string name="preference_devsettings_title">Developer settings</string>
+    <string name="print_3rd_party_plugins_card_title">Print your model on your own 3D printer</string>
+    <string name="print_3rd_party_plugins_height_large">15 CM</string>
+    <string name="print_3rd_party_plugins_height_medium">10 CM</string>
+    <string name="print_3rd_party_plugins_height_small">5 CM</string>
+    <string name="print_3rd_party_plugins_no_apps_descr">If your printer does not support direct printing from the 3D Creator app, you can share your model as a file instead.</string>
+    <string name="print_3rd_party_plugins_no_apps_title">No supported printer apps found</string>
+    <string name="print_customization_desc">Note that your printed model will differ slightly from this preview</string>
+    <string name="print_customization_height_large">10 CM</string>
+    <string name="print_customization_height_large_alt">9 CM</string>
+    <string name="print_customization_height_medium">7 CM</string>
+    <string name="print_customization_height_small">5 CM</string>
+    <string name="print_customization_height_title">Size</string>
+    <string name="print_customization_height_xtra_small">4 CM</string>
+    <string name="print_customization_material_polyjet_colour">Full-color plastics</string>
+    <string name="print_customization_material_porcelain_white">Porcelain white</string>
+    <string name="print_customization_material_sandstone_colour">Sandstone multi-color</string>
+    <string name="print_customization_select_height_toast">Please select a size for your print</string>
+    <string name="print_customization_title">Customize</string>
+    <string name="print_remove_shadows_note">To improve the print quality, remove visible shadows using the slider.</string>
+    <string name="print_remove_shadows_title">Remove shadows</string>
+    <string name="print_select_howto_print">Select how to print</string>
+    <string name="print_select_service_delay_info">This may take several minutes. We will notify you when the upload is ready.</string>
+    <string name="print_select_service_upload_failed_description">"Could not upload '%1$s' to %2$s"</string>
+    <string name="print_select_service_upload_failed_title">Upload failed</string>
+    <string name="printpreparation_above_socle">Place the 3D model onto the base</string>
+    <string name="printpreparation_empty_model">This model cannot be printed</string>
+    <string name="printpreparation_geometry_fail">This model cannot be printed</string>
+    <string name="printpreparation_shell_fail">"Adjust the model's placement on the base"</string>
+    <string name="printpreparation_success">Print preparation succeeded</string>
+    <string name="printpreparation_text_fail">Text is too long. Please shorten and try again.</string>
+    <string name="printpreparation_unknown_fail">Something went wrong, please try again.</string>
+    <string name="privacy_agree">Agree</string>
+    <string name="project_id">ace-shine-782</string>
+    <string name="props_content_anime_hair">Anime</string>
+    <string name="props_content_bow">Bow</string>
+    <string name="props_content_bunny_ears">Bunny ears</string>
+    <string name="props_content_cat_ears">Cat ears</string>
+    <string name="props_content_cat_hat">Cat hat</string>
+    <string name="props_content_cowboy_hat">Cowboy</string>
+    <string name="props_content_crown">Crown</string>
+    <string name="props_content_cyborg">Cyborg</string>
+    <string name="props_content_dubai_glasses">Dubai</string>
+    <string name="props_content_new_york_glasses">New York</string>
+    <string name="props_content_none">None</string>
+    <string name="props_content_panda_hat">Panda hat</string>
+    <string name="props_content_paris_glasses">Paris</string>
+    <string name="props_content_tokyo_glasses">Tokyo</string>
+    <string name="provider_web_viewer_name">3D Creator web viewer</string>
+    <string name="quality_improvement_hint_critical_failure">This model cannot be improved. There is not enough metadata available.</string>
+    <string name="quality_improvement_hint_failure">The model could not be improved</string>
+    <string name="quality_improvement_receiving_description">Downloading quality improvements</string>
+    <string name="quality_improvement_retry">TRY AGAIN</string>
+    <string name="quality_improvement_started_description">Quality improvement in progress</string>
+    <string name="quality_improvement_title">Quality improvement</string>
+    <string name="repeated_tutorial_done_description">Good luck with your scans!</string>
+    <string name="revoke_refresh_token_url">https://accounts.google.com/o/oauth2/revoke?token=</string>
+    <string name="revolving_model">Revolving model</string>
+    <string name="save_scan">Save</string>
+    <string name="saving_print_geometry">Preparing model</string>
+    <string name="scan_button_done">DONE</string>
+    <string name="scan_button_next">NEXT</string>
+    <string name="scan_button_start">START</string>
+    <string name="scan_mode_face_scan_long_desc">Start a face scan</string>
+    <string name="scan_mode_food_scan_long_desc">Start a food scan</string>
+    <string name="scan_mode_freeform_scan_long_desc">Start a freeform scan</string>
+    <string name="scan_mode_head_scan_long_desc">Start a head scan</string>
+    <string name="scan_mode_selfie_scan_long_desc">Start a selfie scan</string>
+    <string name="screen_event_adv_tutorial_screen">Freeform tutorial screen</string>
+    <string name="screen_event_face_tutorial_screen">Face tutorial screen</string>
+    <string name="screen_event_food_tutorial_screen">Food tutorial screen</string>
+    <string name="screen_event_head_tutorial_screen">Head tutorial screen</string>
+    <string name="screen_event_selfie_tutorial_screen">Selfie tutorial screen</string>
+    <string name="screen_event_tips_how_it_works">Tips how it works</string>
+    <string name="screen_event_tips_how_to_scan">Tips how to scan</string>
+    <string name="screen_event_tips_short">Short tips</string>
+    <string name="screen_event_tips_technology">Tips about the technology</string>
+    <string name="screen_event_tips_troubleshooting">Tips troubleshooting</string>
+    <string name="screen_event_tips_what_to_scan">Tips what to scan</string>
+    <string name="screen_event_tips_where_to_scan">Tips where to scan</string>
+    <string name="search_menu_title">Search</string>
+    <string name="select_model">Select model</string>
+    <string name="select_settings_tip">Tap the settings icon to select a model</string>
+    <string name="service_unshare_failed_title">Unshare failed</string>
+    <string name="settings_about_text">About</string>
+    <string name="share_adv_file_title">Advanced file sharing</string>
+    <string name="share_advanced_option">Advanced option</string>
+    <string name="share_advanced_option_height_normal_map_text">"Recommended if you will use the model in:
+- the 3D Creator app
+- games
+- 3D modeling software"</string>
+    <string name="share_advanced_option_height_normal_map_title">Height map and normal map</string>
+    <string name="share_advanced_option_tessellated_mesh_text">"Recommended if the shape of the model is more important than the texture, for example:
+- 3D printing
+- CAD programs"</string>
+    <string name="share_advanced_option_tessellated_mesh_title">Tessellated mesh</string>
+    <string name="share_advanced_option_tittle">Select a format</string>
+    <string name="share_animation_dialog_exclude_anim_button">WITHOUT ANIMATIONS</string>
+    <string name="share_animation_dialog_include_anim_button">WITH ANIMATIONS</string>
+    <string name="share_animation_dialog_include_anim_text">Do you want to share the model with or without animations?</string>
+    <string name="share_animation_dialog_include_anim_title">Share the animated model?</string>
+    <string name="share_animation_dialog_text">When someone views your model, they will be able to see all animations.</string>
+    <string name="share_animations_title">Animations</string>
+    <string name="share_as_avatar">Create your own 3D avatar</string>
+    <string name="share_as_faceblend">Blend the faces of two models</string>
+    <string name="share_as_facemimic">Make your model, or a monster, mimic your expressions.</string>
+    <string name="share_as_file_message_title">"'%1$s' by 3D Creator"</string>
+    <string name="share_as_file_title">Share as file</string>
+    <string name="share_as_stl_file_title">Share as STL file</string>
+    <string name="share_as_video">Create video</string>
+    <string name="share_as_zip_file_title">Share as ZIP file (OBJ+MTL)</string>
+    <string name="share_at_webviewer">Share via the 3D Creator web viewer</string>
+    <string name="share_props">Dress up your model with fun props</string>
+    <string name="share_props_title">Props</string>
+    <string name="share_set_as_wallpaper">Set your model as a Live wallpaper</string>
+    <string name="share_subject_txt">3D Creator model</string>
+    <string name="share_tab_create">Create</string>
+    <string name="share_tab_print">3D Print</string>
+    <string name="share_tab_share">Share</string>
+    <string name="share_toast_loading_ongoing">Wait for loading to finish</string>
+    <string name="share_with_or_without_animations_info_text">Do you want to include animations for your shared model?</string>
+    <string name="share_without_animations_title">No animations</string>
+    <string name="sharing_tab_no_cards">No available options</string>
+    <string name="show_system_settings">Show system settings</string>
+    <string name="show_system_settings_descr">Manage application and permissions</string>
+    <string name="sign_in_button_text">Sign in with Google</string>
+    <string name="sign_in_post_process_title">Sign in to make the quality improvements</string>
+    <string name="sign_in_screen_description">Your models will be synced and backed up online for safety. You can share them as 3D models in the web viewer, or recover them if you change or lose your device.</string>
+    <string name="sign_in_screen_not_now_button">CANCEL</string>
+    <string name="sign_in_screen_title">Sign in to sync and share your models</string>
+    <string name="sketchfab_welcome_description_txt">Sketchfab is a platform for viewing and sharing 3D models. Upload your model to Sketchfab to share it on social media.</string>
+    <string name="smooth_scan">Smooth</string>
+    <string name="sony_support_forum_url">https://talk.sonymobile.com/t5/3D-Creator/bd-p/3D-Creator</string>
+    <string name="stage_adjust_sphere">Adjust the sphere</string>
+    <string name="stage_calculate">Wait</string>
+    <string name="stage_calibration">Calibrate</string>
+    <string name="stage_frame">Frame</string>
+    <string name="stage_sculpting">Sculpt</string>
+    <string name="start_scan">START SCAN</string>
+    <string name="state_completed">Download finished</string>
+    <string name="state_connecting">Connecting to the download server</string>
+    <string name="state_downloading">Downloading resources</string>
+    <string name="state_failed">Download failed</string>
+    <string name="state_failed_cancelled">Download cancelled</string>
+    <string name="state_failed_fetching_url">Download failed because the resources could not be found</string>
+    <string name="state_failed_sdcard_full">Download failed because the external storage is full</string>
+    <string name="state_failed_unlicensed">Download failed because you may not have purchased this app</string>
+    <string name="state_fetching_url">Looking for resources to download</string>
+    <string name="state_idle">Waiting for download to start</string>
+    <string name="state_paused_by_request">Download paused</string>
+    <string name="state_paused_network_setup_failure">Download paused. Test a website in browser</string>
+    <string name="state_paused_network_unavailable">Download paused because no network is available</string>
+    <string name="state_paused_roaming">Download paused because you are roaming</string>
+    <string name="state_paused_sdcard_unavailable">Download paused because the external storage is unavailable</string>
+    <string name="state_paused_wifi_disabled">Download paused because wifi is disabled</string>
+    <string name="state_paused_wifi_unavailable">Download paused because wifi is unavailable</string>
+    <string name="state_unknown">Starting...</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="storage_permissons_needed">To save a video or image, you need to grant 3D Creator with storage access permission.</string>
+    <string name="storage_provider_authority">com.sonymobile.scan3d.storageprovider</string>
+    <string name="storage_service_confirm_signout_message_txt">Are you sure you want to sign out? Note that all backed up scans will be removed from this device.</string>
+    <string name="storage_service_confirm_signout_title_txt">Sign out</string>
+    <string name="storage_service_dialog_button_delete_txt">DELETE</string>
+    <string name="storage_service_dialog_button_discard_txt">DISCARD</string>
+    <string name="storage_service_dialog_button_remove_txt">REMOVE</string>
+    <string name="storage_service_dialog_button_unshare_txt">Unshare</string>
+    <string name="storage_service_dialog_button_yes_txt">YES</string>
+    <string name="storage_service_signin_appbar_title_txt">Sign in to 3D Creator</string>
+    <string name="storage_service_signin_failure_txt">"Could not sign in. Please try again later. &lt;a href='%1$s'>Learn More&lt;/a>."</string>
+    <string name="storage_service_signin_learn_more_title_txt">If the sign-in problem persists, please try the following:</string>
+    <string name="storage_service_signin_learn_more_workaround_activate_google_drive_txt">• Sign in to your account from a computer or in the Google Drive app, and make sure that Google Drive is enabled.</string>
+    <string name="storage_service_signin_learn_more_workaround_clear_gsm_txt">• Clear app data for Google Play services in Settings > Apps &amp; notifications > Google Play services > Storage > MANAGE SPACE > CLEAR ALL DATA</string>
+    <string name="storage_service_signin_learn_more_workaround_notifications_txt">• Check if you have received a notification instructing you to go to Settings > Accounts, and sign in there first.</string>
+    <string name="storage_service_signin_learn_more_workaround_restart_txt">• Restart your device</string>
+    <string name="storage_service_signin_learn_more_workaround_support_forum_txt">"Still need help? Visit our &lt;a href='%1$s'>Support forum&lt;/a>."</string>
+    <string name="storage_service_signin_learn_more_workaround_update_gsm_txt">• Update Google Play services</string>
+    <string name="storage_service_signin_progress_txt">Signing in</string>
+    <string name="storage_service_signout_progress_txt">Signing out</string>
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="synchub_server_base_url">https://live.synchub.sonymobile.com</string>
+    <string name="synchub_server_client_id">939005268536-3udpb0ia99kt80oc33fv20kunfoitjvb.apps.googleusercontent.com</string>
+    <string name="text_license_boost">"
+                &lt;h2 id=\"license\">License&lt;/h2>
+
+                &lt;p>Boost Software License - Version 1.0 - August 17th, 2003&lt;/p>
+
+                &lt;p>Permission is hereby granted, free of charge, to any person or organization
+                   obtaining a copy of the software and accompanying documentation covered by
+                   this license (the \"Software\") to use, reproduce, display, distribute,
+                   execute, and transmit the Software, and to prepare derivative works of the
+                   Software, and to permit third-parties to whom the Software is furnished to
+                   do so, all subject to the following:&lt;/p>
+
+                &lt;p>The copyright notices in the Software and this entire statement, including
+                   the above license grant, this restriction and the following disclaimer,
+                   must be included in all copies of the Software, in whole or in part, and
+                   all derivative works of the Software, unless such copies or derivative
+                   works are solely in the form of machine-executable object code generated by
+                   a source language processor.&lt;/p>
+
+                &lt;p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                   FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+                   SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+                   FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+                   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+                   DEALINGS IN THE SOFTWARE.&lt;/p>
+        "</string>
+    <string name="text_license_ceres_solver">"
+            &lt;h2 id=\"license\">License&lt;/h2>
+
+            &lt;p>Ceres Solver is licensed under the New BSD license, whose terms are as follows.&lt;/p>
+
+            &lt;p>Copyright 2015 Google Inc. All rights reserved.&lt;/p>
+
+            &lt;p>Redistribution and use in source and binary forms, with or without modification,
+               are permitted provided that the following conditions are met:&lt;/p>
+
+            &lt;p>1. Redistributions of source code must retain the above copyright notice,
+                  this list of conditions and the following disclaimer.&lt;/p>
+            &lt;p>2. Redistributions in binary form must reproduce the above copyright notice,
+                  this list of conditions and the following disclaimer in the documentation
+                  and/or other materials provided with the distribution.&lt;/p>
+            &lt;p>3. Neither the name of Google Inc., nor the names of its contributors may be
+                  used to endorse or promote products derived from this software without
+                  specific prior written permission. &lt;/p>
+
+            &lt;p>This software is provided by the copyright holders and contributors “AS IS”
+               and any express or implied warranties, including, but not limited to, the
+               implied warranties of merchantability and fitness for a particular purpose
+               are disclaimed. In no event shall Google Inc. be liable for any direct,
+               indirect, incidental, special, exemplary, or consequential damages (including,
+               but not limited to, procurement of substitute goods or services; loss of use,
+               data, or profits; or business interruption) however caused and on any theory
+               of liability, whether in contract, strict liability, or tort (including
+               negligence or otherwise) arising in any way out of the use of this software,
+               even if advised of the possibility of such damage.&lt;/p>
+        "</string>
+    <string name="text_license_dlib">"
+            &lt;h2 id=\"license\">License&lt;/h2>
+
+            &lt;p>Boost Software License - Version 1.0 - August 17th, 2003&lt;/p>
+
+            &lt;p>Permission is hereby granted, free of charge, to any person or organization
+               obtaining a copy of the software and accompanying documentation covered by
+               this license (the \"Software\") to use, reproduce, display, distribute,
+               execute, and transmit the Software, and to prepare derivative works of the
+               Software, and to permit third-parties to whom the Software is furnished to
+               do so, all subject to the following:&lt;/p>
+
+            &lt;p>The copyright notices in the Software and this entire statement, including
+               the above license grant, this restriction and the following disclaimer,
+               must be included in all copies of the Software, in whole or in part, and
+               all derivative works of the Software, unless such copies or derivative
+               works are solely in the form of machine-executable object code generated by
+               a source language processor.&lt;/p>
+
+            &lt;p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+               IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+               FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+               SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+               FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+               ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+               DEALINGS IN THE SOFTWARE.&lt;/p>
+        "</string>
+    <string name="text_license_jpeg">"
+            &lt;p>This software is based in part on the work of the Independent JPEG Group&lt;/p>
+        "</string>
+    <string name="text_license_loki">"
+                &lt;h2 id=\"license\">License&lt;/h2>
+
+                &lt;p>Copyright 2001 Andrei Alexandrescu&lt;/p>
+
+                &lt;p>Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the \"Software\"), to deal in
+                the Software without restriction, including without limitation the rights to use,
+                copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+                Software, and to permit persons to whom the Software is furnished to do so, subject
+                to the following conditions:&lt;/p>
+
+                &lt;p>The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.&lt;/p>
+
+                &lt;p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+                FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+                ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+                THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p>
+        "</string>
+    <string name="text_license_lua">"
+            &lt;p>Copyright © 1994–2016 Lua.org, PUC-Rio.&lt;/p>
+
+            &lt;p>Permission is hereby granted, free of charge, to any person obtaining
+               a copy of this software and associated documentation files (the
+               \"Software\"), to deal in the Software without restriction, including
+               without limitation the rights to use, copy, modify, merge, publish,
+               distribute, sublicense, and/or sell copies of the Software, and to
+               permit persons to whom the Software is furnished to do so, subject to
+               the following conditions: &lt;/p>
+
+            &lt;p>The above copyright notice and this permission notice shall be
+               included in all copies or substantial portions of the Software.&lt;/p>
+
+            &lt;p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+               EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+               MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+               NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+               LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+               OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+               WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p>
+        "</string>
+    <string name="text_license_mindroid">"&lt;p>Copyright © 2011 John Resig, http://jquery.com/&lt;/p>
+
+            &lt;p>Permission is hereby granted, free of charge, to any person obtaining
+               a copy of this software and associated documentation files (the
+               \"Software\"), to deal in the Software without restriction, including
+               without limitation the rights to use, copy, modify, merge, publish,
+               distribute, sublicense, and/or sell copies of the Software, and to
+               permit persons to whom the Software is furnished to do so, subject to
+               the following conditions:&lt;/p>
+
+            &lt;p>The above copyright notice and this permission notice shall be
+               included in all copies or substantial portions of the Software.&lt;/p>
+
+            &lt;p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+               EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+               MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+               NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+               LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+               OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+               WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p>"</string>
+    <string name="text_license_minizip">"
+            &lt;h2>License&lt;/h2>
+
+            &lt;p>Condition of use and distribution are the same than zlib&lt;/p>
+
+            &lt;p>This software is provided 'as-is', without any express or implied
+               warranty.  In no event will the authors be held liable for any damages
+               arising from the use of this software.&lt;/p>
+
+            &lt;p>Permission is granted to anyone to use this software for any purpose,
+               including commercial applications, and to alter it and redistribute it
+               freely, subject to the following restrictions:&lt;/p>
+
+            &lt;p>1. The origin of this software must not be misrepresented; you must not
+                  claim that you wrote the original software. If you use this software
+                  in a product, an acknowledgment in the product documentation would be
+                  appreciated but is not required.&lt;/p>
+
+            &lt;p>2. Altered source versions must be plainly marked as such, and must not be
+                  misrepresented as being the original software.&lt;/p>
+
+
+            &lt;p>3. This notice may not be removed or altered from any source distribution.&lt;/p>
+        "</string>
+    <string name="text_license_mpl2">"
+&lt;h1 id=\"mozilla-public-license-version-2.0\">Mozilla Public License&lt;br>Version 2.0&lt;/h1>
+&lt;h2 id=\"definitions\">1. Definitions&lt;/h2>
+&lt;dl>
+&lt;dt>1.1. “Contributor”&lt;/dt>
+&lt;dd>&lt;p>means each individual or legal entity that creates, contributes to the creation of, or owns Covered Software.&lt;/p>
+&lt;/dd>
+&lt;dt>1.2. “Contributor Version”&lt;/dt>
+&lt;dd>&lt;p>means the combination of the Contributions of others (if any) used by a Contributor and that particular Contributor’s Contribution.&lt;/p>
+&lt;/dd>
+&lt;dt>1.3. “Contribution”&lt;/dt>
+&lt;dd>&lt;p>means Covered Software of a particular Contributor.&lt;/p>
+&lt;/dd>
+&lt;dt>1.4. “Covered Software”&lt;/dt>
+&lt;dd>&lt;p>means Source Code Form to which the initial Contributor has attached the notice in Exhibit A, the Executable Form of such Source Code Form, and Modifications of such Source Code Form, in each case including portions thereof.&lt;/p>
+&lt;/dd>
+&lt;dt>1.5. “Incompatible With Secondary Licenses”&lt;/dt>
+&lt;dd>&lt;p>means&lt;/p>
+&lt;ol type=\"a\">
+&lt;li>&lt;p>that the initial Contributor has attached the notice described in Exhibit B to the Covered Software; or&lt;/p>&lt;/li>
+&lt;li>&lt;p>that the Covered Software was made available under the terms of version 1.1 or earlier of the License, but not also under the terms of a Secondary License.&lt;/p>&lt;/li>
+&lt;/ol>
+&lt;/dd>
+&lt;dt>1.6. “Executable Form”&lt;/dt>
+&lt;dd>&lt;p>means any form of the work other than Source Code Form.&lt;/p>
+&lt;/dd>
+&lt;dt>1.7. “Larger Work”&lt;/dt>
+&lt;dd>&lt;p>means a work that combines Covered Software with other material, in a separate file or files, that is not Covered Software.&lt;/p>
+&lt;/dd>
+&lt;dt>1.8. “License”&lt;/dt>
+&lt;dd>&lt;p>means this document.&lt;/p>
+&lt;/dd>
+&lt;dt>1.9. “Licensable”&lt;/dt>
+&lt;dd>&lt;p>means having the right to grant, to the maximum extent possible, whether at the time of the initial grant or subsequently, any and all of the rights conveyed by this License.&lt;/p>
+&lt;/dd>
+&lt;dt>1.10. “Modifications”&lt;/dt>
+&lt;dd>&lt;p>means any of the following:&lt;/p>
+&lt;ol type=\"a\">
+&lt;li>&lt;p>any file in Source Code Form that results from an addition to, deletion from, or modification of the contents of Covered Software; or&lt;/p>&lt;/li>
+&lt;li>&lt;p>any new file in Source Code Form that contains any Covered Software.&lt;/p>&lt;/li>
+&lt;/ol>
+&lt;/dd>
+&lt;dt>1.11. “Patent Claims” of a Contributor&lt;/dt>
+&lt;dd>&lt;p>means any patent claim(s), including without limitation, method, process, and apparatus claims, in any patent Licensable by such Contributor that would be infringed, but for the grant of the License, by the making, using, selling, offering for sale, having made, import, or transfer of either its Contributions or its Contributor Version.&lt;/p>
+&lt;/dd>
+&lt;dt>1.12. “Secondary License”&lt;/dt>
+&lt;dd>&lt;p>means either the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or any later versions of those licenses.&lt;/p>
+&lt;/dd>
+&lt;dt>1.13. “Source Code Form”&lt;/dt>
+&lt;dd>&lt;p>means the form of the work preferred for making modifications.&lt;/p>
+&lt;/dd>
+&lt;dt>1.14. “You” (or “Your”)&lt;/dt>
+&lt;dd>&lt;p>means an individual or a legal entity exercising rights under this License. For legal entities, “You” includes any entity that controls, is controlled by, or is under common control with You. For purposes of this definition, “control” means (a) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (b) ownership of more than fifty percent (50%) of the outstanding shares or beneficial ownership of such entity.&lt;/p>
+&lt;/dd>
+&lt;/dl>
+&lt;h2 id=\"license-grants-and-conditions\">2. License Grants and Conditions&lt;/h2>
+&lt;h3 id=\"grants\">2.1. Grants&lt;/h3>
+&lt;p>Each Contributor hereby grants You a world-wide, royalty-free, non-exclusive license:&lt;/p>
+&lt;ol type=\"a\">
+&lt;li>&lt;p>under intellectual property rights (other than patent or trademark) Licensable by such Contributor to use, reproduce, make available, modify, display, perform, distribute, and otherwise exploit its Contributions, either on an unmodified basis, with Modifications, or as part of a Larger Work; and&lt;/p>&lt;/li>
+&lt;li>&lt;p>under Patent Claims of such Contributor to make, use, sell, offer for sale, have made, import, and otherwise transfer either its Contributions or its Contributor Version.&lt;/p>&lt;/li>
+&lt;/ol>
+&lt;h3 id=\"effective-date\">2.2. Effective Date&lt;/h3>
+&lt;p>The licenses granted in Section&amp;nbsp;2.1 with respect to any Contribution become effective for each Contribution on the date the Contributor first distributes such Contribution.&lt;/p>
+&lt;h3 id=\"limitations-on-grant-scope\">2.3. Limitations on Grant Scope&lt;/h3>
+&lt;p>The licenses granted in this Section&amp;nbsp;2 are the only rights granted under this License. No additional rights or licenses will be implied from the distribution or licensing of Covered Software under this License. Notwithstanding Section&amp;nbsp;2.1(b) above, no patent license is granted by a Contributor:&lt;/p>
+&lt;ol type=\"a\">
+&lt;li>&lt;p>for any code that a Contributor has removed from Covered Software; or&lt;/p>&lt;/li>
+&lt;li>&lt;p>for infringements caused by: (i) Your and any other third party’s modifications of Covered Software, or (ii) the combination of its Contributions with other software (except as part of its Contributor Version); or&lt;/p>&lt;/li>
+&lt;li>&lt;p>under Patent Claims infringed by Covered Software in the absence of its Contributions.&lt;/p>&lt;/li>
+&lt;/ol>
+&lt;p>This License does not grant any rights in the trademarks, service marks, or logos of any Contributor (except as may be necessary to comply with the notice requirements in Section&amp;nbsp;3.4).&lt;/p>
+&lt;h3 id=\"subsequent-licenses\">2.4. Subsequent Licenses&lt;/h3>
+&lt;p>No Contributor makes additional grants as a result of Your choice to distribute the Covered Software under a subsequent version of this License (see Section&amp;nbsp;10.2) or under the terms of a Secondary License (if permitted under the terms of Section&amp;nbsp;3.3).&lt;/p>
+&lt;h3 id=\"representation\">2.5. Representation&lt;/h3>
+&lt;p>Each Contributor represents that the Contributor believes its Contributions are its original creation(s) or it has sufficient rights to grant the rights to its Contributions conveyed by this License.&lt;/p>
+&lt;h3 id=\"fair-use\">2.6. Fair Use&lt;/h3>
+&lt;p>This License is not intended to limit any rights You have under applicable copyright doctrines of fair use, fair dealing, or other equivalents.&lt;/p>
+&lt;h3 id=\"conditions\">2.7. Conditions&lt;/h3>
+&lt;p>Sections 3.1, 3.2, 3.3, and 3.4 are conditions of the licenses granted in Section&amp;nbsp;2.1.&lt;/p>
+&lt;h2 id=\"responsibilities\">3. Responsibilities&lt;/h2>
+&lt;h3 id=\"distribution-of-source-form\">3.1. Distribution of Source Form&lt;/h3>
+&lt;p>All distribution of Covered Software in Source Code Form, including any Modifications that You create or to which You contribute, must be under the terms of this License. You must inform recipients that the Source Code Form of the Covered Software is governed by the terms of this License, and how they can obtain a copy of this License. You may not attempt to alter or restrict the recipients’ rights in the Source Code Form.&lt;/p>
+&lt;h3 id=\"distribution-of-executable-form\">3.2. Distribution of Executable Form&lt;/h3>
+&lt;p>If You distribute Covered Software in Executable Form then:&lt;/p>
+&lt;ol type=\"a\">
+&lt;li>&lt;p>such Covered Software must also be made available in Source Code Form, as described in Section&amp;nbsp;3.1, and You must inform recipients of the Executable Form how they can obtain a copy of such Source Code Form by reasonable means in a timely manner, at a charge no more than the cost of distribution to the recipient; and&lt;/p>&lt;/li>
+&lt;li>&lt;p>You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients’ rights in the Source Code Form under this License.&lt;/p>&lt;/li>
+&lt;/ol>
+&lt;h3 id=\"distribution-of-a-larger-work\">3.3. Distribution of a Larger Work&lt;/h3>
+&lt;p>You may create and distribute a Larger Work under terms of Your choice, provided that You also comply with the requirements of this License for the Covered Software. If the Larger Work is a combination of Covered Software with a work governed by one or more Secondary Licenses, and the Covered Software is not Incompatible With Secondary Licenses, this License permits You to additionally distribute such Covered Software under the terms of such Secondary License(s), so that the recipient of the Larger Work may, at their option, further distribute the Covered Software under the terms of either this License or such Secondary License(s).&lt;/p>
+&lt;h3 id=\"notices\">3.4. Notices&lt;/h3>
+&lt;p>You may not remove or alter the substance of any license notices (including copyright notices, patent notices, disclaimers of warranty, or limitations of liability) contained within the Source Code Form of the Covered Software, except that You may alter any license notices to the extent required to remedy known factual inaccuracies.&lt;/p>
+&lt;h3 id=\"application-of-additional-terms\">3.5. Application of Additional Terms&lt;/h3>
+&lt;p>You may choose to offer, and to charge a fee for, warranty, support, indemnity or liability obligations to one or more recipients of Covered Software. However, You may do so only on Your own behalf, and not on behalf of any Contributor. You must make it absolutely clear that any such warranty, support, indemnity, or liability obligation is offered by You alone, and You hereby agree to indemnify every Contributor for any liability incurred by such Contributor as a result of warranty, support, indemnity or liability terms You offer. You may include additional disclaimers of warranty and limitations of liability specific to any jurisdiction.&lt;/p>
+&lt;h2 id=\"inability-to-comply-due-to-statute-or-regulation\">4. Inability to Comply Due to Statute or Regulation&lt;/h2>
+&lt;p>If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Covered Software due to statute, judicial order, or regulation then You must: (a) comply with the terms of this License to the maximum extent possible; and (b) describe the limitations and the code they affect. Such description must be placed in a text file included with all distributions of the Covered Software under this License. Except to the extent prohibited by statute or regulation, such description must be sufficiently detailed for a recipient of ordinary skill to be able to understand it.&lt;/p>
+&lt;h2 id=\"termination\">5. Termination&lt;/h2>
+&lt;p>5.1. The rights granted under this License will terminate automatically if You fail to comply with any of its terms. However, if You become compliant, then the rights granted under this License from a particular Contributor are reinstated (a) provisionally, unless and until such Contributor explicitly and finally terminates Your grants, and (b) on an ongoing basis, if such Contributor fails to notify You of the non-compliance by some reasonable means prior to 60 days after You have come back into compliance. Moreover, Your grants from a particular Contributor are reinstated on an ongoing basis if such Contributor notifies You of the non-compliance by some reasonable means, this is the first time You have received notice of non-compliance with this License from such Contributor, and You become compliant prior to 30 days after Your receipt of the notice.&lt;/p>
+&lt;p>5.2. If You initiate litigation against any entity by asserting a patent infringement claim (excluding declaratory judgment actions, counter-claims, and cross-claims) alleging that a Contributor Version directly or indirectly infringes any patent, then the rights granted to You by any and all Contributors for the Covered Software under Section&amp;nbsp;2.1 of this License shall terminate.&lt;/p>
+&lt;p>5.3. In the event of termination under Sections&amp;nbsp;5.1 or 5.2 above, all end user license agreements (excluding distributors and resellers) which have been validly granted by You or Your distributors under this License prior to termination shall survive termination.&lt;/p>
+&lt;h2 id=\"disclaimer-of-warranty\">6. Disclaimer of Warranty&lt;/h2>
+&lt;p>&lt;em>Covered Software is provided under this License on an “as is” basis, without warranty of any kind, either expressed, implied, or statutory, including, without limitation, warranties that the Covered Software is free of defects, merchantable, fit for a particular purpose or non-infringing. The entire risk as to the quality and performance of the Covered Software is with You. Should any Covered Software prove defective in any respect, You (not any Contributor) assume the cost of any necessary servicing, repair, or correction. This disclaimer of warranty constitutes an essential part of this License. No use of any Covered Software is authorized under this License except under this disclaimer.&lt;/em>&lt;/p>
+&lt;h2 id=\"limitation-of-liability\">7. Limitation of Liability&lt;/h2>
+&lt;p>&lt;em>Under no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party’s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.&lt;/em>&lt;/p>
+&lt;h2 id=\"litigation\">8. Litigation&lt;/h2>
+&lt;p>Any litigation relating to this License may be brought only in the courts of a jurisdiction where the defendant maintains its principal place of business and such litigation shall be governed by laws of that jurisdiction, without reference to its conflict-of-law provisions. Nothing in this Section shall prevent a party’s ability to bring cross-claims or counter-claims.&lt;/p>
+&lt;h2 id=\"miscellaneous\">9. Miscellaneous&lt;/h2>
+&lt;p>This License represents the complete agreement concerning the subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable. Any law or regulation which provides that the language of a contract shall be construed against the drafter shall not be used to construe this License against a Contributor.&lt;/p>
+&lt;h2 id=\"versions-of-the-license\">10. Versions of the License&lt;/h2>
+&lt;h3 id=\"new-versions\">10.1. New Versions&lt;/h3>
+&lt;p>Mozilla Foundation is the license steward. Except as provided in Section&amp;nbsp;10.3, no one other than the license steward has the right to modify or publish new versions of this License. Each version will be given a distinguishing version number.&lt;/p>
+&lt;h3 id=\"effect-of-new-versions\">10.2. Effect of New Versions&lt;/h3>
+&lt;p>You may distribute the Covered Software under the terms of the version of the License under which You originally received the Covered Software, or under the terms of any subsequent version published by the license steward.&lt;/p>
+&lt;h3 id=\"modified-versions\">10.3. Modified Versions&lt;/h3>
+&lt;p>If you create software not governed by this License, and you want to create a new license for such software, you may create and use a modified version of this License if you rename the license and remove any references to the name of the license steward (except to note that such modified license differs from this License).&lt;/p>
+&lt;h3 id=\"distributing-source-code-form-that-is-incompatible-with-secondary-licenses\">10.4. Distributing Source Code Form that is Incompatible With Secondary Licenses&lt;/h3>
+&lt;p>If You choose to distribute Source Code Form that is Incompatible With Secondary Licenses under the terms of this version of the License, the notice described in Exhibit B of this License must be attached.&lt;/p>
+&lt;h2 id=\"exhibit-a---source-code-form-license-notice\">Exhibit A - Source Code Form License Notice&lt;/h2>
+&lt;blockquote>
+&lt;p>This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.&lt;/p>
+&lt;/blockquote>
+&lt;p>If it is not possible or desirable to put the notice in a particular file, then You may include the notice in a location (such as a LICENSE file in a relevant directory) where a recipient would be likely to look for such a notice.&lt;/p>
+&lt;p>You may add additional accurate notices of copyright ownership.&lt;/p>
+&lt;h2 id=\"exhibit-b---incompatible-with-secondary-licenses-notice\">Exhibit B - “Incompatible With Secondary Licenses” Notice&lt;/h2>
+&lt;blockquote>
+&lt;p>This Source Code Form is “Incompatible With Secondary Licenses”, as defined by the Mozilla Public License, v. 2.0.&lt;/p>
+&lt;/blockquote>
+        "</string>
+    <string name="text_license_opencv">"
+&lt;h2>License Agreement&lt;/h2>
+&lt;p align=\"center\">For Open Source Computer Vision Library&lt;/p>
+&lt;p align=\"center\">(3-clause BSD License)&lt;/p>
+
+&lt;p>Redistribution and use in source and binary forms, with or without modification, are permitted
+provided that the following conditions are met:&lt;/p>
+
+&lt;ul>
+  &lt;li>Redistributions of source code must retain the above copyright notice, this list of conditions
+      and the following disclaimer.&lt;/li>
+  &lt;li>Redistributions in binary form must reproduce the above copyright notice, this list of
+      conditions and the following disclaimer in the documentation and/or other materials provided
+      with the distribution.&lt;/li>
+  &lt;li>Neither the names of the copyright holders nor the names of the contributors may be used to
+      endorse or promote products derived from this software without specific prior written
+      permission.&lt;/li>
+&lt;/ul>
+
+&lt;p>This software is provided by the copyright holders and contributors “as is” and any express or
+implied warranties, including, but not limited to, the implied warranties of merchantability and
+fitness for a particular purpose are disclaimed. In no event shall copyright holders or contributors
+be liable for any direct, indirect, incidental, special, exemplary, or consequential damages
+(including, but not limited to, procurement of substitute goods or services; loss of use, data, or
+profits; or business interruption) however caused and on any theory of liability, whether in
+contract, strict liability, or tort (including negligence or otherwise) arising in any way out of
+the use of this software, even if advised of the possibility of such damage.&lt;/p>
+        "</string>
+    <string name="text_license_poly2tri">"
+&lt;h2>License Agreement&lt;/h2>
+&lt;p align=\"center\">For Open Source Poly2Tri library&lt;/p>
+&lt;p align=\"center\">(3-clause BSD License)&lt;/p>
+
+&lt;p>Redistribution and use in source and binary forms, with or without modification, are permitted
+provided that the following conditions are met:&lt;/p>
+
+&lt;ul>
+  &lt;li>Redistributions of source code must retain the above copyright notice, this list of conditions
+      and the following disclaimer.&lt;/li>
+  &lt;li>Redistributions in binary form must reproduce the above copyright notice, this list of
+      conditions and the following disclaimer in the documentation and/or other materials provided
+      with the distribution.&lt;/li>
+  &lt;li>Neither the name of Poly2Tri nor the names of its contributors may be
+    used to endorse or promote products derived from this software without specific
+    prior written permission.&lt;/li>
+&lt;/ul>
+
+&lt;p>This software is provided by the copyright holders and contributors “as is” and any express or
+implied warranties, including, but not limited to, the implied warranties of merchantability and
+fitness for a particular purpose are disclaimed. In no event shall the copyright owner or contributors
+be liable for any direct, indirect, incidental, special, exemplary, or consequential damages
+(including, but not limited to, procurement of substitute goods or services; loss of use, data, or
+profits; or business interruption) however caused and on any theory of liability, whether in
+contract, strict liability, or tort (including negligence or otherwise) arising in any way out of
+the use of this software, even if advised of the possibility of such damage.&lt;/p>
+        "</string>
+    <string name="text_license_pugixml">"&lt;h2>License&lt;/h2>
+
+            &lt;p>This library is available to anybody free of charge, under the terms of MIT License:&lt;/p>
+
+            &lt;p>Copyright © 2006-2015 Arseny Kapoulkine&lt;/p>
+
+            &lt;p>Permission is hereby granted, free of charge, to any person
+               obtaining a copy of this software and associated documentation files
+               (the “Software”), to deal in the Software without restriction, including
+               without limitation the rights to use, copy, modify, merge, publish,
+               distribute, sublicense, and/or sell copies of the Software, and to
+               permit persons to whom the Software is furnished to do so, subject to
+               the following conditions:&lt;/p>
+
+            &lt;p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&lt;/p>
+
+            &lt;p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+               EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+               MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+               IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+               CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+               TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+               SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p>
+
+            &lt;p>This means that you can freely use pugixml in your applications, both
+               open-source and proprietary. If you use pugixml in a product, it is
+               sufficient to add an acknowledgment like this to the product
+               distribution:&lt;/p>
+
+
+            &lt;p>This software is based on pugixml library (http://pugixml.org).
+               pugixml is Copyright © 2006-2015 Arseny Kapoulkine.&lt;/p>"</string>
+    <string name="text_license_xmltojson">"
+                &lt;h2 id=\"license\">License&lt;/h2>
+
+                &lt;p>Copyright 2016 Arnaud Guyon&lt;/p>
+
+                &lt;p>Licensed under the Apache License, Version 2.0 (the \"License\");
+                you may not use this file except in compliance with the License.
+                You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+                &lt;/p>
+
+                &lt;p>Unless required by applicable law or agreed to in writing, software distributed
+                under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR
+                CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
+                language governing permissions and limitations under the License.&lt;/p>
+        "</string>
+    <string name="thermal_dialog_title">Device too warm</string>
+    <string name="thermal_dialog_too_hot_shutdown_description">Scanning has stopped to allow this device to cool down</string>
+    <string name="thermal_dialog_too_hot_to_start_description">This device needs to cool down before you start a new scan</string>
+    <string name="thermal_sphinx_toast_getting_hot">The temperature of this device is rising. If it continues to rise, the scanning will automatically stop.</string>
+    <string name="time_remaining">Time remaining: %1$s</string>
+    <string name="time_remaining_notification">%1$s left</string>
+    <string name="tip_calibration_description_first">"During calibration, we use the camera to determine the object's position in 3D space.
+
+Move your phone slowly and steadily, using both hands, to avoid blurring the images."</string>
+    <string name="tip_calibration_description_second">"Keep an even distance to the object, around 50 cm.
+
+Follow the instructions on the screen, and connect the dots as you capture the person or object.
+
+Make sure to keep the object within the circle during the entire scan."</string>
+    <string name="tip_calibration_title">Start with calibration</string>
+    <string name="tip_degrade_issues_description">Every time you do a head scan, 3D Creator calibrates the camera on your phone to improve the scan quality. The camera calibration may be affected if you drop your phone, for example. If this happens, go to 3D Creator settings and select Reset camera calibration.</string>
+    <string name="tip_degrade_issues_title">I used to do good scans, but the quality has gotten worse</string>
+    <string name="tip_dialog_action_open_share">action_open_share</string>
+    <string name="tip_dialog_action_open_wizard">action_open_wizard</string>
+    <string name="tip_dialog_action_turn_on_backup">action_turn_on_backup</string>
+    <string name="tip_dialog_button_learn_more">LEARN MORE</string>
+    <string name="tip_dialog_button_skip">SKIP</string>
+    <string name="tip_dialog_dont_show_checkbox_text">"Don't show this tip again"</string>
+    <string name="tip_hairstyles_description">"Some hairstyles may be difficult to scan. For example ponytails or other styles where the hair isn't close to the head."</string>
+    <string name="tip_hairstyles_short_desc">Some hairstyles may be difficult to scan</string>
+    <string name="tip_hairstyles_title">Hairstyles to avoid</string>
+    <string name="tip_model_destroyed_description">This could be caused by sculpting for too long, or problems in the environment. If you notice this problem, stop scanning immediately.</string>
+    <string name="tip_model_destroyed_title">The model looks OK, but then parts of it get damaged during sculpting.</string>
+    <string name="tip_pause_sculpt_issues_description">If the app can’t find enough stable feature points on the object or in the background, the sculpting is paused to prevent damage to the model. To reactivate the sculpting, try sculpting from different angles, and move further away from the object in order to find stable feature points in the viewfinder.</string>
+    <string name="tip_pause_sculpt_issues_title">Sculpting stops and the green areas become semi-transparent</string>
+    <string name="tip_performance_issues_description">If the phone gets too warm, the performance may be affected. Let the phone cool down before you start a new scan.</string>
+    <string name="tip_performance_issues_title">Performance issues during scanning</string>
+    <string name="tip_sculpting_description_first">"After the calibration is finished, we create the basic shape of the model.
+
+In the final step - sculpting - you can refine the shape of the model in real-time.
+
+Move your phone slowly around the areas where you want more details. During the sculpting you can go closer to the object."</string>
+    <string name="tip_sculpting_description_second">"Sculpt until the shape of the model has enough detail and the surface is smooth.
+
+When sculpting a person, remember to sculpt the face from below to capture the chin. There is no need to sculpt the back of the head.
+
+Sculpting for too long may damage the scan."</string>
+    <string name="tip_sculpting_title">Finish up by sculpting</string>
+    <string name="tips_category_about_technology_description">Learn about the technology behind 3D Creator</string>
+    <string name="tips_category_about_technology_title">About the technology</string>
+    <string name="tips_category_how_description">Learn the technique for making good scans</string>
+    <string name="tips_category_how_it_works_description">Learn more by watching videos on how to scan</string>
+    <string name="tips_category_how_it_works_title">See how it works</string>
+    <string name="tips_category_how_title">How to scan</string>
+    <string name="tips_category_troubleshooting_description">Some common problems and how you solve them</string>
+    <string name="tips_category_troubleshooting_title">Troubleshooting</string>
+    <string name="tips_category_what_description">Learn which objects are suitable for scanning</string>
+    <string name="tips_category_what_title">What to scan</string>
+    <string name="tips_category_where_description">The environment where you scan is important for the result</string>
+    <string name="tips_category_where_title">Where to scan</string>
+    <string name="tips_dialog_button_backup">TURN ON BACKUP</string>
+    <string name="tips_short_backup_short_desc">Back up your models to keep them safe</string>
+    <string name="tips_short_env_movement_short_desc">"Don't scan in an environment where there is movement in the background"</string>
+    <string name="tips_short_face_scan_suggestion_short_desc">If the environment around the object is not optimal (not enough space, movement or bad lighting), a face scan may work better than a head scan.</string>
+    <string name="tips_short_lens_short_desc">If your model looks blurry, it may help to clean the camera lens.</string>
+    <string name="tips_short_long_scan_short_desc">Sculpting for too long may damage your scan</string>
+    <string name="tips_short_quick_scan_short_desc">"Don't forget to refine the model and add details by sculpting"</string>
+    <string name="tips_short_selfie_eyes_short_desc">You may get a better selfie scan if you keep looking straight ahead during scanning, instead of looking at the phone.</string>
+    <string name="tips_short_share_short_desc">Share your model with the world</string>
+    <string name="tips_short_wallpaper_short_desc">You can use your model as a live wallpaper</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="title_face_mimic">Face mimic</string>
+    <string name="title_license_boost">Boost</string>
+    <string name="title_license_ceres_solver">Ceres Solver</string>
+    <string name="title_license_dlib">dlib</string>
+    <string name="title_license_eigen">Eigen</string>
+    <string name="title_license_jpeg">JPEG</string>
+    <string name="title_license_loki">Loki</string>
+    <string name="title_license_lua">Lua</string>
+    <string name="title_license_mindroid">Mindroid</string>
+    <string name="title_license_minizip">minizip</string>
+    <string name="title_license_opencv">OpenCV</string>
+    <string name="title_license_poly2tri">Poly2Tri</string>
+    <string name="title_license_pugixml">pugixml</string>
+    <string name="title_license_xmltojson">XmlToJson</string>
+    <string name="title_model_print_preview">Prepare model</string>
+    <string name="toast_message_establish_scale_free_form">"Capture your object from all angles, making sure that you scan as many points as possible to define its shape.
+
+Then tap Next."</string>
+    <string name="toast_message_face_tutorial_calibration_2">Move your phone to the left and connect the dots as they appear</string>
+    <string name="toast_message_food_tutorial_calibration_2">Move your phone to the left and downward. Connect the dots as they appear.</string>
+    <string name="toast_message_frame_target_selfie">Frame your face within the silhouette, and try to keep a relaxed facial expression during the scan.</string>
+    <string name="toast_message_frame_target_selfie_1">Frame your face within the silhouette</string>
+    <string name="toast_message_frame_target_selfie_2">Try to focus your eyes on a single point during the scan</string>
+    <string name="toast_message_head_tutorial_calibration_2">Circle around your target and connect the dots as they appear</string>
+    <string name="toast_message_head_tutorial_calibration_3">Keep an even pace and distance</string>
+    <string name="toast_message_init_sculpt_tips">Re-scan the face to sculpt more detail onto your image</string>
+    <string name="toast_message_init_sculpt_tips_food">Re-scan a section of food to sculpt more detail onto your image</string>
+    <string name="toast_message_init_sculpt_tips_free_form">Scan the section that you want to sculpt more detail onto</string>
+    <string name="toast_message_pre_sculpting">Move slowly towards the face while we create the basic shape of the model</string>
+    <string name="toast_message_pre_sculpting_short">Move slowly towards the face</string>
+    <string name="toast_message_resize_blob">If needed, adjust the size of the sphere so it covers the object.</string>
+    <string name="toast_message_scan_almost_done">Tap Done when you are happy with the scan</string>
+    <string name="toast_message_scan_coverage_reminder">Remember to scan your object from above and below</string>
+    <string name="toast_message_selfie_tutorial_calibration_2">When the phone vibrates, change direction.</string>
+    <string name="toast_message_tutorial_calibration_1">First we analyze the object and the environment</string>
+    <string name="toast_message_tutorial_frame_target_1">Make sure that the person is sitting still, and is not wearing glasses.</string>
+    <string name="toast_message_tutorial_frame_target_2">Frame both head and shoulders within the silhouette</string>
+    <string name="toast_message_tutorial_frame_target_3">Start by the ear</string>
+    <string name="toast_message_uninitialized">Frame both head and shoulders within the silhouette</string>
+    <string name="toast_message_uninitialized_food">Frame the food within the silhouette, pointing the phone straight downwards.</string>
+    <string name="toast_message_uninitialized_free_form">Frame the object within the circle</string>
+    <string name="toast_not_part_of_beta">Sorry, you are not part of the Beta trial program.</string>
+    <string name="toast_signout_completed">You have been signed out</string>
+    <string name="toast_warning_long_scan">Sculpting for too long might damage your scan, please stop when the model has a smooth surface.</string>
+    <string name="toast_warning_pacman_wrong_starting_direction">Please move from the right to the left</string>
+    <string name="toast_warning_pose_not_stable">Not enough feature points found. Try to sculpt from another angle.</string>
+    <string name="toast_warning_too_close">"Don't get too close to your object"</string>
+    <string name="toast_warning_too_fast">Move your phone steadily</string>
+    <string name="toast_warning_too_slow">Move around your object, keeping a steady pace and distance.</string>
+    <string name="toast_warning_tracking_lost"><b>Position lost</b> - Move slowly back to the face</string>
+    <string name="toast_warning_tracking_lost_food"><b>Position lost</b> - Move slowly back to your initial position</string>
+    <string name="toast_warning_tracking_lost_free_form"><b>Position lost</b> - Move slowly back to your starting position.</string>
+    <string name="toggle_base">Switch base</string>
+    <string name="tutorial_practice_scan_name">Practice scan</string>
+    <string name="unshare_complete_txt">Unsharing from %1$s complete</string>
+    <string name="unshare_failed_txt">Unsharing of %s failed</string>
+    <string name="unsharing_model_txt">"Unsharing '%1$s' from %2$s"</string>
+    <string name="upload_action_print_text">Print</string>
+    <string name="upload_action_share_text">Share</string>
+    <string name="upload_action_view_text">View</string>
+    <string name="upload_already_uploaded_txt">Your scan is already uploaded to %s</string>
+    <string name="upload_complete_text">Upload to %s complete</string>
+    <string name="upload_error_dialog_title">Uploading model</string>
+    <string name="upload_failed_txt">"Could not upload '%1$s' to %2$s"</string>
+    <string name="upload_generic_already_active_txt">Please wait until the upload is finished</string>
+    <string name="upload_network_failure_txt">Check your network connection</string>
+    <string name="upload_no_action_txt">"'%s' is uploaded"</string>
+    <string name="upload_print_txt">Tap to go to checkout</string>
+    <string name="upload_share_txt">"Tap to share '%s'"</string>
+    <string name="upload_share_with_txt">Share with</string>
+    <string name="upload_unshare_txt">"'%s' has been unshared"</string>
+    <string name="upload_view_txt">"Tap to view '%s'"</string>
+    <string name="upload_welcome_accept_txt">GOT IT</string>
+    <string name="upload_welcome_learn_more_txt">LEARN MORE</string>
+    <string name="uploading_model_txt">"Uploading '%1$s' to %2$s"</string>
+    <string name="us_about_dialog_privacy">"By signing in, you accept that Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to backup your content. Sony Mobile will handle your data per our &lt;a href='%2$s'>Privacy Policy&lt;/a> (&lt;a href='%3$s'>CA Privacy Notice&lt;/a>)."</string>
+    <string name="us_ca_privacy_policy_url">https://www.xperiainfo.com/us/privacy.html#10</string>
+    <string name="us_post_process_privacy_disclaimer">"Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to back up your content. Sony Mobile will handle your data per our &lt;a href='%2$s'>Privacy Policy&lt;/a> (&lt;a href='%3$s'>CA Privacy Notice&lt;/a>)."</string>
+    <string name="us_privacy_policy_url">https://www.xperiainfo.com/us/privacy.html</string>
+    <string name="user_gazing">Make eyes look at the user</string>
+    <string name="v7_preference_off">OFF</string>
+    <string name="v7_preference_on">ON</string>
+    <string name="video_creating">Creating video</string>
+    <string name="viewer_action_button_animate_model">Animate your model</string>
+    <string name="viewer_action_button_edit">Edit and morph</string>
+    <string name="viewer_action_button_face_mimic">Face mimic</string>
+    <string name="viewer_action_button_improve">Improve quality</string>
+    <string name="viewer_action_button_play_with_animations">Play with animations</string>
+    <string name="viewer_action_button_share">Share, print and more</string>
+    <string name="viewer_dialog_improve_text_applying">You will be notified when the improvements are finished</string>
+    <string name="viewer_dialog_improve_text_completed">Quality improvements completed</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Connect to Wi-Fi in order to improve your model</string>
+    <string name="viewer_hint_improve_button_completed">VIEW IMPROVED MODEL</string>
+    <string name="viewer_hint_improve_button_learn_more">Learn more</string>
+    <string name="viewer_hint_improve_button_no">No thanks</string>
+    <string name="viewer_hint_improve_button_yes">Yes</string>
+    <string name="viewer_hint_improve_promo_checkbox_text">"Don't ask again"</string>
+    <string name="viewer_hint_improve_promo_description">"We will upload this model and additional image data to our servers via Wi-Fi.
+
+Due to the amount of space that the additional image data takes up on your device, only data from the five latest scans are saved. Older models cannot be improved."</string>
+    <string name="viewer_hint_improve_promo_dismissed_description">"To improve a model, additional image data needs to be analyzed. Due to the amount of space this image's data takes up on your device, only data from the last five scans are saved. Older models cannot be improved."</string>
+    <string name="viewer_hint_improve_promo_title">Would you like to improve the quality of this model?</string>
+    <string name="viewer_invalid_file">Invalid file</string>
+    <string name="viewer_no_content_provided">No content provided</string>
+    <string name="viewer_overflow_delete">Delete</string>
+    <string name="viewer_overflow_details">Details</string>
+    <string name="viewer_overflow_edit_name">Edit name</string>
+    <string name="viewer_overflow_remove_animation">Remove the animation</string>
+    <string name="viewer_overflow_unshare">Unshare</string>
+    <string name="viewer_overflow_view_animated">View animated model</string>
+    <string name="viewer_overflow_view_prop">View with prop</string>
+    <string name="viewer_overflow_view_static">View without animations</string>
+    <string name="viewfinder_scale">Camera view scale</string>
+    <string name="viewing_angle_compensation">Compensate for viewing angle</string>
+    <string name="wait_progress">Please wait</string>
+    <string name="wait_until_finalize_progress">Please wait to finalize the scan</string>
+    <string name="wallpaper_background_shanghai_desc">Shanghai background</string>
+    <string name="wallpaper_background_simple_desc">Simple background</string>
+    <string name="wallpaper_background_studio_desc">Studio background</string>
+    <string name="wallpaper_background_wooden_lounge_desc">Wooden lounge background</string>
+    <string name="warning_bad_light">Not enough light around the object</string>
+    <string name="warning_bad_loop_closure">Make sure to keep the same distance to the object and keep it centered during calibration</string>
+    <string name="warning_low_texture_area">Too few points to define the scan object. This may be caused by monochrome or reflective surfaces in the background.</string>
+    <string name="warning_too_bright">Direct sunlight may interfere with scan quality</string>
+    <string name="warning_uneven_light">Too much difference in light around the object</string>
+    <string name="web_viewer_description_text">Share your scan with your friends using a social network of your choice</string>
+    <string name="webviewer_server_url">https://3d-creator.sonymobile.com</string>
+    <string name="wizard_card_button_show_me">SHOW ME</string>
+    <string name="wizard_pager_indicator_close">CLOSE</string>
+    <string name="wizard_pager_indicator_done">DONE</string>
+    <string name="wizard_pager_indicator_next">NEXT</string>
+    <string name="wizard_pager_indicator_skip">SKIP</string>
+    <string name="wizard_tip_ambient_light_description">Check light conditions in your environment before scanning. Soft, even light gives the best results.</string>
+    <string name="wizard_tip_ambient_light_short_desc">Soft, even light conditions give the best results for scanning.</string>
+    <string name="wizard_tip_ambient_light_title">Ambient light</string>
+    <string name="wizard_tip_avoid_backlight_description">"Windows and other sharp light sources can cause uneven light and shadows, which will make a bad scan.
+
+Try to not cast shadows on the object during scanning."</string>
+    <string name="wizard_tip_avoid_backlight_short_desc">Avoid backlight and sharp light sources</string>
+    <string name="wizard_tip_avoid_backlight_title">Avoid backlight and sharp light sources</string>
+    <string name="wizard_tip_background_movement_description">"Don't scan in an environment where there's background movement (such as outside on a windy day).
+
+Background movement makes it difficult to find stable points in the background, and the quality of the model may be affected."</string>
+    <string name="wizard_tip_background_movement_title">Background movement</string>
+    <string name="wizard_tip_be_still_description">"The person or object you're scanning needs to be still during the scan. If you are scanning a person it is preferable that they sit down."</string>
+    <string name="wizard_tip_be_still_short_desc">It is important that the person or object you are scanning remains still</string>
+    <string name="wizard_tip_be_still_title">Keep still</string>
+    <string name="wizard_tip_no_glasses_description">"Transparent objects can't be scanned"</string>
+    <string name="wizard_tip_no_glasses_title">Remove glasses</string>
+    <string name="wizard_tip_space_description">"When scanning a head make sure there's enough space to walk around the object while scanning.
+
+Keep the phone approximately 50 cm (20 in) from the object."</string>
+    <string name="wizard_tip_space_title">Space</string>
+    <string name="wizard_tip_suitable_objects_description">"Solid, textured objects are suitable for scanning.
+
+Glossy or transparent objects, or objects with holes in them, can't be scanned."</string>
+    <string name="wizard_tip_suitable_objects_short_desc">Learn what type of objects make good scans</string>
+    <string name="wizard_tip_suitable_objects_title">Suitable objects for scanning</string>
+    <string name="wizard_tip_surfaces_description">"Don't scan near large, smooth white or reflective surfaces (such as a big TVs or an entirely white wall)."</string>
+    <string name="wizard_tip_surfaces_title">Avoid large white and reflective surfaces</string>
+    <string name="wizard_type_about_technology">wizard_type_about_technology</string>
+    <string name="wizard_type_action">wizard_type_action</string>
+    <string name="wizard_type_list">wizard_type_list</string>
+    <string name="wizard_type_pager">wizard_type_pager</string>
+    <string name="youtube_tutorial_video_url">https://youtube.com/channel/UC8gM-HlzAKz-2prVXvKCc2w</string>
+</resources>

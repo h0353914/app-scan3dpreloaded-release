@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Bantu kami meningkatkan enjin imbasan Pencipta 3D dengan menyediakan Sony Mobile dengan data imej daripada imbasan anda. Data tersebut akan dimuat naik hanya melalui WLAN dan akan dialih keluar daripada pelayan kami selepas 90 hari. Anda boleh memilih keluar pada bila-bila masa melalui tetapan Sandar dan segerak</string>
+    <string name="dialog_data_traffic_body">Pencipta 3D perlu mengakses WLAN dan data mudah alih untuk teruskan</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Hanya segerak menerusi WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN sahaja</string>
+    <string name="post_process_privacy_description">Imbasan dan data imej tambahan anda akan dimuat naik ke pelayan kami bagi meningkatkan model anda. Data akan dimuat naik menerusi WLAN sahaja dan akan dialih keluar daripada pelayan kami selepas 90 hari.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Sambung ke WLAN untuk meningkatkan model anda</string>
+    <string name="viewer_hint_improve_promo_description">"Kami akan memuat naik model ini dan data imej tambahan ke pelayan kami melalui WLAN.
+
+Oleh sebab jumlah ruang yang digunakan oleh data imej tambahan pada peranti anda, hanya data daripada lima imbasan terkini disimpan. Model lama tidak boleh dipertingkat."</string>
+</resources>

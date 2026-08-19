@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Ajude-nos a melhorar o motor de digitalização do Criador 3D ao fornecer à Sony Mobile dados de imagem das suas digitalizações. Os dados serão carregados apenas através de WLAN e serão removidos dos nossos servidores após 90 dias. Pode, em qualquer altura, optar por não participar através das Definições de cópia de segurança e sincronização</string>
+    <string name="dialog_data_traffic_body">O Criador 3D necessita de aceder ao WLAN e aos dados móveis para continuar</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sincronizar apenas através de WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Apenas WLAN</string>
+    <string name="post_process_privacy_description">A digitalização e os dados de imagem adicionais vão carregados para os nossos servidores para melhorar o seu modelo. Os dados serão carregados apenas através de WLAN e removidos dos nossos servidores após 90 dias.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Ligue-se ao WLAN para melhorar o modelo</string>
+    <string name="viewer_hint_improve_promo_description">"Iremos carregar este modelo e os dados de imagem adicionais para os nossos servidores através de WLAN.
+
+Devido ao espaço que os dados de imagem adicionais ocupam no dispositivo, apenas são guardados as últimas cinco digitalizações. Não é possível melhorar os modelos mais antigos."</string>
+</resources>

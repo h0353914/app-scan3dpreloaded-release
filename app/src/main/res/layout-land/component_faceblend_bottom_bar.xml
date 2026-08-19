@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/seekbar_container" android:tag="layout-land/component_faceblend_bottom_bar_0" android:background="@drawable/viewer_bottom_bar_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/texture_container" android:layout_width="0.0px" android:layout_height="64.0dip" android:layout_weight="1.0" layout="@layout/component_faceblend_seekbar" />
+    <include android:id="@id/mesh_container" android:layout_width="0.0px" android:layout_height="64.0dip" android:layout_weight="1.0" layout="@layout/component_faceblend_seekbar" />
+</LinearLayout>

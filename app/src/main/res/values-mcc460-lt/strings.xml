@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Padėkite patobulinti 3D kūrimo programos nuskaitymo variklį, pateikdami „Sony Mobile“ nuskaitymų vaizdo duomenis. Duomenys bus siunčiami tik „WLAN“ ryšiu ir po 90 dienų bus pašalinti iš mūsų serverių. Šios funkcijos bet kuriuo metu galite atsisakyti atsarginės kopijos ir sinchronizavimo nustatymuose.</string>
+    <string name="dialog_data_traffic_body">Kad galėtų tęsti, 3D kūrimo priemonei reikalinga prieiga prie to WLAN ir mobiliųjų duomenų</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sinchronizuoti tik per „WLAN“</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Tik „WLAN“</string>
+    <string name="post_process_privacy_description">Jūsų nuskaitymas ir papildomi vaizdo duomenys bus nusiųsti į mūsų serverius, kad būtų patobulintas modelis. Duomenys bus nusiųsti tik naudojant „WLAN“ ir bus ištrinti iš mūsų serverių po 90 dienų.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Įjunkite „WLAN“ ryšį, kad patobulintumėte modelį</string>
+    <string name="viewer_hint_improve_promo_description">"Šį modelį ir papildomus vaizdo duomenis nusiųsime į savo serverius naudodami „WLAN“.
+
+Dėl papildomų vaizdo duomenų jūsų įrenginyje užimamos vietos įrašomi tiktai paskutiniųjų penkių nuskaitymų duomenys. Ankstesnių modelių patobulinti neįmanoma."</string>
+</resources>

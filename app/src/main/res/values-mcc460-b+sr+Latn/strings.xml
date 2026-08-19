@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Pomozite nam da poboljšamo mehanizam za skeniranje aplikacije 3D Creator tako što ćete korporaciji Sony Mobile pružiti podatke slike skeniranja. Podaci se otpremaju isključivo putem WLAN mreže i uklanjaju se sa servera posle 90 dana. Saglasnost možete da otkažete u bilo kom trenutku putem podešavanja rezervne kopije i sinhronizovanja</string>
+    <string name="dialog_data_traffic_body">Neophodan je pristup WLAN mreži i mobilnim podacima da bi 3D Creator mogao da nastavi s radom</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sinhronizuj samo preko WLAN veze</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Samo WLAN</string>
+    <string name="post_process_privacy_description">Skeniranje i dodatni podaci o slici biće otpremljeni na naše servere da bismo poboljšali model. Podaci će biti otpremljeni samo preko WLAN mreže i biće uklonjeni sa naših servera nakon 90 dana.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Povežite se sa WLAN mrežom da biste unapredili model</string>
+    <string name="viewer_hint_improve_promo_description">"Otpremićemo ovaj model i dodatne podatke o slici na svoje servere preko WLAN mreže.
+
+Usled količine prostora koji dodatni podaci o slici zauzimaju na uređaju, čuvaju se samo podaci o poslednjih pet skeniranja. Starije modele nije moguće poboljšati."</string>
+</resources>

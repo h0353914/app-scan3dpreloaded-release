@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Sony Mobileによる3Dクリエータースキャンエンジンおよびスキャンした画像データの品質改善にご協力ください。データはWLAN経由でのみアップロードが可能です。また、そのデータはサーバーから90日後に削除されます。[バックアップと同期]の設定画面からいつでも中断することができます。</string>
+    <string name="dialog_data_traffic_body">続行するには3DクリエーターにWLANおよびモバイルデータへのアクセスを許可する必要があります</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">WLANが利用可能な場合にのみ同期します</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLANのみ</string>
+    <string name="post_process_privacy_description">スキャンデータと追加の画像データは、モデルを改善するためにサーバーにアップロードされます。このデータはWLAN経由でのみアップロードされ、90日後にサーバーから削除されます。</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">モデルを改善するにはWLANに接続してください</string>
+    <string name="viewer_hint_improve_promo_description">"このモデルと追加の画像データをWLAN経由でサーバーにアップロードします。
+
+追加の画像データに必要となる容量を考慮し、最新5件のスキャンデータのみが保存されます。これより古いモデルは改善できません。"</string>
+</resources>

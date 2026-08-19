@@ -1,0 +1,42 @@
+package com.sonymobile.scan3d;
+
+public class SphinxHintMsgID {
+    public static final int kHintMsgTooHot = 0;
+    public static final int kHintMsgLowBattery = 1;
+    public static final int kHintMsgLowStorage = 2;
+    public static final int kHintMsgLowMovementCalib = 3;
+    public static final int kHintMsgHighMovement = 4;
+    public static final int kHintMsgCoverageReminder = 5;
+    public static final int kHintMsgAlmostDone = 6;
+    public static final int kHintMsgFrameSubject = 7;
+    public static final int kHintMsgFoodFrameSubject = 8;
+    public static final int kHintMsgOrbitAround = 9;
+    public static final int kHintMsgFoodOrbitAround = 10;
+    public static final int kHintMsgFaceOrbitAround = 11;
+    public static final int kHintMsgSelfieOrbitAround = 12;
+    public static final int kHintMsgResizeBlob = 13;
+    public static final int kHintMsgPreSculpting = 14;
+    public static final int kHintMsgTrackingLost = 15;
+    public static final int kHintMsgFoodTrackingLost = 16;
+    public static final int kHintMsgTooClose = 17;
+    public static final int kHintMsgFaceTutorialStart = 18;
+    public static final int kHintMsgFaceTutorialCalibrationStart = 19;
+    public static final int kHintMsgHeadTutorialStart = 20;
+    public static final int kHintMsgHeadTutorialCalibrationStart = 21;
+    public static final int kHintMsgInitialSculptingTips = 22;
+    public static final int kHintMsgFoodInitialSculptingTips = 23;
+    public static final int kHintMsgLongScanWarn = 24;
+    public static final int kHintMsgFreeFormFrameSubject = 25;
+    public static final int kHintMsgFreeFormEveryAngle = 26;
+    public static final int kHintMsgFreeFormInitialSculptingTips = 27;
+    public static final int kHintMsgFreeFormTrackingLost = 28;
+    public static final int kHintMsgScanWrongStartingDirection = 29;
+    public static final int kHintMsgPhoneIsGettingHot = 30;
+    public static final int kHintMsgPoseNotStable = 31;
+    public static final int kHintMsgSelfieFrameSubject = 32;
+    public static final int kHintMsgFoodTutorialCalibrationStart = 33;
+    public static final int kHintMsgSelfieTutorialCalibrationStart = 34;
+    public static final int kHintMsgSelfieTutorialFrameSubject = 35;
+    public static final int kHintMsgScanningCanNotContinue = 36;
+    public static final int kHintMsgCount = 37;
+}

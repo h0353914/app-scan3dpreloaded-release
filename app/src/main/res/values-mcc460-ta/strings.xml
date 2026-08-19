@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">உங்கள் ஸ்கேன்களின் படத் தரவை Sony Mobile -க்கு வழங்கி, 3D உருவாக்கியின் ஸ்கேனிங் இன்ஜினை மேம்படுத்த எங்களுக்கு உதவுங்கள். இந்தத் தரவு WLAN மூலம் மட்டுமே பதிவேற்றப்படும் மற்றும் 90 நாட்களுக்குப் பின்னர் எங்கள் சர்வர்களிலிருந்து அகற்றப்படும். இதிலிருந்து நீங்கள் மறுபிரதி மற்றும் ஒத்திசைவு அமைப்புகளில் எந்நேரத்திலும் விலகலாம்.</string>
+    <string name="dialog_data_traffic_body">தொடர்வதற்கு, 3D உருவாக்கிக்கு WLAN மற்றும் மொபைல் தரவுக்கான அணுகல் தேவை</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">WLAN -இல் மட்டும் ஒத்திசை</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN -இல் மட்டும்</string>
+    <string name="post_process_privacy_description">உங்கள் மாடலை மேம்படுத்த, உங்கள் ஸ்கேனும் கூடுதல் படத் தரவும் எங்கள் சர்வர்களுக்கு ஏற்றப்படும். இந்தத் தரவு WLAN மூலம் மட்டுமே ஏற்றப்படும், 90 நாட்களுக்குப் பின்னர் அவை எங்கள் சர்வர்களிலிருந்து அகற்றப்படும்.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">உங்கள் மாடலை மேம்படுத்த, WLAN உடன் இணைக்கவும்</string>
+    <string name="viewer_hint_improve_promo_description">"WLAN மூலம் இந்த மாடலையும் கூடுதல் படத் தரவையும் எங்கள் சர்வர்களுக்கு ஏற்றுவோம்.
+
+கூடுதல் படத் தரவு உங்கள் சாதனத்தில் எடுத்துக் கொள்ளக்கூடிய இடத்தின் காரணமாக, சமீபத்திய ஐந்து ஸ்கேன்களின் தரவு மட்டுமே சேமிக்கப்படும். பழைய மாடல்களை மேம்படுத்த முடியாது."</string>
+</resources>

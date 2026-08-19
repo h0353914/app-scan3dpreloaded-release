@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/wizard_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_intro" style="@style/WizardItem.Description" />
+        <TextView android:paddingTop="@dimen/wizard_item_padding" android:paddingBottom="@dimen/wizard_about_technology_title_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_positioning_title" style="@style/WizardItem.Title.Medium" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_positioning_description" style="@style/WizardItem.Description" />
+        <TextView android:paddingTop="@dimen/wizard_item_padding" android:paddingBottom="@dimen/wizard_about_technology_title_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_point_cloud_title" style="@style/WizardItem.Title.Medium" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_point_cloud_description" style="@style/WizardItem.Description" />
+        <TextView android:paddingTop="@dimen/wizard_item_padding" android:paddingBottom="@dimen/wizard_about_technology_title_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_sculpting_title" style="@style/WizardItem.Title.Medium" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_sculpting_description" style="@style/WizardItem.Description" />
+        <TextView android:paddingTop="@dimen/wizard_item_padding" android:paddingBottom="@dimen/wizard_about_technology_title_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_texture_title" style="@style/WizardItem.Title.Medium" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_technology_texture_description" style="@style/WizardItem.Description" />
+    </LinearLayout>
+</ScrollView>

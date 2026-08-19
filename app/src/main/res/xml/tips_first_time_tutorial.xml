@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TipCategories>
+    <TipCategory screenEvent="@string/screen_event_selfie_tutorial_screen">
+        <Tip>
+            <Clip source="first_time_180_scan_lighting_1.mp4" text="@string/first_time_180_scan_lighting_1" />
+        </Tip>
+        <Tip>
+            <Clip source="first_time_180_scan_environment_1.mp4" text="@string/first_time_selfie_scan_environment_1" />
+            <Clip source="first_time_180_scan_environment_2" text="@string/first_time_selfie_scan_environment_2" />
+        </Tip>
+        <Tip description="@string/first_time_selfie_calibration_description" title="@string/first_time_selfie_calibration_title">
+            <Clip source="first_time_selfie_scan_calibration.mp4" />
+        </Tip>
+        <Tip subtitles="@raw/selfie_calibration_subtitles" video="selfie_calibration.mp4" />
+        <Tip description="@string/first_time_180_sculpting_description" title="@string/first_time_180_sculpting_title">
+            <Clip source="first_time_selfie_scan_sculpting.mp4" />
+        </Tip>
+        <Tip subtitles="@raw/selfie_sculpting_subtitles" video="selfie_sculpting.mp4" />
+        <Tip description="@string/first_time_selfie_done_description">
+            <Clip loop="true" source="first_time_180_loop.mp4" />
+            <Video text="@string/first_time_selfie_scan_video" uri="@string/first_time_selfie_scan_video_link" />
+        </Tip>
+    </TipCategory>
+    <TipCategory screenEvent="@string/screen_event_face_tutorial_screen">
+        <Tip>
+            <Clip source="first_time_180_scan_lighting_1.mp4" text="@string/first_time_180_scan_lighting_1" />
+            <Clip source="first_time_180_scan_lighting_2.mp4" text="@string/first_time_180_scan_lighting_2" />
+        </Tip>
+        <Tip>
+            <Clip source="first_time_180_scan_environment_1.mp4" text="@string/first_time_face_scan_environment_1" />
+            <Clip source="first_time_180_scan_environment_2.mp4" text="@string/first_time_face_scan_environment_2" />
+        </Tip>
+        <Tip description="@string/first_time_face_calibration_description" title="@string/first_time_face_calibration_title">
+            <Clip source="first_time_face_scan_calibration_1.m4v" />
+            <Clip source="first_time_face_scan_calibration_2.m4v" />
+        </Tip>
+        <Tip subtitles="@raw/face_calibration_subtitles" video="face_calibration.mp4" />
+        <Tip description="@string/first_time_180_sculpting_description" title="@string/first_time_180_sculpting_title">
+            <Clip source="first_time_face_scan_sculpting.m4v" />
+        </Tip>
+        <Tip subtitles="@raw/face_sculpting_subtitles" video="face_sculpting.mp4" />
+        <Tip description="@string/first_time_face_done_description">
+            <Clip loop="true" source="first_time_180_loop.mp4" />
+            <Video text="@string/first_time_face_scan_video" uri="@string/first_time_face_scan_video_link" />
+        </Tip>
+    </TipCategory>
+    <TipCategory screenEvent="@string/screen_event_head_tutorial_screen">
+        <Tip>
+            <Clip source="first_time_head_scan_environment_1.m4v" text="@string/first_time_head_scan_text_1" />
+            <Clip source="first_time_head_scan_environment_2.m4v" text="@string/first_time_head_scan_text_2" />
+            <Clip source="first_time_head_scan_environment_3.m4v" text="@string/first_time_head_scan_text_3" />
+        </Tip>
+        <Tip description="@string/first_time_head_calibration_description" title="@string/first_time_head_calibration_title">
+            <Clip source="first_time_head_scan_calibration.mp4" />
+        </Tip>
+        <Tip subtitles="@raw/head_calibration_subtitles" video="head_calibration.mp4" />
+        <Tip description="@string/first_time_head_sculpting_description" title="@string/first_time_head_sculpting_title">
+            <Clip source="first_time_head_scan_sculpting.m4v" />
+        </Tip>
+        <Tip video="head_sculpting.mp4" />
+        <Tip description="@string/first_time_head_done_description">
+            <Clip loop="true" source="first_time_head_loop.mp4" />
+            <Video text="@string/first_time_head_scan_video" uri="@string/first_time_head_scan_video_link" />
+        </Tip>
+    </TipCategory>
+    <TipCategory screenEvent="@string/screen_event_food_tutorial_screen">
+        <Tip>
+            <Clip source="first_time_food_scan_lighting.mp4" text="@string/first_time_food_scan_lighting" />
+        </Tip>
+        <Tip>
+            <Clip source="first_time_food_scan_environment_1.mp4" text="@string/first_time_food_scan_environment_1" />
+            <Clip source="first_time_food_scan_environment_2.mp4" text="@string/first_time_food_scan_environment_2" />
+        </Tip>
+        <Tip description="@string/first_time_food_calibration_description" title="@string/first_time_food_calibration_title">
+            <Clip source="first_time_food_scan_calibration.mp4" />
+        </Tip>
+        <Tip subtitles="@raw/food_calibration_subtitles" video="food_calibration.mp4" />
+        <Tip description="@string/first_time_food_sculpting_description" title="@string/first_time_food_sculpting_title">
+            <Clip source="first_time_food_scan_sculpting.mp4" />
+        </Tip>
+        <Tip subtitles="@raw/food_sculpting_subtitles" video="food_sculpting.mp4" />
+        <Tip description="@string/first_time_food_done_description">
+            <Clip loop="true" source="first_time_food_loop.mp4" />
+            <Video text="@string/first_time_food_scan_video" uri="@string/first_time_food_scan_video_link" />
+        </Tip>
+    </TipCategory>
+    <TipCategory screenEvent="@string/screen_event_adv_tutorial_screen">
+        <Tip>
+            <Clip source="first_time_adv_calibration.mp4" text="@string/first_time_adv_calibration" />
+        </Tip>
+        <Tip description="@string/first_time_adv_done_description">
+            <Clip loop="false" source="first_time_adv_loop.mp4" />
+            <Video text="@string/first_time_adv_scan_video" uri="@string/first_time_freeform_scan_video_link" />
+        </Tip>
+    </TipCategory>
+</TipCategories>

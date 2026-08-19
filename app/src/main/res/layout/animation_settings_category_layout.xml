@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/select_model" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/pref_lw_select_scan_title" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <RelativeLayout android:id="@id/animation_switch_view" android:background="?android:selectableItemBackground" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_toStartOf="@id/animation_enable">
+            <TextView android:textSize="16.0sp" android:id="@id/animation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_animations" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/helper_text_disabled_white" android:id="@id/animation_disabled_help_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_animations_disabled_subtext" />
+        </LinearLayout>
+        <Switch android:id="@id/animation_enable" android:clickable="false" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_centerVertical="true" android:paddingStart="16.0dip" android:layout_alignParentEnd="true" style="@android:style/Widget.Material.CompoundButton.Switch" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/revolving_switch_view" android:background="?android:selectableItemBackground" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <Switch android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/revolving_enable" android:clickable="false" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/revolving_model" style="@android:style/Widget.Material.CompoundButton.Switch" />
+    </RelativeLayout>
+</LinearLayout>

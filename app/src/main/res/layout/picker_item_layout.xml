@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/picker_item" style="@style/PickerItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/picker_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/picker_item_text" android:padding="0.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/picker_item_image" android:layout_centerHorizontal="true" style="@style/PickerItemText" />
+</RelativeLayout>

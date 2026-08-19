@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">আপনার স্ক্যানগুলি থেকে Sony Mobile-কে প্রতিচ্ছবি ডেটা প্রদান করে আমাদের 3D ক্রিয়েটর স্ক্যানিং ইঞ্জিন উন্নত করতে সাহায্য করুন। এই ডেটা কেবলমাত্র WLAN মারফত আপলোড করা হবে এবং 90 দিন পরে আমাদের সার্ভার থেকে সরিয়ে দেওয়া হবে। আপনি ব্যাক আপ ও সমলয় সেটিংস মারফত যেকোনো সময় অনির্বাচন করতে পারেন।</string>
+    <string name="dialog_data_traffic_body">এগিয়ে যাওয়ার জন্য 3D ক্রিয়েটরের WLAN এবং মোবাইল ডেটাতে অ্যাক্সেস করতে হবে</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">কেবলমাত্র WLAN-এ সমলয় করুন</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">কেবলমাত্র WLAN</string>
+    <string name="post_process_privacy_description">আপনার স্ক্যান এবং অতিরিক্ত ছবি ডেটা আপনার মডেল উন্নত করতে আমাদের সার্ভারে আপলোড করা হবে। ডেটা কেবল WLAN এর মাধ্যমেই আপলোড করা হবে এবং 90 দিন পরে আমাদের সার্ভার থেকে মুছে দেওয়া হবে।</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">যথাযথভাবে আপনার মডেল উন্নত করতে WLAN-এ সংযোগ করুন</string>
+    <string name="viewer_hint_improve_promo_description">"আমরা WLAN মারফত আমাদের সার্ভারে এই মডেল ও অতিরিক্ত ছবির ডেটা আপলোড করব।
+
+আপনার যন্ত্রে যে পরিমান জায়গা অতিরিক্ত ছবি ডেটা নেয়, তাতে কেবল পাঁচটি সাম্প্রতিক স্ক্যানের ডেটাই সংরক্ষিত হয়। পুরোনো মডেলগুলি উন্নত করা যাবে না।"</string>
+</resources>

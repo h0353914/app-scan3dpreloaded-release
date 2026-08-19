@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Помогнете ни да го подобриме механизмот за скенирање на 3D креатор така што ќе обезбедите податоци за сликите од вашите скенирања за Sony Mobile. Податоците ќе се префрлат само преку WLAN и ќе се отстранат од нашите сервери по 90 дена. Може да откажете во секое време преку поставките за Резервни копии и синхронизирање</string>
+    <string name="dialog_data_traffic_body">3Д креаторот има потреба од пристап до WLAN и мобилните податоци за да продолжи</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Синхронизирај само преку WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Само WLAN</string>
+    <string name="post_process_privacy_description">Скенирањето и дополнителните податоци за сликите ќе се префрлат на нашите сервери за да го подобриме вашиот модел. Податоците ќе се префрлат само преку WLAN и ќе се отстранат од серверите по 90 дена.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Поврзете се на WLAN за да го подобрите моделот</string>
+    <string name="viewer_hint_improve_promo_description">"Ќе ги префрлиме овој модел и дополнителните податоци за сликите на нашите сервери преку WLAN.
+
+Поради количината на простор на уредот што ја зафаќаат дополнителните податоци за сликите, се зачувуваат само податоците од последните пет скенирања. Постарите модели не може да се подобруваат."</string>
+</resources>

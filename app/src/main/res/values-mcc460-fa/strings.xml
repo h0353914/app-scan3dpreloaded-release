@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">به ما کمک کنید تا با در اختیار گذاشتن داده تصویر اسکن‌هایتان به Sony Mobile، به بهبود موتور اسکن خلاق سه بعدی کمک کنیم. داده فقط از طریق WLAN آپلود می‌شود و بعد از ۹۰ روز از سرورهای ما حذف می‌شود. هر زمان خواستید می‌توانید از طریق تنظیمات همگام‌سازی و پشتیبان‌گیری آن را رد کنید.</string>
+    <string name="dialog_data_traffic_body">برای ادامه کار، سه‌بعدی ساز باید به WLAN و داده‌های شبکه همراه دسترسی پیدا کند</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">فقط همگام‌سازی از طریق WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">فقط WLAN</string>
+    <string name="post_process_privacy_description">برای بهبود مدلتان، اسکن شما و داده‌های تصویر اضافی در سرورهای ما آپلود خواهد شد. داده‌ها فقط از طریق WLAN آپلود می‌شوند و پس از ۹۰ روز از سرورهای ما حذف خواهند شد.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">برای ارتقاء مدل خود، به WLAN متصل شوید</string>
+    <string name="viewer_hint_improve_promo_description">"این مدل و داده‌های تصویر اضافی را ازطریق WLAN در سرورهایمان آپلود می‌کنیم.
+
+بسته به میزان فضایی که داده‌های تصویر اضافی در دستگاهتان اشغال می‌کنند، فقط داده‌های پنج اسکن اخیر ذخیره می‌شوند. مدل‌های قدیمی‌تر را نمی‌توان بهبود بخشید."</string>
+</resources>

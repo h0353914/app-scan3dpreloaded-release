@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <FrameLayout android:id="@id/youtube_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/youtube_image_height">
+            <ImageView android:id="@id/youtube_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play" />
+        </FrameLayout>
+        <include layout="@layout/tip_wizard_text_layout" />
+    </LinearLayout>
+</ScrollView>

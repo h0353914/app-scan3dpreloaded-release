@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/save" android:background="@drawable/white_icon_ripple" android:layout_width="@dimen/viewer_activity_open_with_button_width" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/viewer_activity_bottom_bar_button_text_size" android:textColor="@android:color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_scan" android:drawablePadding="@dimen/viewer_activity_textview_drawable_padding" android:drawableStart="@drawable/ic_check_24dp" />
+    </FrameLayout>
+</LinearLayout>

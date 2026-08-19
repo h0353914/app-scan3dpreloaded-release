@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Segítheti a 3D készítő szkennelési motorjának továbbfejlesztését, ha megadja a szkennelései képadatait a Sony Mobile számára. Az adatok csak WLAN-kapcsolaton keresztül lesznek feltöltve, és 90 nap múlva eltávolítjuk a kiszolgálóinkról. A Biztonsági mentés és szinkronizálás beállításain keresztül bármikor leiratkozhat</string>
+    <string name="dialog_data_traffic_body">A 3D készítőnek a folytatáshoz hozzáféréssel kell rendelkeznie a WLAN-hez és a mobiladatokhoz</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Szinkronizálás csak WLAN-hálózaton</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Csak WLAN</string>
+    <string name="post_process_privacy_description">A szkennelt kép és a további képadatok fel lesznek töltve a kiszolgálóinkra a modell javítása érdekében. Az adatok feltöltése csak WLANn keresztül történik, és 90 nap múlva töröljük őket a kiszolgálóinkról.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Csatlakozzon WLANhez a modell javításához</string>
+    <string name="viewer_hint_improve_promo_description">"Ezt a modellt és a további képadatokat WLANn keresztül töltjük fel a kiszolgálóinkra.
+
+A készüléken a további képadatok által foglalt hely nagysága miatt csak az öt legutóbbi szkennelés adatait menti a rendszer. A korábbi modellek nem javíthatók."</string>
+</resources>

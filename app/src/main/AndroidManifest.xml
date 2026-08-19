@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.sonymobile.scan3d" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <permission android:description="@string/permission_thermal_mitigation_description" android:label="@string/permission_thermal_mitigation_label" android:name="com.sonymobile.scan3d.permission.THERMAL_MITIGATION"/>
+    <uses-permission android:name="com.sonymobile.scan3d.permission.THERMAL_MITIGATION"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/application_name" android:largeHeap="true" android:name="com.sonymobile.scan3d.Scan3DApp" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true">
+        <uses-library android:name="com.sonyericsson.idd" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="com.sonymobile.runtimeskinning.WALLPAPER_INFO" android:resource="@xml/wallpaper_info"/>
+        <uses-library android:name="com.sony.device" android:required="true"/>
+        <provider android:authorities="@string/storage_provider_authority" android:exported="false" android:name="com.sonymobile.scan3d.storageservice.provider.StorageProvider"/>
+        <provider android:authorities="@string/expansion_provider_authority" android:exported="false" android:name="com.sonymobile.scan3d.storageservice.provider.ExpansionProvider"/>
+        <provider android:authorities="@string/file_provider_authority" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|screenSize" android:icon="@mipmap/ic_launcher" android:launchMode="singleTop" android:name="com.sonymobile.scan3d.storageservice.ui.activity.GalleryActivity" android:theme="@style/SphinxAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.sony.scan3d"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sonymobile.scan3d.ACTION_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.sonymobile.scan3d.storageservice.ui.upload.OauthCallbackActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="scan3d.sonymobile.com" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.sonymobile.scan3d.storageservice.ui.gallery.wizard.QuickTipCategoriesActivity" android:screenOrientation="portrait" android:theme="@style/SphinxAppTheme"/>
+        <activity android:name="com.sonymobile.scan3d.storageservice.ui.gallery.wizard.WizardActivity" android:screenOrientation="portrait" android:theme="@style/SphinxAppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.sonymobile.scan3d.storageservice.ui.gallery.wizard.FirstTimeActivity" android:screenOrientation="landscape" android:theme="@style/SphinxAppTheme.Tutorial"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/storage_service_signin_appbar_title_txt" android:name="com.sonymobile.scan3d.storageservice.authentication.SignoutActivity" android:theme="@style/AuthenticatorTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/storage_service_signin_appbar_title_txt" android:name="com.sonymobile.scan3d.storageservice.authentication.SigninActivity" android:theme="@style/AuthenticatorTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sonymobile.scan3d.storageservice.authentication.SigninLearnMoreActivity" android:theme="@style/AuthenticatorTheme"/>
+        <activity android:name="com.sonymobile.scan3d.storageservice.authentication.PrivacyActivity" android:theme="@style/AuthenticatorTheme"/>
+        <activity android:name="com.sonymobile.scan3d.viewer.ViewerActivity" android:theme="@style/SphinxAppTheme.Viewer"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.sonymobile.scan3d.editor.EditorActivity" android:theme="@style/SphinxAppTheme"/>
+        <activity android:icon="@mipmap/ic_launcher" android:name="com.sonymobile.scan3d.viewer.OpenWithInterceptActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/zip" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/vnd.sony.scan3d" android:scheme="content"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sonymobile.scan3d.storageservice.ui.activity.OnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/SphinxAppTheme.OnboardingScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@mipmap/ic_launcher" android:name="com.sonymobile.scan3d.Scan3dActivity" android:theme="@style/SphinxAppTheme.Scan"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.sonymobile.scan3d.ScanningPermissionsActivity" android:screenOrientation="portrait" android:theme="@style/SphinxAppTheme"/>
+        <activity android:label="@string/title_activity_checkout" android:name="com.sonymobile.scan3d.storageservice.ui.upload.CartActivity" android:screenOrientation="portrait" android:theme="@style/SphinxAppTheme"/>
+        <activity android:name="com.sonymobile.scan3d.storageservice.ui.gallery.wizard.TipVideoPlayerActivity" android:screenOrientation="landscape" android:theme="@style/SphinxAppTheme.Fullscreen"/>
+        <activity android:name="com.sonymobile.scan3d.storageservice.ui.upload.ActionActivity" android:theme="@style/SphinxAppTheme.Upload"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_face_mimic" android:name="com.sonymobile.scan3d.sfmc.FaceMimicActivity" android:screenOrientation="portrait" android:theme="@style/SphinxAppTheme"/>
+        <service android:exported="false" android:name="com.sonymobile.scan3d.SphinxService"/>
+        <service android:name="com.sonymobile.scan3d.storageservice.ui.upload.ActionService"/>
+        <service android:exported="true" android:name="com.sonymobile.scan3d.storageservice.content.SyncService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.sonymobile.scan3d.storageservice.content.WorkService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.sonymobile.scan3d.storageservice.provider.FileRecordService"/>
+        <service android:icon="@mipmap/ic_launcher" android:label="@string/application_name" android:name="com.sonymobile.scan3d.wallpaper.SphinxWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"/>
+        </service>
+        <activity android:exported="true" android:name="com.sonymobile.scan3d.wallpaper.WallpaperPreviewer" android:theme="@style/SphinxAppTheme.Viewer"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.sonymobile.scan3d.viewer.SelectImprovementActivity" android:theme="@style/SphinxAppTheme.Dialog.SelectionTheme"/>
+        <receiver android:exported="false" android:name="com.sonymobile.scan3d.viewer.ProxyReceiver"/>
+        <service android:exported="true" android:name="com.sonymobile.scan3d.storageservice.authentication.EncryptionDriveEventService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.drive.events.HANDLE_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"/>
+        <service android:exported="false" android:name="com.sonymobile.scan3d.storageservice.network.firebase.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.sonymobile.scan3d.expansionfile.RemoteDownloadService"/>
+        <receiver android:name="com.sonymobile.scan3d.LocaleChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sonymobile.scan3d.expansionfile.RemoteAlarmReceiver"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    </application>
+</manifest>

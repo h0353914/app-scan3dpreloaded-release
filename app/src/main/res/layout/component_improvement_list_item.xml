@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/select_improvement_item_padding_top_bottom" android:paddingBottom="@dimen/select_improvement_item_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/select_improvement_item_height" android:foreground="?android:selectableItemBackground" android:paddingStart="@dimen/select_improvement_content_padding_start_end" android:paddingEnd="@dimen/select_improvement_content_padding_start_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/improvement_image" android:layout_width="@dimen/select_improvement_item_image_width" android:layout_height="@dimen/select_improvement_item_image_width" android:scaleType="centerCrop" />
+    <TextView android:gravity="center_vertical" android:id="@id/improvement_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/select_improvement_item_text_margin" style="@style/SphinxAppTheme.Dialog.SelectionTheme.Item" />
+</LinearLayout>

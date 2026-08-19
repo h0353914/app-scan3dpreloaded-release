@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">透過提供Sony Mobile您所掃描的影像資料，協助我們改善3D建立工具和掃描引擎。資料僅會透過WLAN上傳，並且會在90天後從我們的伺服器中移除。您隨時可以透過[備份和同步化]設定選擇退出。</string>
+    <string name="dialog_data_traffic_body">3D建立工具必須存取WLAN與行動數據連線，才能繼續進行</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">僅透過WLAN進行同步</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">僅透過WLAN</string>
+    <string name="post_process_privacy_description">您的掃描和其他影像資料會上傳到伺服器以便改善您的模型。資料僅會透過WLAN上傳且會在90天後從伺服器移除。</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">連線至WLAN以改善您的模型</string>
+    <string name="viewer_hint_improve_promo_description">"我們將透過WLAN上傳此模型和其他影像資料至伺服器。
+
+由於其他影像資料在您裝置上所佔據的空間，只有最近五次掃描的資料會儲存。較舊的模型無法改善。"</string>
+</resources>

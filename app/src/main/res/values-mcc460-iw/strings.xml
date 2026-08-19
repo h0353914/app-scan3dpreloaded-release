@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">"עזור לשפר את מנגנון הסריקה של היישום 'יוצר בתלת-ממד' על-ידי שליחת נתוני תמונות מהסריקות שלך אל Sony Mobile. הנתונים יועלו רק באמצעות חיבור WLAN ויוסרו מהשרתים שלנו לאחר 90 ימים. תוכל לבטל את ההצטרפות בכל עת באמצעות הגדרות הגיבוי והסנכרון."</string>
+    <string name="dialog_data_traffic_body">"ליישום 'יוצר בתלת-ממד' נדרשת גישה לרשת WLAN ולנתונים סלולריים כדי להמשיך"</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">סנכרן רק באמצעות WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">‏WLAN בלבד</string>
+    <string name="post_process_privacy_description">הסריקה ונתוני תמונה נוספים יועלו אל השרתים שלנו כדי לשפר את המודל. הנתונים יועלו באמצעות חיבור WLAN בלבד ויוסרו מהשרתים לאחר 90 ימים.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">התחבר לרשת WLAN כדי לשפר את המודל</string>
+    <string name="viewer_hint_improve_promo_description">"נעלה מודל זה ונתוני תמונה נוספים אל השרתים שלנו דרך חיבור WLAN.
+
+עקב כמות השטח שנתוני התמונה הנוספים צורכים במכשיר, יישמרו נתונים רק מחמש הסריקות האחרונות. לא ניתן לשפר מודלים ישנים יותר."</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">ช่วยเราปรับปรุงระบบสแกนครีเอเตอร์ 3 มิติโดยให้ข้อมูลภาพจากภาพสแกนแก่ Sony Mobile ข้อมูลนี้จะอัปโหลดผ่าน WLAN เท่านั้นและจะลบออกจากเซิร์ฟเวอร์ของเราหลังจากผ่านไป 90 วัน คุณสามารถเลือกไม่ให้ข้อมูลเมื่อใดก็ได้ผ่านการตั้งค่าการสำรองข้อมูลและการซิงค์</string>
+    <string name="dialog_data_traffic_body">ครีเอเตอร์ 3 มิติต้องการเข้าถึง WLAN และข้อมูลโทรศัพท์เคลื่อนที่เพื่อดำเนินการต่อ</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">ซิงค์ผ่าน WLAN เท่านั้น</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN เท่านั้น</string>
+    <string name="post_process_privacy_description">จะมีการอัปโหลดภาพสแกนและข้อมูลภาพอื่นๆ ไปยังเซิร์ฟเวอร์เพื่อปรับปรุงโมเดล ข้อมูลนี้จะอัปโหลดผ่าน WLAN เท่านั้นและจะลบออกจากเซิร์ฟเวอร์หลังจากผ่านไป 90 วัน</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">เชื่อมต่อ WLAN เพื่อปรับปรุงโมเดลของคุณ</string>
+    <string name="viewer_hint_improve_promo_description">"เราจะอัปโหลดโมเดลนี้และข้อมูลภาพอื่นๆ ไปยังเซิร์ฟเวอร์ผ่าน WLAN
+
+ระบบจะบันทึกเฉพาะข้อมูลภาพสแกน 5 ภาพสุดท้ายเท่านั้นเนื่องจากข้อมูลภาพอื่นๆ ใช้พื้นที่เก็บข้อมูลในเครื่องมาก และปรับปรุงโมเดลเก่าๆ ไม่ได้"</string>
+</resources>

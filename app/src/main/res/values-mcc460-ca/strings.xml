@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">"Ajudeu-nos a millorar el motor d'escaneig de Creador en 3D proporcionant a Sony Mobile dades de les imatges dels escaneigs. Les dades només es carregaran mitjançant la WLAN i se suprimiran dels nostres servidors al cap de 90 dies. Podeu donar-vos de baixa en qualsevol moment mitjançant els paràmetres de Còpia de seguretat i sincronització"</string>
+    <string name="dialog_data_traffic_body">Creador en 3D necessita accedir a la WLAN i a les dades mòbils per continuar</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Només sincronització per WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Només WLAN</string>
+    <string name="post_process_privacy_description">"El vostre escaneig i les dades d'imatge addicionals es carregaran als nostres servidors per millorar el vostre model. Les dades només es carregaran per WLAN i s'eliminaran dels nostres servidors al cap de 90 dies."</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Connecteu-vos a la WLAN per millorar el model</string>
+    <string name="viewer_hint_improve_promo_description">"Carregarem aquest model i les dades d'imatge addicionals als nostres servidors per WLAN.
+
+Atès l'espai que ocupen les dades d'imatge addicionals al dispositiu, només es desen les dades dels cinc darrers escaneigs. Els models més antics no es poden millorar."</string>
+</resources>

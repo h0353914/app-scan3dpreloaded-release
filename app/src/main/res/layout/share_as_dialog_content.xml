@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dialog_privacy_content_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?android:dialogPreferredPadding" android:paddingEnd="?android:dialogPreferredPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_share_as_padding_bottom" style="@style/ShareDialog.Text" />
+    <CheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_checkbox_text_dont_show_again" style="@style/ShareDialog.Checkbox" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/gallery_preference_network_sync_over_wifi_title" android:key="@string/pref_key_sync_over_wifi" android:summary="@string/gallery_preference_network_sync_over_wifi_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <SwitchPreference android:title="@string/gallery_preference_sync_when_charging_title" android:key="@string/pref_key_sync_when_charging" android:summary="@string/gallery_preference_sync_when_charging_summary" android:defaultValue="@bool/sync_when_charging_setting" app:iconSpaceReserved="false" />
+    <com.sonymobile.scan3d.storageservice.ui.component.TransferPreference android:key="@string/pref_key_transfer_monitor" />
+    <PreferenceCategory android:title="@string/backup_sync_account_category" app:allowDividerAbove="false" app:allowDividerBelow="false" app:iconSpaceReserved="false">
+        <Preference android:key="@string/pref_key_account" android:summary="@string/backup_sync_signed_in" app:iconSpaceReserved="false" />
+        <Preference android:persistent="false" android:title="@string/backup_sync_personal_data" android:key="@string/key_backup_personal_data" app:iconSpaceReserved="false" />
+        <Preference android:persistent="false" android:title="@string/backup_sync_export" android:key="@string/pref_key_backup_export_data" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/backup_sync_signout_text" android:key="@string/pref_key_sign_out" app:iconSpaceReserved="false" />
+        <Preference android:persistent="false" android:title="@string/backup_sync_delete" android:key="@string/pref_key_backup_delete_account" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

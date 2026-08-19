@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Ajutaţi-ne să îmbunătăţim motorul de scanare al aplicaţiei Creator 3D trimiţând la Sony Mobile date de imagini din scanările dvs. Datele trebuie încărcate nu mai prin WLAN şi vor fi eliminate de pe serverele noastre după 90 de zile. Puteţi renunţa oricând prin intermediul setărilor pentru copiere de rezervă şi sincronizare</string>
+    <string name="dialog_data_traffic_body">Aplicaţia Creator 3D are nevoie de acces la WLAN şi la date de telefonie mobilă pentru a continua</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Se sincronizează doar prin WLAN.</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Doar prin WLAN</string>
+    <string name="post_process_privacy_description">Scanarea şi datele de imagini suplimentare vor fi încărcate pe serverele noastre pentru a vă îmbunătăţi modelul. Datele vor fi încărcate doar prin WLAN şi vor fi eliminate de pe serverele noastre după 90 de zile.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Conectaţi-vă la WLAN pentru a vă îmbunătăţi modelul</string>
+    <string name="viewer_hint_improve_promo_description">"Vom încărca acest model şi alte date de imagini pe serverele noastre prin WLAN.
+
+Din cauza spaţiului pe care îl ocupă pe dispozitiv datele de imagini suplimentare, sunt salvate doar datele provenite de la ultimele cinci scanări. Modelele mai vechi nu pot fi îmbunătăţite."</string>
+</resources>

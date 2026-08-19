@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Bantu kami meningkatkan mesin pemindaian Pembuat 3D dengan memberikan Sony Mobile data gambar dari hasil pindaian Anda. Data akan diunggah hanya melalui WLAN, dan akan dihapus dari server kami setelah 90 hari. Anda dapat memilih berhenti kapan saja melalui setelan Rekam cadangan dan sinkr</string>
+    <string name="dialog_data_traffic_body">Pembuat 3D memerlukan akses ke WLAN dan data seluler untuk melanjutkan</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Hanya sinkr lewat WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN saja</string>
+    <string name="post_process_privacy_description">Pindaian dan data gambar tambahan Anda akan diunggah ke server kami untuk memperbaiki model Anda. Data akan diunggah hanya melalui WLAN, dan akan dihapus dari server kami setelah 90 hari.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Sambungkan ke WLAN agar dapat meningkatkan model Anda</string>
+    <string name="viewer_hint_improve_promo_description">"Kami akan mengunggah model dan data gambar tambahan ke server kami melalui WLAN.
+
+Karena jumlah ruang data gambar tambahan diambil pada pada perangkat Anda, hanya data dari lima pemindaian terbaru yang disimpan. Model lama tidak bisa ditingkatkan."</string>
+</resources>

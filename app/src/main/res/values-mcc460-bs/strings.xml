@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Pomozite nam da unaprijedimo mehanizam skeniranja programa 3D kreator tako što ćete kompaniji Sony Mobile poslati podatke slika nakon skeniranja. Podaci će se prenositi samo preko WLAN mreže i bit će uklonjeni s naših servera nakon 90 dana. U svakom trenutku možete odustati koristeći postavke za izradu rezervne kopije i sinhroniziranje</string>
+    <string name="dialog_data_traffic_body">3D kreator treba pristup WLAN mreži i mobilnim podacima kako bi nastavio s radom</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sinhroniziraj samo koristeći WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Samo WLAN</string>
+    <string name="post_process_privacy_description">Vaš skenirani snimak i dodatni podaci o slici bit će preneseni na naše servere radi poboljšavanja modela. Podaci će se prenositi samo preko WLAN veze i bit će uklonjeni s naših servera nakon 90 dana.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Povežite se na WLAN kako biste poboljšali model</string>
+    <string name="viewer_hint_improve_promo_description">"Prenijet ćemo ovaj model i dodatne podatke o slici na naše servere preko WLAN veze.
+
+Zbog količine prostora kojeg na vašem uređaju zauzimaju dodatni podaci o slici moguće je sačuvati samo podatke za pet posljednjih skeniranja. Starije modele nije moguće poboljšati."</string>
+</resources>

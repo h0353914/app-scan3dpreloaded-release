@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/reveal_view" android:background="@drawable/fab_feature_description_shape" android:visibility="invisible" android:layout_width="@dimen/fab_reveal_size" android:layout_height="@dimen/fab_reveal_size" android:backgroundTint="@color/feature_description_bg_color">
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Medium" android:textColor="@android:color/black" android:layout_gravity="start|top" android:id="@id/tip_text" android:padding="40.0dip" android:layout_width="@dimen/fab_reveal_text_width" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:text="@string/fab_new_scan_tip" android:layout_marginStart="30.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="end|bottom" android:id="@id/fab_parent" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center" android:id="@id/pulse_view" android:background="@drawable/fab_feature_description_shape" android:visibility="invisible" android:layout_width="@dimen/fab_size" android:layout_height="@dimen/fab_size" android:alpha="0.0" android:backgroundTint="@android:color/black" />
+        <ImageButton android:id="@id/fab_normal" android:background="@drawable/fab_background" android:layout_width="@dimen/fab_size" android:layout_height="@dimen/fab_size" android:src="@drawable/fab" android:contentDescription="@string/accessibility_new_scan_button" />
+        <ImageButton android:id="@id/fab_inverted" android:background="@drawable/fab_feature_description_shape" android:visibility="invisible" android:clickable="false" android:layout_width="@dimen/fab_size" android:layout_height="@dimen/fab_size" android:src="@drawable/fab_inverted" android:backgroundTint="@android:color/black" />
+    </FrameLayout>
+</merge>

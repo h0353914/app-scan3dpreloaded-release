@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/seekbar_container" android:tag="layout/component_faceblend_bottom_bar_0" android:background="@drawable/viewer_bottom_bar_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/select_video_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip">
+        <Button android:id="@id/button_1to1" android:background="@drawable/button_bracket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/button_ratio_1to1" android:paddingHorizontal="5.0dip" android:paddingVertical="4.0dip" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="@id/button_4to3" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" />
+        <Button android:id="@id/button_4to3" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/button_ratio_4to3" android:paddingHorizontal="5.0dip" android:paddingVertical="4.0dip" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="@id/button_1to1" bind:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/texture_container" layout="@layout/component_faceblend_seekbar" />
+    <include android:id="@id/mesh_container" layout="@layout/component_faceblend_seekbar" />
+</LinearLayout>

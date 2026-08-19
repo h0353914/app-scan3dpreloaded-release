@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar android:id="@id/toolbar" android:title="@string/help_title_text" android:foregroundTint="@android:color/white" android:navigationIcon="@drawable/ic_arrow_back_24dp" android:navigationContentDescription="@string/accessibility_back_button" style="@style/Toolbar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+</RelativeLayout>

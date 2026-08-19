@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/PrintCustomization"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/toolbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Toolbar android:id="@id/toolbar" android:visibility="gone" style="@style/Toolbar">
+            <Button android:textColor="@android:color/white" android:layout_gravity="end|center" android:id="@id/end_action" android:background="@drawable/white_icon_ripple" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/viewer_activity_scan_bar_padding_start" android:paddingEnd="@dimen/viewer_activity_scan_bar_padding_start" style="@android:style/Widget.Material.Button.Borderless" />
+        </Toolbar>
+        <FrameLayout android:id="@id/navigation_button_parent" android:background="?android:actionBarItemBackground" android:padding="@dimen/icon_button_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/viewer_activity_navigation_button_margin" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/navigation_button" android:layout_width="@dimen/icon_button_size" android:layout_height="@dimen/icon_button_size" />
+        </FrameLayout>
+    </RelativeLayout>
+    <com.sonymobile.scan3d.viewer.ViewerGLTextureView android:id="@id/glTextureView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/shadows_seekbar_layout" android:layout_below="@id/toolbar_layout" />
+    <TextView android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/print_customization_large_spacing" android:text="@string/print_remove_shadows_note" android:maxLines="2" android:layout_below="@id/toolbar_layout" android:layout_marginStart="@dimen/print_customization_large_spacing" android:layout_marginEnd="@dimen/print_customization_large_spacing" />
+    <LinearLayout android:id="@id/shadows_seekbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/PrintCustomization.ShadowsBar">
+        <SeekBar android:id="@id/shadows_seekbar" android:layout_width="fill_parent" android:layout_height="@dimen/editor_bottombar_effects_slider_height" android:progress="100" />
+    </LinearLayout>
+</RelativeLayout>

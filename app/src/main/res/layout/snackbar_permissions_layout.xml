@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/permissions_container" android:background="@android:color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_bar" android:paddingStart="16.0dip" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/permissions_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/storage_permissons_needed" android:layout_centerVertical="true" android:fontFamily="Roboto" android:layout_toStartOf="@id/permissions_button" android:layout_alignParentStart="true" />
+    <Button android:textColor="@color/primary_color_light" android:id="@id/permissions_button" android:background="@drawable/white_icon_ripple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_text_permissons" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@android:style/Widget.Material.Button.Borderless" />
+</RelativeLayout>

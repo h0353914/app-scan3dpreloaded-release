@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Допоможіть покращити процесор сканування програми Створення 3D-моделей, надаючи компанії Sony Mobile дані зображення ваших сканувань. Ці дані надсилаються тільки через WLAN і видаляються з наших серверів через 90 днів. Цю функцію можна вимкнути в будь-який момент в установках резервного копіювання та синхронізації.</string>
+    <string name="dialog_data_traffic_body">Щоб продовжити, функції «Створення 3D-моделей» потрібен доступ до WLAN і пакетних даних</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Синхронізація лише через WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Лише WLAN</string>
+    <string name="post_process_privacy_description">Щоб покращити модель, її буде надіслано на наші сервери разом із додатковими графічними даними. Дані надсилаються виключно через WLAN та видаляються із серверів через 90 днів.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Щоб покращити модель, підключіться до WLAN</string>
+    <string name="viewer_hint_improve_promo_description">"Ми надішлемо цю модель і додаткові графічні дані на наші сервери через WLAN.
+
+З огляду на обсяг на пристрої зберігаються додаткові графічні дані лише останніх п’яти сканувань. Якість старіших моделей не можна покращити."</string>
+</resources>

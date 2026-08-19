@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Na ndihmoni të përmirësojmë motorin e skanimit të Krijuesit 3D duke i ofruar Sony Mobile të dhëna të imazheve nga skanimet tuaja. Të dhënat do të ngarkohen vetëm nëpërmjet WLAN dhe do të hiqen nga serverët tanë pas 90 ditëve. Mund të zgjidhni që ta refuzoni në çdo kohë nëpërmjet cilësimeve të Kopjes rezervë dhe sinkronizimit</string>
+    <string name="dialog_data_traffic_body">Krijuesi 3D ka nevojë për qasje te WLAN dhe të dhënat celulare për të vazhduar</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sinkronizoni vetëm nëpërmjet WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Vetëm me WLAN</string>
+    <string name="post_process_privacy_description">Skanimi juaj dhe të dhëna shtesë të imazheve do të ngarkohen te serverët tanë për të përmirësuar modelin tuaj. Të dhënat do të ngarkohen vetëm nëpërmjet WLAN dhe do të hiqen nga serverët tanë pas 90 ditëve.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Lidhuni me WLAN për të përmirësuar modelin tuaj</string>
+    <string name="viewer_hint_improve_promo_description">"Ne do të ngarkojmë këtë model dhe të dhëna shtesë të imazheve te serverët tanë nëpërmjet WLAN.
+
+Për shkak të sasisë së hapësirës që zënë të dhënat shtesë të imazheve në pajisjen tuaj, ruhen vetëm të dhënat nga pesë skanimet më të fundit. Modelet më të vjetra nuk mund të përmirësohen."</string>
+</resources>

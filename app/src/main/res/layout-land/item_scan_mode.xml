@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/select_scan_mode_item_background" android:layout_width="@dimen/scan_mode_item_width" android:layout_height="@dimen/scan_mode_item_height" android:elevation="@dimen/standard_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="@dimen/scan_mode_item_icon_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scan_mode_item_icon_margin_top_bottom" android:layout_marginBottom="@dimen/scan_mode_item_icon_margin_top_bottom" android:src="@drawable/scan_choice_head" android:layout_marginStart="@dimen/scan_mode_item_icon_margin_start" />
+    <LinearLayout android:gravity="center" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scan_mode_item_complete_margin_bottom" android:layout_marginBottom="@dimen/scan_mode_item_button_margin_bottom" android:layout_alignParentBottom="true" android:layout_toEndOf="@id/image">
+        <Button android:textAppearance="@style/SelectScanMode.Button" android:id="@id/btn_view_tutorial" android:background="@drawable/select_scan_mode_item_button" android:layout_width="@dimen/scan_mode_item_button_width" android:layout_height="@dimen/scan_mode_item_button_height" android:text="@string/dialog_scan_mode_button_view_tutorial" android:layout_marginEnd="@dimen/scan_mode_item_button_spacing" />
+        <Button android:textAppearance="@style/SelectScanMode.Button" android:id="@id/btn_start_scan" android:background="@drawable/select_scan_mode_item_button" android:layout_width="@dimen/scan_mode_item_button_width" android:layout_height="@dimen/scan_mode_item_button_height" android:text="@string/dialog_scan_mode_button_start_scan" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/scan_mode_item_icon_margin_top_bottom" android:layout_marginBottom="@dimen/scan_mode_item_button_margin_bottom" android:fillViewport="true" android:layout_above="@id/button_container" android:layout_toEndOf="@id/image">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/scan_mode_item_text_area_margin_start" android:layout_marginEnd="@dimen/scan_mode_item_text_area_margin_end">
+            <TextView android:textAppearance="@style/SelectScanMode.Title" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textAppearance="@style/SelectScanMode.Description" android:id="@id/description" android:paddingTop="@dimen/scan_mode_item_description_margin_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
