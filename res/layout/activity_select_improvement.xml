@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/select_improvement_padding_top" android:paddingBottom="@dimen/select_improvement_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dialog_improve_select_scan" android:layout_marginStart="@dimen/select_improvement_content_padding_start_end" android:layout_marginEnd="@dimen/select_improvement_content_padding_start_end" style="@style/SphinxAppTheme.Dialog.SelectionTheme.Title" />
+    <ListView android:id="@id/select_improvement_list" android:paddingTop="@dimen/select_improvement_content_padding_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:textColor="@color/primary_color_light" android:layout_gravity="end" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@android:string/cancel" android:textAllCaps="true" android:layout_marginEnd="@dimen/select_improvement_button_margin_end" style="?android:borderlessButtonStyle" />
+</LinearLayout>

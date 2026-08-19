@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Auta meitä parantamaan 3D-toiminnon skannausominaisuutta! Luovuta Sony Mobilelle kuvatietoja skannauksistasi. Tiedot siirretään vain WLAN-yhteydellä ja poistetaan palvelimiltamme 90 päivän kuluttua. Voit peruuttaa suostumuksesi milloin tahansa varmuuskopiointi- ja synkronointiasetuksissa</string>
+    <string name="dialog_data_traffic_body">3D-luontitoiminto tarvitsee WLAN- ja mobiilidatayhteyden käyttöoikeuden jatkaakseen</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Synkronoi vain WLAN-yhteydellä</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Vain WLAN</string>
+    <string name="post_process_privacy_description">Skannauksesi ja lisäkuvatiedot ladataan palvelimillemme mallisi parantamista varten. Tiedot ladataan vain WLAN-yhteydellä ja poistetaan palvelimiltamme 90 päivän kuluttua.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Paranna malliasi muodostamalla WLAN-yhteys</string>
+    <string name="viewer_hint_improve_promo_description">"Lataamme tämän mallin ja lisäkuvatietoja palvelimillemme WLAN-yhteydellä.
+
+Lisäkuvatiedot vievät tilaa laitteeltasi, joten vain viimeisten viiden skannauksen tiedot tallentuvat. Vanhempia malleja ei voi parantaa."</string>
+</resources>

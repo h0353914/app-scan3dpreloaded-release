@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_view_static" android:visible="false" android:orderInCategory="100" android:title="@string/viewer_overflow_view_static" />
+    <item android:id="@id/menu_view_animated" android:visible="false" android:orderInCategory="100" android:title="@string/viewer_overflow_view_animated" />
+    <item android:id="@id/menu_view_prop" android:visible="false" android:orderInCategory="100" android:title="@string/viewer_overflow_view_prop" />
+    <item android:id="@id/menu_unshare" android:visible="true" android:orderInCategory="100" android:title="@string/viewer_overflow_unshare" />
+</menu>

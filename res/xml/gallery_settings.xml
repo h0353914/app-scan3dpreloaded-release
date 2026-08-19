@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/gallery_preference_scanning_sound_title" android:key="@string/pref_key_scanning_sound" android:summary="@string/gallery_preference_scanning_sound_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <Preference android:title="@string/pref_camera_calib_reset" android:key="@string/pref_calib_reset" android:summary="@string/pref_camera_calib_reset_descr" app:iconSpaceReserved="false" />
+    <PreferenceCategory android:title="@string/settings_about_text" app:allowDividerAbove="false" app:allowDividerBelow="false" app:iconSpaceReserved="false">
+        <Preference android:title="@string/about_open_source" android:key="@string/pref_key_open_source" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/about_software_version" android:key="@string/pref_key_version" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/ca_privacy_notice" android:key="@string/pref_ca_privacy_notice" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

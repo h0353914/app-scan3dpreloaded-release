@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_selected="false" android:drawable="@drawable/step_indicator_bullet_not_selected" />
+    <item android:state_enabled="false" android:state_selected="true">
+        <nine-patch android:src="@drawable/step_indicator_bullet_selected_line" android:tint="@color/primary_color_light" />
+    </item>
+    <item android:state_enabled="true" android:state_selected="true">
+        <nine-patch android:src="@drawable/step_indicator_bullet_selected_noline" android:tint="@color/primary_color_light" />
+    </item>
+</selector>

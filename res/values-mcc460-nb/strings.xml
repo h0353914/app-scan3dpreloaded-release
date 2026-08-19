@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Hjelp oss med å forbedre skannemotoren til 3D-skaper ved gå Sony Mobile bildedata fra skanningene dine. Dataene dine lastes bare opp via WLAN og fjernes fra serverne våre etter 90 dager. Du kan trekke deg når som helst via innstillingene for sikkerhetskopiering og synkronisering.</string>
+    <string name="dialog_data_traffic_body">3D-skaper trenger tilgang til WLAN og mobildata for å gå videre</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Synkroniser bare over WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Kun WLAN</string>
+    <string name="post_process_privacy_description">Skanningen og de ekstra bildedataene lastes opp til serverne våre for å forbedre modellen din. Dataene lastes opp utelukkende via WLAN, og de fjernes fra serverne etter 90 dager.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Koble til WLAN for å forbedre modellen din</string>
+    <string name="viewer_hint_improve_promo_description">"Vi vil laste opp denne modellen og ekstra bildedata til serverne våre via WLAN.
+
+På grunn av plassen de ekstra bildedataene opptar på enheten din, lagres bare data fra de fem siste skanningene. Eldre modeller kan ikke forbedres."</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="sphinx_lw_preferences"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_lw_title">
+        <Preference android:title="@string/pref_lw_select_scan_title" android:key="@string/pref_key_lw_select_scan" android:summary="@string/pref_lw_select_scan_summary" />
+        <CheckBoxPreference android:title="@string/pref_lw_use_movement_title" android:key="@string/pref_key_lw_use_movement" android:summary="@string/pref_lw_use_movement_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

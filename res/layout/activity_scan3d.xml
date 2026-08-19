@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/gl_container" />
+    <FrameLayout android:id="@id/busy_loading" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/close_button" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_close_24dp" android:scaleType="centerInside" android:tint="@color/scan3d_close_button_color" android:contentDescription="@string/accessibility_close_button" android:layout_marginStart="10.0dip" />
+    <com.sonymobile.scan3d.widgets.SphinxStepIndicator android:gravity="center" android:id="@id/step_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/close_button" android:layout_alignBottom="@id/close_button" android:layout_toEndOf="@id/close_button" />
+    <include android:id="@id/start_stop_button" layout="@layout/start_stop_button" />
+    <ScrollView android:id="@id/toast_view_left_scroll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/scan_toast_margin_top">
+        <com.sonymobile.scan3d.SphinxToastView android:id="@id/toast_view_left" android:background="@drawable/toast_bg" android:paddingBottom="@dimen/scan_toast_padding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/scan_toast_max_width" android:paddingEnd="@dimen/scan_toast_padding" />
+    </ScrollView>
+    <com.sonymobile.scan3d.SphinxToastView android:id="@id/toast_view_right" android:background="@drawable/toast_bg" android:paddingBottom="@dimen/scan_toast_padding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/scan_toast_max_width" android:layout_above="@id/start_stop_button" android:paddingEnd="@dimen/scan_toast_padding" android:layout_alignEnd="@id/start_stop_button" />
+    <com.sonymobile.scan3d.widgets.SphinxProgressBar android:id="@id/progress_bar" android:layout_centerInParent="true" style="@style/Sphinx.ProgressBar" />
+    <com.sonymobile.scan3d.widgets.VerticalSeekBar android:layout_gravity="center_horizontal" android:id="@id/focusAdjust" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="8.0dip" android:max="100" android:progress="0" android:layout_below="@id/close_button" android:layout_marginHorizontal="16.0dip" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/action_menu_color_states" android:tag="layout/component_sharing_bar_item_0" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" android:drawableTint="@color/action_menu_color_states" style="@style/BottomBar.TextView"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

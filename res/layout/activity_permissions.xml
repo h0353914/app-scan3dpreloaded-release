@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/permission_activity_margin_start_end" android:layout_marginEnd="@dimen/permission_activity_margin_start_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/permission_activity_title_margin_top" android:text="@string/permission_activity_title" android:layout_alignParentTop="true" style="@style/PermissionScreen.Title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/permissions_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/permission_activity_list_margin_top" android:layout_above="@id/change_permissions_btn" android:layout_below="@id/title" />
+    <Button android:id="@id/change_permissions_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/permission_activity_button_margin_bottom" android:text="@string/permissions_change_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingStart="@dimen/permission_activity_button_padding" android:paddingEnd="@dimen/permission_activity_button_padding" style="@style/PermissionScreen.Item.Button" />
+</RelativeLayout>

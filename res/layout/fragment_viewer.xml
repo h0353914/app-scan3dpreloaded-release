@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sonymobile.scan3d.viewer.SphanGLTextureView android:id="@id/glTextureView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/non_fullscreen_window" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="gone" layout="@layout/toolbar_end_button_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/actions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+            <FrameLayout android:id="@id/navigation_button_parent" android:background="?android:actionBarItemBackground" android:padding="@dimen/icon_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/viewer_activity_navigation_button_margin">
+                <ImageView android:layout_width="@dimen/icon_button_size" android:layout_height="@dimen/icon_button_size" android:src="@drawable/ic_arrow_back_24dp" />
+            </FrameLayout>
+            <TextView android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/viewer_name" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" />
+            <include layout="@layout/webview_action_button" />
+            <FrameLayout android:id="@id/texture_knob_parent" android:background="?android:actionBarItemBackground" android:padding="@dimen/icon_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/viewer_activity_navigation_button_margin">
+                <ToggleButton android:id="@id/texture_knob" android:background="@drawable/visibility_knob" android:clickable="false" android:layout_width="@dimen/icon_button_size" android:layout_height="@dimen/icon_button_size" android:checked="false" android:textOn="@null" android:textOff="@null" android:contentDescription="@string/accessibility_texture_button" />
+            </FrameLayout>
+            <include layout="@layout/animation_action_button" />
+            <FrameLayout android:id="@id/overflow_menu_parent" android:background="?android:actionBarItemBackground" android:padding="@dimen/icon_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/viewer_activity_navigation_button_margin">
+                <ImageView android:layout_width="@dimen/icon_button_size" android:layout_height="@dimen/icon_button_size" android:src="@drawable/ic_overflow_24dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/rotate_glass_print_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="66.0dip" android:text="@string/glass_print_rotate_hint" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <FrameLayout android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.sonymobile.scan3d.viewer.HintView android:id="@id/hint_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/actions" />
+    </RelativeLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="150.0dip" layout="@layout/snackbar_permissions_layout" />
+</FrameLayout>

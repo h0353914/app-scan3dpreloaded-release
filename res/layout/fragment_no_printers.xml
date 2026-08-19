@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/no_supported_printer" android:adjustViewBounds="true" />
+    <ScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/wizard_item_double_padding" android:paddingEnd="@dimen/wizard_item_double_padding">
+            <TextView android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wizard_item_text_margin_top" android:text="@string/print_3rd_party_plugins_no_apps_title" style="@style/WizardItem.Title" />
+            <TextView android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wizard_item_text_margin_top" android:text="@string/print_3rd_party_plugins_no_apps_descr" style="@style/WizardItem.Description" />
+            <Button android:textColor="@android:color/black" android:layout_gravity="center|bottom" android:id="@id/btn_action" android:background="@drawable/editor_action_ripple" android:padding="@dimen/start_stop_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/button_in_text_margin_top" android:minWidth="@dimen/tip_dialog_button_min_width" android:text="@string/share_as_file_title" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

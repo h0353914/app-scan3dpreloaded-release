@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/preference_devsettings_title" app:allowDividerAbove="false" app:allowDividerBelow="false" app:iconSpaceReserved="false">
+        <Preference android:title="@string/show_system_settings" android:key="@string/pref_key_settings" android:summary="@string/show_system_settings_descr" app:iconSpaceReserved="false" />
+        <ListPreference android:entries="@array/focus_entries" android:title="@string/pref_focus_type" android:key="@string/pref_key_focus_type" android:summary="@string/pref_focus_type_summary" android:defaultValue="@string/focus_type_setting" android:entryValues="@array/focus_entries" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/pref_use_debug_buttons" android:key="@string/pref_key_debug_buttons_enabled" android:summary="@string/pref_use_debug_buttons_summary" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/pref_use_lamp" android:key="@string/pref_key_use_lamp" android:summary="@string/pref_use_lamp_summary" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/pref_edge_enhancement" android:key="@string/pref_key_edge_enhancement" android:summary="@string/pref_edge_enhancement_summary" android:defaultValue="@bool/edge_enhancement_setting" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/pref_noise_reduction" android:key="@string/pref_key_noise_reduction" android:summary="@string/pref_noise_reduction_summary" android:defaultValue="@bool/noise_reduction_setting" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/pref_awb_lock" android:key="@string/pref_key_awb_lock" android:summary="@string/pref_awb_lock_summary" android:defaultValue="@bool/awb_lock_setting" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/pref_clear_prefs_title" android:key="@string/pref_key_clear_preferences" android:summary="@string/pref_clear_prefs_summary" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/pref_restore_prefs_title" android:key="@string/pref_key_restore_preferences" android:summary="@string/pref_restore_prefs_summary" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

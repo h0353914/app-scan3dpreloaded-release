@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="face_mimic_first_time_text_size">20.0sp</dimen>
+    <dimen name="face_mimic_focus_frame">200.0dip</dimen>
+    <item type="dimen" name="face_mimic_focus_frame_bias">0.5</item>
+    <dimen name="face_mimic_preview_spacing">32.0dip</dimen>
+</resources>

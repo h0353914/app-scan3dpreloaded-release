@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">ساعدنا على تحسين محرك المسح الضوئي للمنشئ ثلاثي الأبعاد من خلال تزويد Sony Mobile بأي بيانات صور من عمليات البحث الضوئي . سيتم تحميل البيانات عبر WLAN فقط وستتم إزالتها من خوادمنا بعد 90 يومًا. يمكنك سحبها في أي وقت عبر إعدادات النسخ الاحتياطي والمزامنة</string>
+    <string name="dialog_data_traffic_body">يحتاج منشئ ثلاثي الأبعاد إلى الوصول إلى بيانات الهاتف المحمول وWLAN للمتابعة</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">المزامنة عبر WLAN فقط</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN فقط</string>
+    <string name="post_process_privacy_description">سيتم تحميل المسح الضوئي وبيانات الصور الإضافية إلى الخوادم لدينا من أجل تحسين النموذج. سيتم تحميل البيانات عبر شبكة WLAN فقط مع العلم أنه ستتم إزالتها من الخوادم لدينا بعد مرور 90 يومًا.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">قم بالتوصيل بشبكة WLAN لتحسين نموذجك</string>
+    <string name="viewer_hint_improve_promo_description">"سنقوم بتحميل هذا النموذج وبيانات صور إضافية إلى الخوادم لدينا عبر ‏WLAN.
+
+نظرًا لمقدار المساحة التي تشغلها بيانات الصور الإضافية على جهازك، فسيتم حفظ بيانات آخر خمس عمليات مسح ضوئي. ولن يمكن تحسين النماذج الأقدم."</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">ನಿಮ್ಮ ಸ್ಕ್ಯಾನ್‌ಗಳ ಚಿತ್ರ ಡೇಟಾವನ್ನು Sony Mobile ಗೆ ಒದಗಿಸುವ ಮೂಲಕ 3D ಕ್ರಿಯೇಟರ್‌ನ ಸ್ಕ್ಯಾನಿಂಗ್ ಸುಧಾರಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡಿ. ಡೇಟಾವನ್ನು WLAN ಮೂಲಕ ಮಾತ್ರ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ ಮತ್ತು 90 ದಿನಗಳ ನಂತರ ಸರ್ವರ್‌ಗಳಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ. ಬ್ಯಾಕಪ್ ಮತ್ತು ಸಿಂಕ್ ಸಂಯೋಜನೆಗಳ ಮೂಲಕ ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನೀವು ಹೊರಗುಳಿಯಬಹುದು</string>
+    <string name="dialog_data_traffic_body">ಮುಂದುವರಿಯಲು WLAN ಮತ್ತು ಮೊಬೈಲ್ ಡೇಟಾಗೆ 3D ಕ್ರಿಯೇಟರ್ ಪ್ರವೇಶಿಸಬೇಕಾಗುತ್ತದೆ</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">WLAN ನಲ್ಲಿ ಮಾತ್ರ ಸಿಂಕ್ ಮಾಡಿ</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN ಮಾತ್ರ</string>
+    <string name="post_process_privacy_description">ನಿಮ್ಮ ಮಾದರಿಯನ್ನು ಸುಧಾರಿಸಲು ನಿಮ್ಮ ಸ್ಕ್ಯಾನ್ ಮತ್ತು ಹೆಚ್ಚುವರಿ ಚಿತ್ರ ಡೇಟಾವನ್ನು ನಮ್ಮ ಸರ್ವರ್‍‌ಗಳಿಗೆ ಅಪ್‍‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ. ಡೇಟಾವನ್ನು WLAN ಮೂಲಕ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ ಮತ್ತು 90 ದಿನಗಳ ನಂತರ ನಮ್ಮ ಸರ್ವರ್‌ಗಳಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">ನಿಮ್ಮ ಮಾದರಿ ಸುಧಾರಿಸಲು WLAN ಗೆ ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="viewer_hint_improve_promo_description">"ನಾವು ಈ ಮಾದರಿ ಮತ್ತು ಹೆಚ್ಚುವರಿ ಚಿತ್ರ ಡೇಟಾವನ್ನು WLAN ಮೂಲಕ ನಮ್ಮ ಸರ್ವರ್‌ಗಳಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡುತ್ತೇವೆ.
+
+ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಚಿತ್ರ ಡೇಟಾ ಬಳಸುವ ಸ್ಥಳದ ಪ್ರಮಾಣದ ಕಾರಣದಿಂದ, ಐದು ಇತ್ತೀಚಿನ ಸ್ಕ್ಯಾನ್‌ಗಳ ಡೇಟಾವನ್ನು ಮಾತ್ರ ಉಳಿಸಲಾಗಿದೆ. ಹಳೆಯ ಮಾದರಿಗಳನ್ನು ಸುಧಾರಿಸಲಾಗುವುದಿಲ್ಲ."</string>
+</resources>

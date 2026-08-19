@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Sony Mobile қызметіне сканерлеу нәтижелерінен алынған кескін деректерін қамтамасыз ету арқылы 3D Creator қолданбасының сканерлеу жүйесін жақсартуға көмектесіңіз. Деректер тек WLAN арқылы кері жүктеледі және серверлерімізден 90 күннен кейін жойылады. «Қосалқы көшірме жасау және синхрондау параметрлері» арқылы кез келген уақытта бас тарта аласыз</string>
+    <string name="dialog_data_traffic_body">Жалғастыру үшін 3D Creator WLAN және мобильді деректерге қатынасуы керек</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Тек WLAN арқылы синхрондау</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Тек WLAN</string>
+    <string name="post_process_privacy_description">Моделіңізді жақсарту үшін сканерлеу нәтижесі және қосымша кескін деректері серверлерімізге жүктеп салынады. Деректер тек WLAN арқылы жүктеп салынады және серверлерімізден 90 күннен кейін жойылады.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Үлгіні жақсарту үшін WLAN желісіне қосылыңыз</string>
+    <string name="viewer_hint_improve_promo_description">"Бұл модель және қосымша кескін деректері серверлерімізге WLAN арқылы жүктеп салынады.
+
+Қосымша кескін деректері құрылғыңызда алатын кеңістік мөлшеріне байланысты тек соңғы бес сканерлеудің деректері сақталады. Ескірек модельдерді жақсарту мүмкін емес."</string>
+</resources>

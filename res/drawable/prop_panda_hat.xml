@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="30.0dip" android:width="30.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/animation_item_selector" android:pathData="M15,11.93a0.77 0.77 ,0,1,0,0.76 0.77 A0.76 0.76 ,0,0,0,15,11.93Z" />
+    <path android:fillColor="@color/animation_item_selector" android:pathData="M9,11.93a0.77 0.77 ,0,1,0,0.76 0.77 A0.76 0.76 ,0,0,0,9,11.93Z" />
+    <path android:fillColor="@color/animation_item_selector" android:pathData="M22.51,7.35a3.36,3.36,0,0,0-6.71,0h0a9,9,0,0,0-7.37,0h0a3.36,3.36,0,1,0-3.84,3.29,9,9,0,0,0-0.28,9.41l0.18 0.32 0.34-0.16a18,18,0,0,1,7.27-1.47c4.86,0,7.18,1.48,7.21,1.5l0.35 0.23 0.21-0.37a9,9,0,0,0-0.25-9.46A3.34,3.34,0,0,0,22.51,7.35ZM7.25,14.85a2.51,2.51,0,0,1,0-3.53,2.51,2.51,0,0,1,3.49-0.55,2.52,2.52,0,0,1,0.05,3.53A2.51,2.51,0,0,1,7.25,14.85Zm4.68,2.08c-0.53,0-0.95-0.28-0.95-0.63s0.42-0.63 0.95 -0.63 0.94 0.28 0.94 0.63S12.45,16.93,11.93,16.93Zm4.82-2.08a2.51,2.51,0,0,1-3.49-0.55,2.52,2.52,0,0,1,0.05-3.53,2.51,2.51,0,0,1,3.49 0.55 A2.51,2.51,0,0,1,16.75,14.85Z" />
+</vector>

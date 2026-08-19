@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Aiutaci a migliorare il motore di scansione di Creazione 3D fornendo a Sony Mobile immagini delle tue scansioni. I dati possono essere caricati solo tramite WLAN e saranno eliminati dai nostri server dopo 90 giorni. Puoi disattivare questa scelta in qualsiasi momento dalle impostazioni di backup e sincronizzazione</string>
+    <string name="dialog_data_traffic_body">"Creazione 3D richiede l'accesso ai dati WLAN e al traffico dati per continuare"</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sincronizza solo tramite WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Solo WLAN</string>
+    <string name="post_process_privacy_description">La scansione e altri dati sulle immagini verranno caricati nei nostri server per migliorare il modello. I dati verranno caricati solo tramite WLAN e verranno rimossi dai nostri server dopo 90 giorni.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Connettiti a una rete WLAN per migliorare il modello</string>
+    <string name="viewer_hint_improve_promo_description">"Caricheremo questo modello e altri dati sulle immagini nei nostri server tramite WLAN.
+
+A causa della quantità di spazio che le immagini aggiuntive occupano nel dispositivo, verranno salvati solo i dati relativi alle ultime cinque scansioni. I modelli precedenti non possono essere migliorati."</string>
+</resources>

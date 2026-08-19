@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/non_fullscreen_window" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Toolbar android:id="@id/toolbar" android:contentDescription="@string/accessibility_back_button" android:navigationIcon="@drawable/ic_arrow_back_24dp" style="@style/Toolbar">
+            <Button android:textColor="@android:color/white" android:layout_gravity="end|center" android:id="@id/end_action" android:background="@drawable/white_icon_ripple" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/viewer_activity_scan_bar_padding_start" android:paddingEnd="@dimen/viewer_activity_scan_bar_padding_start" style="@android:style/Widget.Material.Button.Borderless" />
+        </Toolbar>
+        <com.sonymobile.scan3d.viewer.BlenderGLTextureView android:layout_gravity="bottom" android:id="@id/glTextureView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_result_container" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/view_result_container" android:background="@android:color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_above="@id/bottom_bar" android:paddingStart="16.0dip" android:paddingEnd="8.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/view_result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_blend_video_created" android:layout_centerVertical="true" android:fontFamily="Roboto" android:layout_alignParentStart="true" />
+            <Button android:textColor="@color/primary_color_light" android:id="@id/view_result" android:background="@drawable/white_icon_ripple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_blend_view_video" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@android:style/Widget.Material.Button.Borderless" />
+        </RelativeLayout>
+        <include layout="@layout/snackbar_permissions_layout" />
+        <FrameLayout android:id="@id/bottom_bar" android:background="#ff212121" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <TextView android:gravity="center" android:id="@id/creating_video" android:background="@android:color/black" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/bottom_bar" android:layout_alignBottom="@id/bottom_bar" />
+        <ProgressBar android:id="@id/save_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" android:max="100" android:indeterminate="false" android:layout_above="@id/bottom_bar" style="?android:progressBarStyleHorizontal" />
+        <include layout="@layout/faceblend_save_as_layout" />
+    </RelativeLayout>
+</FrameLayout>

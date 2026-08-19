@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Sony Mobile को अपने स्कैन का छवि डेटा देकर 3D क्रिएटर को बेहतर बनाने में हमारी सहायता करें. डेटा केवल WLAN के माध्यम से अपलोड किया जाएगा और 90 दिन बाद हमारे सर्वर से निकाल दिया जाएगा. आप बैकअप और सिंक सेटिंग द्वारा कभी भी ऑप्ट-आउट कर सकते हैं</string>
+    <string name="dialog_data_traffic_body">3D क्रिएटर को आगे बढ़ने के लिए WLAN और मोबाइल डेटा के एक्‍सेस की आवश्‍यकता होती है</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">केवल WLAN पर ही सिंक करें</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">केवल WLAN</string>
+    <string name="post_process_privacy_description">आपके मॉडल में सुधार करने के लिए आपके स्कैन को और अतिरिक्त छवि डेटा को हमारे सर्वरों पर अपलोड किया जाएगा। डेटा केवल WLAN द्वारा अपलोड किया जाएगा और 90 दिनों बाद हमारे सर्वरों से हटा दिया जाएगा।</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">अपने मॉडल को बेहतर बनाने के लिए WLAN से कनेक्ट करें</string>
+    <string name="viewer_hint_improve_promo_description">"हम WLAN द्वारा अपने सर्वरों पर यह मॉडल और अतिरिक्त छवि डेटा अपलोड करेंगे।
+
+आपके डिवाइस में अतिरिक्त छवि डेटा द्वारा जगह लिए जाने के कारण, केवल पाँच नए स्कैन से डेटा सहेजा जाता है। पुराने मॉडलों में सुधार नहीं किया जा सकता है।"</string>
+</resources>

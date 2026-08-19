@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="wrap_content" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <com.sonymobile.scan3d.ViewPagerNavigation android:padding="@dimen/error_dialog_navigation_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sonymobile.scan3d.ViewPagerIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="end" android:id="@id/end_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/error_dialog_button_text_size" android:textColor="@color/primary_color_light" android:id="@id/button_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/error_dialog_button_max_width" android:text="@string/dialog_environment_warning_continue" android:layout_marginEnd="@dimen/error_dialog_navigation_button_spacing" style="?android:borderlessButtonStyle" />
+            <Button android:textSize="@dimen/error_dialog_button_text_size" android:textColor="@color/primary_color_light" android:id="@id/button_new_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/error_dialog_button_max_width" android:text="@string/dialog_environment_warning_new_scan" style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+    </com.sonymobile.scan3d.ViewPagerNavigation>
+</LinearLayout>

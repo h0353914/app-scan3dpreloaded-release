@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:animateLayoutChanges="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="start|top" android:id="@id/text_hint_improvement" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/HintTextView.Description" />
+    <LinearLayout android:layout_gravity="end|bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/primary_color_light" android:layout_gravity="end" android:id="@id/button_hint_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" style="?android:borderlessButtonStyle" />
+        <Button android:textSize="14.0sp" android:textColor="@color/primary_color_light" android:layout_gravity="end" android:id="@id/button_hint_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</FrameLayout>

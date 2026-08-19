@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen android:title="@string/title_license_boost" android:key="@string/pref_key_boost" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_ceres_solver" android:key="@string/pref_key_ceres_solver" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_dlib" android:key="@string/pref_key_dlib" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_eigen" android:key="@string/pref_key_eigen" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_jpeg" android:key="@string/pref_key_jpeg" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_loki" android:key="@string/pref_key_loki" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_lua" android:key="@string/pref_key_lua" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_mindroid" android:key="@string/pref_key_mindroid" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_minizip" android:key="@string/pref_key_minizip" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_opencv" android:key="@string/pref_key_opencv" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_pugixml" android:key="@string/pref_key_pugixml" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_xmltojson" android:key="@string/pref_key_xmltojson" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:title="@string/title_license_poly2tri" android:key="@string/pref_key_poly2tri" app:iconSpaceReserved="false" />
+</PreferenceScreen>

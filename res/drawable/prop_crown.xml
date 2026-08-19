@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="30.0dip" android:width="30.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/animation_item_selector" android:pathData="M16.5,11.5l-4.6-6l-4.5,6L1.8,7.2l1.8,7.6v3.5c0,0.1,0.1,0.2,0.2,0.2h16.2c0.1,0,0.2-0.1,0.2-0.2v-3.5l2-7.7 L16.5,11.5z" />
+    <path android:fillColor="@color/animation_item_selector" android:pathData="M7.3,11l1.5-1.9L7.1,7L5.3,9.4L7.3,11z" />
+    <path android:fillColor="@color/animation_item_selector" android:pathData="M18.6,9.4L16.8,7l-1.7,2.1l1.5,1.9L18.6,9.4z" />
+</vector>

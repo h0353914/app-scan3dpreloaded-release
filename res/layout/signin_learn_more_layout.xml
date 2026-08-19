@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/fullscreen_primary_color_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar android:id="@id/toolbar" android:background="@color/fullscreen_primary_color_bg" android:elevation="0.0dip" android:navigationIcon="@drawable/ic_arrow_back_24dp_black" android:navigationContentDescription="@string/accessibility_back_button" style="@style/Toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:paddingBottom="@dimen/sign_in_scrollview_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sign_in_padding" android:paddingEnd="@dimen/sign_in_padding">
+            <TextView android:gravity="start" android:layout_gravity="start" android:paddingBottom="@dimen/sign_in_padding" android:text="@string/storage_service_signin_learn_more_title_txt" style="@style/AuthenticationText.Title" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:text="@string/storage_service_signin_learn_more_workaround_notifications_txt" style="@style/AuthenticationText.Description" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:text="@string/storage_service_signin_learn_more_workaround_activate_google_drive_txt" style="@style/AuthenticationText.Description" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:text="@string/storage_service_signin_learn_more_workaround_update_gsm_txt" style="@style/AuthenticationText.Description" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:text="@string/storage_service_signin_learn_more_workaround_clear_gsm_txt" style="@style/AuthenticationText.Description" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:text="@string/storage_service_signin_learn_more_workaround_restart_txt" style="@style/AuthenticationText.Description" />
+            <TextView android:gravity="start" android:autoLink="web" android:layout_gravity="start" android:id="@id/learn_more_support_forum_link" android:paddingTop="@dimen/sign_in_padding" style="@style/AuthenticationText.Description" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

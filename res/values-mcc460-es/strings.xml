@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Ayúdenos a mejorar el motor de escaneado de 3D Creator al proporcionar a Sony Mobile los datos de imagen de sus escaneados. Los datos se cargarán solamente por WLAN y se eliminarán de nuestros servidores después de 90 días. Puede anularlo en cualquier momento desde los ajustes de Respaldo y sincronización</string>
+    <string name="dialog_data_traffic_body">Creador 3D necesita acceder a WLAN y a los datos móviles para continuar</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sincronizar solo por WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Solo WLAN</string>
+    <string name="post_process_privacy_description">Los datos de su escaneado y de imagen adicional se actualizarán en nuestros servidores para mejorar su modelo. Los datos se cargarán solamente por WLAN y se eliminarán de nuestros servidores después de 90 días.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Conéctese a WLAN para poder mejorar su modelo</string>
+    <string name="viewer_hint_improve_promo_description">"Cargaremos este modelo y datos adicionales de la imagen en nuestros servidores mediante WLAN.
+
+Debido a la cantidad de espacio que consumen los datos adicionales de la imagen en su dispositivo, solo se guardan los cinco escaneados más recientes. Los modelos anteriores no se pueden mejorar."</string>
+</resources>

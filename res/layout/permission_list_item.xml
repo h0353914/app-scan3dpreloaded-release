@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/permission_list_item_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/permission_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/permission_list_item_icon_margin_end" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/permission_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/permission_list_item_title_space" style="@style/PermissionScreen.Item.Title" />
+        <TextView android:id="@id/permission_description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PermissionScreen.Item" />
+    </LinearLayout>
+</LinearLayout>

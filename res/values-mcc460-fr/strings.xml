@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Aidez-nous à améliorer le moteur de numérisation de Générateur 3D en fournissant à Sony Mobile des images de vos numérisations. Les données seront transférées uniquement par WLAN et supprimées de nos serveurs au bout de 90 jours. Vous pouvez à tout moment vous désabonner via les réglages de sauvegarde et de synchronisation</string>
+    <string name="dialog_data_traffic_body">Le Générateur 3D doit avoir accès au WLAN et aux données mobiles pour continuer</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Synchroniser par WLAN uniquement</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN uniquement</string>
+    <string name="post_process_privacy_description">"Votre numérisation et les données d'images supplémentaires seront transférées sur nos serveurs pour améliorer votre modèle. Les données seront transférées par WLAN uniquement et supprimées de nos serveurs au bout de 90 jours."</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Connexion au WLAN pour améliorer votre modèle</string>
+    <string name="viewer_hint_improve_promo_description">"Ce modèle et les données d'images supplémentaires seront transférés sur nos serveurs via WLAN.
+
+En raison de l'espace occupé sur votre appareil par les données d'images supplémentaires, seules les données des cinq dernières numérisations sont enregistrées. Les modèles antérieurs ne peuvent pas être améliorés."</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cardview_margin_top_bottom" android:layout_marginBottom="@dimen/cardview_margin_top_bottom" android:foreground="@drawable/card_ripple" android:layout_marginStart="@dimen/cardview_margin_start_end" android:layout_marginEnd="@dimen/cardview_margin_start_end" card_view:cardCornerRadius="@dimen/cardview_default_radius" card_view:cardElevation="@dimen/cardview_default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/cardview_info_text" android:textColor="@android:color/black" android:id="@id/info_title" android:background="#fffbb74f" android:padding="@dimen/cardview_info_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Toolbar.Share" />
+    <com.sonymobile.scan3d.viewer.sharing.SlidingTabLayout android:id="@id/tab_layout" android:background="@color/toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:paddingTop="@dimen/sharing_viewpager_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_layout" />
+</RelativeLayout>

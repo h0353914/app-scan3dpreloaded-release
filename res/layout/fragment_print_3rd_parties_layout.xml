@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/toolbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Toolbar android:id="@id/toolbar" android:title="@string/print_customization_title" style="@style/Toolbar" />
+    </RelativeLayout>
+    <TextView android:id="@id/height_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/print_customization_large_spacing" android:text="@string/print_customization_height_title" android:layout_below="@id/toolbar_layout" android:layout_marginStart="@dimen/print_customization_large_spacing" android:layout_marginEnd="@dimen/print_customization_standard_spacing" style="@style/PrintCustomization.Title" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sizes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/height_title" android:layout_marginStart="@dimen/print_customization_large_spacing" android:layout_marginEnd="@dimen/print_customization_large_spacing">
+        <Button android:textColor="@android:color/black" android:id="@id/size_small" android:layout_width="0.0dip" android:layout_height="@dimen/print_customization_button_height" android:text="@string/print_3rd_party_plugins_height_small" android:layout_weight="1.0" android:backgroundTint="@color/height_selection_background" style="@style/PrintCustomization" />
+        <Button android:textColor="@android:color/black" android:id="@id/size_medium" android:layout_width="0.0dip" android:layout_height="@dimen/print_customization_button_height" android:text="@string/print_3rd_party_plugins_height_medium" android:layout_weight="1.0" android:backgroundTint="@color/height_selection_background" style="@style/PrintCustomization" />
+        <Button android:textColor="@android:color/black" android:id="@id/size_large" android:layout_width="0.0dip" android:layout_height="@dimen/print_customization_button_height" android:text="@string/print_3rd_party_plugins_height_large" android:layout_weight="1.0" android:backgroundTint="@color/height_selection_background" style="@style/PrintCustomization" />
+    </LinearLayout>
+    <TextView android:id="@id/list_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/print_customization_large_spacing" android:text="@string/print_select_howto_print" android:layout_below="@id/sizes" android:layout_marginStart="@dimen/print_customization_large_spacing" android:layout_marginEnd="@dimen/print_customization_standard_spacing" style="@style/PrintCustomization.Title" />
+    <ListView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/list_title" android:layout_marginStart="@dimen/print_customization_large_spacing" />
+</RelativeLayout>

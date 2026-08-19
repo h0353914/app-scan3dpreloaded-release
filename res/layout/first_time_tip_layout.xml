@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextureView android:id="@id/texture_view" android:background="@null" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="W,1:1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/texture_view" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ScrollView android:id="@id/bullet_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/bulletpoints" android:background="@android:color/transparent" android:paddingTop="@dimen/first_time_text_description_margin_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="false" android:paddingStart="@dimen/first_time_text_area_padding_start" android:paddingEnd="@dimen/first_time_text_area_padding_end" />
+        </ScrollView>
+        <FrameLayout android:id="@id/info_container" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" android:paddingStart="@dimen/first_time_text_area_padding_start" android:paddingEnd="@dimen/first_time_text_area_padding_end">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/title_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SphinxAppTheme.Tutorial.Title" />
+                <TextView android:id="@id/description_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/first_time_text_description_margin_top" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/first_time_footer_margin_top" android:layout_weight="0.0">
+            <TextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/additional_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginBottom="@dimen/first_time_text_additional_video_margin_top" android:drawablePadding="@dimen/first_time_text_additional_video_drawable_padding" android:drawableStart="@drawable/youtube_play_icon" android:paddingStart="@dimen/first_time_text_area_padding_start" android:paddingEnd="@dimen/first_time_text_area_padding_end" style="@style/SphinxAppTheme.Tutorial.AdditionalVideoText" />
+            <Button android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/button_start_scan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/first_time_button_margin_bottom" android:text="@string/start_scan" android:onClick="onStartTutorialScan" android:backgroundTint="@color/primary_color_light" />
+            <com.sonymobile.scan3d.storageservice.ui.gallery.wizard.PagerIndicator android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

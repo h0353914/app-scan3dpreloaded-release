@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Aidake meil 3D-looja skannimismootorit parandada, pakkudes Sony Mobile’ile oma skannide andmeid. Andmeid laaditakse üles ainult WLAN kaudu ja need eemaldatakse meie serveritest 90 päeva möödudes. Saate sellest igal ajal loobuda varundamise ja sünkroonimise seadetes</string>
+    <string name="dialog_data_traffic_body">3D-looja vajab jätkamiseks juurdepääsu WLAN-le ja mobiilsideandmetele</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sünkrooni ainult WLAN kaudu</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Ainult WLAN</string>
+    <string name="post_process_privacy_description">Võite skannida ja täiendavad pildiandmed laaditakse teie mudeli parendamiseks üles meie serveritesse. Andmed laaditakse üles ainult WLAN kaudu ja eemaldatakse meie serveritest 90 päeva möödumisel.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Mudeli täiustamiseks looge ühendus WLAN võrguga</string>
+    <string name="viewer_hint_improve_promo_description">"Laadime selle mudeli ja täiendavad pildiandmed WLAN kaudu meie serveritesse.
+
+Seoses salvestusruumi mahuga, mida täiendavad pildiandmed teie seadmes enda alla võtavad, salvestatakse ainult viimase viie skannimise andmed. Vanemaid mudeleid pole võimalik parendada."</string>
+</resources>

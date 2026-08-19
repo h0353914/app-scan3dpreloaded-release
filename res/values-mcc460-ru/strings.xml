@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Помогите нам улучшить средство создания 3D-моделей, предоставив Sony Mobile изображения ваших сканов. Данные будут загружаться только по сети WLAN и будут удалены с серверов компании через 90 дней. Вы можете в любое время отказаться от участия в программе в настройках резервного копирования и синхронизации</string>
+    <string name="dialog_data_traffic_body">Для продолжения средству создания 3D-моделей необходим доступ к сети WLAN и мобильным данным</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Синхронизация только через WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Только через WLAN</string>
+    <string name="post_process_privacy_description">Сканирование и дополнительные данные изображения будут загружены на наши серверы для улучшения модели. Данные будут загружены только с помощью WLAN и будут удалены с серверов через 90 дней.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Для улучшения модели подключитесь к WLAN</string>
+    <string name="viewer_hint_improve_promo_description">"Мы загрузим эту модель и дополнительные данные изображения на наши серверы через WLAN.
+
+Из-за объема памяти устройства, используемого для дополнительных данных изображений, сохраняются данные только пяти последних сканирований. Более старые модели улучшить нельзя."</string>
+</resources>

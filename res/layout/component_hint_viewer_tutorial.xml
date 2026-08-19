@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="start" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/dialog_viewer_tutorial_pinch" android:drawablePadding="24.0dip" android:drawableStart="@drawable/ges_pinch" style="@style/HintTextView" />
+    <TextView android:gravity="start" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/dialog_viewer_tutorial_rotate" android:drawablePadding="24.0dip" android:drawableStart="@drawable/ges_1_free_drag" style="@style/HintTextView" />
+    <Button android:textSize="14.0sp" android:textColor="@color/primary_color_light" android:layout_gravity="end" android:id="@id/got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_tutorial_accept_button" style="?android:borderlessButtonStyle" />
+</LinearLayout>

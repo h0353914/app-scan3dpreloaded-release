@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TipCategories>
+    <TipCategory screenEvent="@string/screen_event_tips_short">
+        <Tip dialogPositiveButton="@android:string/ok" scanType="0,1,0x101,0x200" shortDesc="@string/tips_short_env_movement_short_desc" />
+        <Tip dialogPositiveButton="@android:string/ok" scanPolicy="4" scanType="0,1,0x100,0x101,0x200" shortDesc="@string/tips_short_lens_short_desc" />
+        <Tip dialogPositiveButton="@android:string/ok" scanType="0x00000101" shortDesc="@string/tips_short_face_scan_suggestion_short_desc" />
+        <Tip dialogPositiveAction="@string/tip_dialog_action_open_share" dialogPositiveButton="@string/tip_dialog_button_learn_more" keptScanOnly="true" scanPolicy="4" scanType="0,1,0x100,0x101,0x200" shortDesc="@string/tips_short_share_short_desc" />
+        <Tip dialogPositiveAction="@string/tip_dialog_action_open_share" dialogPositiveButton="@string/tip_dialog_button_learn_more" keptScanOnly="true" scanType="0,1,0x101,0x200" shortDesc="@string/tips_short_wallpaper_short_desc" />
+        <Tip dialogPositiveButton="@android:string/ok" scanPolicy="4" shortDesc="@string/tips_short_selfie_eyes_short_desc" />
+    </TipCategory>
+</TipCategories>

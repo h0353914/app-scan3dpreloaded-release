@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/no_adv_share_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/radiobutton_top_margin">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/no_adv_sharing" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_marginStart="@dimen/adv_sharing_radio_button_margin_start" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/adv_sharing_radio_button_title_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_advanced_option_height_normal_map_title" android:layout_marginStart="@dimen/adv_sharing_radio_button_title_margin" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/adv_sharing_radio_button_desc_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_advanced_option_height_normal_map_text" android:layout_marginStart="@dimen/adv_shar_descr_text_margin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/adv_sharing_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/radiobutton_top_margin">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/adv_sharing" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/adv_sharing_radio_button_margin_start" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/adv_sharing_radio_button_title_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_advanced_option_tessellated_mesh_title" android:layout_marginStart="@dimen/adv_sharing_radio_button_title_margin" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/adv_sharing_radio_button_desc_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_advanced_option_tessellated_mesh_text" android:layout_marginStart="@dimen/adv_shar_descr_text_margin" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

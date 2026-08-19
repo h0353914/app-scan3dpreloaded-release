@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Palīdziet mums uzlabot 3D Creator skenēšanas programmu, ļaujot Sony Mobile izmantot jūsu skenēšanas attēlu datus. Dati tiks augšupielādēti, izmantojot WLAN tīklu, un tie tiks dzēsti mūsu serverī pēc 90 dienām. Jūs varat atteikties jebkurā laikā, izmantojot dublēšanas un sinhronizācijas iestatījumus.</string>
+    <string name="dialog_data_traffic_body">3D izveidotājam vajadzīga piekļuve WLAN un mobilajiem datiem, lai turpinātu darbību</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Sinhronizēt var tikai WLAN tīklā</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Tikai WLAN tīklā</string>
+    <string name="post_process_privacy_description">Jūsu skenējuma un papildu attēla dati tiks augšupielādēti mūsu serveros, lai uzlabotu jūsu modeli. Dati tiks augšupielādēti, izmantojot tikai WLAN, un tiks noņemti no mūsu serveriem pēc 90 dienām.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Lai uzlabotu modeli, izveidojiet savienojumu ar WLAN</string>
+    <string name="viewer_hint_improve_promo_description">"Šo modeli un papildu attēla datus mēs augšupielādēsim savos serveros, izmantojot WLAN.
+
+Tā kā papildu attēla dati jūsu ierīcē aizņem daudz vietas, tiek saglabāti tikai pēdējo piecu skenējumu dati. Vecākus modeļus nevar uzlabot."</string>
+</resources>

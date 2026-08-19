@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="16.0sp" android:textColor="@android:color/black" android:padding="@dimen/start_stop_button_padding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/start_stop_button_margin_bottom" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/start_stop_button_margin_end" android:layout_alignParentEnd="true" android:backgroundTint="@color/primary_color_light"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

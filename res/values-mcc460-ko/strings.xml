@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">스캔한 이미지 데이터를 제공해 주시면 Sony Mobile 3D 생성기의 스캔 엔진 향상에 큰 도움이 됩니다. 데이터는 WLAN로만 업로드할 수 있고 90일 후 서버에서 제거됩니다. 백업 및 동기화 설정을 통해 언제든지 참여를 취소하실 수 있습니다.</string>
+    <string name="dialog_data_traffic_body">3D 생성기를 사용하려면 WLAN 및 모바일 데이터에 접속할 수 있어야 함</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">WLAN를 통해서만 동기화</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN 전용</string>
+    <string name="post_process_privacy_description">모델 향상을 위해 스캔 및 추가 이미지 데이터가 서버에 업로드됩니다. 이 데이터는 WLAN를 통해서만 업로드되며 90일 이후에는 서버에서 제거됩니다.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">모델을 개선하려면 WLAN에 연결해야 함</string>
+    <string name="viewer_hint_improve_promo_description">"이 모델과 추가 이미지 데이터는 WLAN를 통해 서버에 업로드됩니다.
+
+기기에서 추가 이미지 데이터가 차지하는 저장 공간으로 인해 최근 5개 스캔의 데이터만 저장되며 이전 모델은 향상되지 않습니다."</string>
+</resources>

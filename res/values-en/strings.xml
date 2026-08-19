@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_dialog_privacy">"By signing in, you accept that Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to back up your content. Sony Mobile will handle your data according to our &lt;a href='%2$s'>Privacy Policy&lt;/a>."</string>
+    <string name="about_dialog_privacy_labs">"By signing in, you accept that Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to back up your content and analyse your scans. Sony Mobile will handle your data per our &lt;a href='%2$s'>Privacy Policy&lt;/a>."</string>
+    <string name="about_open_source">Open source licences</string>
+    <string name="about_technology_point_cloud_description">Based on the camera orientation and the captured images, we create a <b>point cloud</b>. The point cloud is quite rough and only consists of points in 3D space and no colour. Based on the point cloud information, a <b>mesh</b> is created. This mesh, or \"lump of clay\", is what we will bring to the next stage of the process: the sculpting.</string>
+    <string name="about_technology_positioning_description">The first part of the scanning is the calibration step. As you circulate slowly around the object, the camera takes images of the object. The algorithm at work looks for things that stand out in the images. Anything that can be identified and saved as a feature of the object or the surrounding environment, is a <b>feature point</b>. Feature points are used to calculate where the camera is located in the room in relation to the scanned object.</string>
+    <string name="about_technology_texture_description">Lastly, the app creates the <b>texture</b>. The texture in this context refers to the colours of the object. Using a few of the images captured during the sculpting, the colours are projected onto the mesh from different perspectives.</string>
+    <string name="accessibility_back_button">Navigate Up</string>
+    <string name="accessibility_face_mimic_toggle_audio">Audio on/off</string>
+    <string name="backup_sync_monitor_done">All of your models are synced</string>
+    <string name="backup_sync_opt_in_description">"Help us to improve 3D Creator's scanning engine by providing Sony Mobile with image data from your scans. The data will be uploaded via Wi-Fi only and will be removed from our servers after 90 days. You can opt out at any time via the Backup and sync settings"</string>
+    <string name="backup_sync_opt_in_privacy">"Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to analyse your scans. Sony Mobile will handle your data according to our &lt;a href='%2$s'>Privacy Policy&lt;/a>."</string>
+    <string name="dialog_break_scanning_restart_scanning_message">"Cannot complete the scan. 
+Please start again."</string>
+    <string name="dialog_checkbox_text_dont_show_again">Don’t show this again</string>
+    <string name="dialog_note_title">Note</string>
+    <string name="dialog_scan_mode_head_scan_description">"Capture a full 360 scan of the head.
+
+Make sure you allow enough space to walk around your model."</string>
+    <string name="face_mimic_first_time_info">Look at the front camera to make the model mimic your facial expressions</string>
+    <string name="first_time_adv_calibration">"During freeform calibration, you will not be guided through the calibration movement.
+
+Make sure that you capture the object from all angles until the object is covered in points."</string>
+    <string name="first_time_face_done_description">"Now you're ready to do your first face scan."</string>
+    <string name="first_time_face_scan_environment_1">Make sure that the person you are scanning sits still.</string>
+    <string name="first_time_head_done_description">Now you are ready to do your first head scan.</string>
+    <string name="no_data_connection_description_txt">Could not upload model. Please check Internet connection.</string>
+    <string name="onboarding_create_description">"In 3D Creator, you can easily make 3D scans of people or objects using your phone's camera!"</string>
+    <string name="onboarding_share_description">"Once you've captured an object, you can print it in 3D or share it with the world."</string>
+    <string name="personal_data_item_face_scan">Face scan</string>
+    <string name="pref_camera_calib_reset_descr">If scan quality starts to decrease, then you may need to reset camera calibration. This can happen if the phone has been dropped.</string>
+    <string name="print_customization_height_large_alt">9 cm</string>
+    <string name="print_customization_material_polyjet_colour">Full-colour plastics</string>
+    <string name="print_customization_material_sandstone_colour">Sandstone multicolour</string>
+    <string name="print_customization_title">Customise</string>
+    <string name="printpreparation_unknown_fail">Something went wrong. Please try again.</string>
+    <string name="share_advanced_option_height_normal_map_text">"Recommended if you will use the model in:
+- the 3D Creator app;
+- games; or
+- 3D modelling software"</string>
+    <string name="share_set_as_wallpaper">Set your model as a live wallpaper</string>
+    <string name="storage_permissons_needed">To save a video or image, you need to grant 3D Creator storage access permission.</string>
+    <string name="storage_service_confirm_signout_message_txt">Are you sure you want to sign out? Note: All backed-up scans will be removed from this device.</string>
+    <string name="storage_service_signin_learn_more_workaround_notifications_txt">• Check whether you have received a notification instructing you to go to Settings > Accounts, and sign in there first.</string>
+    <string name="storage_service_signin_learn_more_workaround_restart_txt">• Restart your device</string>
+    <string name="tip_calibration_description_second">"Keep an even distance from the object, around 50 cm.
+
+Follow the instructions on the screen, and connect the dots as you capture the person or object.
+
+Make sure you keep the object within the circle during the entire scan."</string>
+    <string name="tip_degrade_issues_title">I used to do get scans, but the quality has got worse</string>
+    <string name="tip_hairstyles_description">"Some hairstyles may be difficult to scan. For example, ponytails or other styles where the hair isn't close to the head."</string>
+    <string name="tip_model_destroyed_title">The model looks OK, but then parts of it get damaged during sculpting</string>
+    <string name="tip_sculpting_description_first">"After the calibration has finished, we create the basic shape of the model.
+
+In the final step – sculpting – you can refine the shape of the model in real time.
+
+Move your phone slowly around the areas where you want more details. During sculpting, you can go closer to the object."</string>
+    <string name="tips_category_troubleshooting_description">Some common problems and how you can solve them</string>
+    <string name="tips_short_env_movement_short_desc">"Don't scan in an environment where there is movement in the background."</string>
+    <string name="tips_short_lens_short_desc">If your model looks blurry, it may help to clean the camera lens</string>
+    <string name="toast_message_food_tutorial_calibration_2">Move your phone to the left and downwards. Connect the dots as they appear.</string>
+    <string name="toast_message_resize_blob">If needed, adjust the size of the sphere so it covers the object</string>
+    <string name="toast_message_tutorial_calibration_1">Firstly, we analyse the object and the environment.</string>
+    <string name="toast_not_part_of_beta">Sorry, you are not part of the Beta trial programme.</string>
+    <string name="toast_warning_long_scan">Sculpting for too long might damage your scan. Please stop when the model has a smooth surface.</string>
+    <string name="toast_warning_pacman_wrong_starting_direction">Please move from the right to the left.</string>
+    <string name="toast_warning_tracking_lost"><b>Position lost</b> – Move back to the face slowly</string>
+    <string name="toast_warning_tracking_lost_food"><b>Position lost</b> – Move slowly back to your initial position</string>
+    <string name="toast_warning_tracking_lost_free_form"><b>Position lost</b> – Move back to your starting position slowly.</string>
+    <string name="unshare_complete_txt">Unsharing from %1$s has finished</string>
+    <string name="unshare_failed_txt">Unsharing of %s has failed</string>
+    <string name="upload_already_uploaded_txt">Your scan has already been uploaded to %s</string>
+    <string name="upload_complete_text">Upload to %s has finished</string>
+    <string name="upload_generic_already_active_txt">Please wait until the upload has finished</string>
+    <string name="upload_network_failure_txt">Check your network connection.</string>
+    <string name="upload_no_action_txt">"'%s' has been uploaded"</string>
+    <string name="upload_print_txt">Tap to go to check-out</string>
+    <string name="us_about_dialog_privacy">"By signing in, you accept that Sony Mobile will collect your &lt;a href='%1$s'>personal data&lt;/a> to back up your content. Sony Mobile will handle your data according to our &lt;a href='%2$s'>Privacy Policy&lt;/a> (&lt;a href='%3$s'>CA Privacy Notice&lt;/a>)."</string>
+    <string name="viewer_dialog_improve_text_applying">You will be notified when the improvements have finished</string>
+    <string name="viewer_hint_improve_promo_dismissed_description">"To improve a model, additional image data needs to be analysed. Due to the amount of space this image's data takes up on your device, only data from the last five scans will be saved. Older models cannot be improved."</string>
+    <string name="wait_until_finalize_progress">Please wait to finalise the scan</string>
+    <string name="warning_bad_loop_closure">Make sure that you keep the same distance from the object and keep it centred during calibration</string>
+    <string name="warning_uneven_light">Too much difference in light around the object.</string>
+    <string name="wizard_tip_ambient_light_description">Check lighting conditions in your environment before scanning. Soft, even light gives the best results.</string>
+    <string name="wizard_tip_ambient_light_short_desc">Soft, even lighting conditions give the best results for scanning.</string>
+    <string name="wizard_tip_be_still_description">"The person or object you're scanning needs to be still during the scan. If you are scanning a person, it is preferable that they sit down."</string>
+    <string name="wizard_tip_no_glasses_description">"Transparent objects can't be scanned."</string>
+    <string name="wizard_tip_space_description">"When scanning a head, make sure there's enough space to walk around the object while scanning.
+
+Keep the phone approximately 50 cm (20 in.) from the object."</string>
+    <string name="wizard_tip_surfaces_description">"Don't scan near large, smooth white or reflective surfaces (such as big TVs or an entirely white wall)."</string>
+</resources>

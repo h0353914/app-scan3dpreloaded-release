@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">"Help us to improve 3D Creator's scanning engine by providing Sony Mobile with image data from your scans. The data will be uploaded only via WLAN and will be removed from our servers after 90 days. You can opt out at any time via the Backup and sync settings."</string>
+</resources>

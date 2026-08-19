@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TipCategories>
+    <TipCategory screenEvent="@string/wizard_type_pager">
+        <Tip actionOnClick="@string/action_whats_new_learn_how_to_scan" backgroundColor="#ff7355c3" description="@string/card_learn_howto_scan" image="@drawable/whatsnew_tips" linkText="@string/wizard_card_button_show_me" removable="true" requiresGooglePlay="false" title="@string/gallery_wizard_card_title" />
+    </TipCategory>
+</TipCategories>

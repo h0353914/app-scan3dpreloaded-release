@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Tulungan kaming pagandahin ang scanning engine ng 3D Creator sa pamamagitan ng pagbibigay sa Sony Mobile ng data ng imahe mula sa iyong mga scan. Maa-upload lang ang data sa pamamagitan lang ng WLAN at matatanggal ito sa aming mga server makalipas ang 90 araw. Maaari kang mag-opt out anumang oras sa pamamagitan ng Mga setting ng backup at sync</string>
+    <string name="dialog_data_traffic_body">Kailangan ng 3D Creator ng access sa WLAN at mobile data para magpatuloy</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Mag-sync lang sa WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN lang</string>
+    <string name="post_process_privacy_description">Ang iyong scan at karagdagang data ng imahe ay i-a-upload sa aming mga server para pagandahin ang iyong model. Ang data ay i-a-upload lang sa pamamagitan ng WLAN at tatanggalin sa aming mga server makalipas ang 90 araw.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Kumonekta sa WLAN para mapahusay ang iyong modelo</string>
+    <string name="viewer_hint_improve_promo_description">"I-a-upload namin ang model na ito at karagdagang data ng imahe sa aming mga server sa pamamagitan ng WLAN.
+
+Dahil sa dami ng espasyo na ginagamit ng karagdagang data ng imahe sa iyong device, ang data lang mula sa limang pinakabagong pag-scan ang sine-save. Hindi mapapahusay ang mga mas lumang model."</string>
+</resources>

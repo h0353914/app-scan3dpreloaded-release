@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_pager_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sonymobile.scan3d.widgets.ViewPagerContainer android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/scan_mode_item_height">
+            <androidx.viewpager.widget.ViewPager android:layout_gravity="center" android:id="@id/view_pager" android:layout_width="@dimen/scan_mode_item_width" android:layout_height="@dimen/scan_mode_item_height" />
+        </com.sonymobile.scan3d.widgets.ViewPagerContainer>
+        <com.sonymobile.scan3d.storageservice.ui.gallery.wizard.PagerIndicator android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="end|bottom" android:id="@id/selection_fab" android:background="@null" android:layout_width="@dimen/fab_size" android:layout_height="@dimen/fab_size" android:layout_marginBottom="@dimen/fab_margin" android:src="@drawable/ic_close_24dp" android:contentDescription="@string/accessibility_close_button" android:layout_marginEnd="@dimen/fab_margin" android:transitionName="selection_fab" />
+</FrameLayout>

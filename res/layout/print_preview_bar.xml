@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/print_preview_bar_0" android:background="@drawable/viewer_bottom_bar_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/action_edit" layout="@layout/component_sharing_bar_item" />
+    <include android:id="@id/action_print_edit" layout="@layout/component_sharing_bar_item" />
+    <include android:id="@id/action_toggle_base" android:visibility="gone" layout="@layout/component_sharing_bar_item" />
+</LinearLayout>

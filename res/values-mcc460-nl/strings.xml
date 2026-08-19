@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Help ons de scanengine van 3D-maker te verbeteren door Sony Mobile de afbeeldingsgegevens van uw scans te geven. De gegevens worden uitsluitend via WLAN geüpload en worden na 90 dagen van onze servers verwijderd. U kunt uw keuze op elk moment veranderen via de Instellingen voor back-ups en synchronisatie</string>
+    <string name="dialog_data_traffic_body">Om verder te gaan, heeft 3D-maker toegang nodig tot WLAN en mobiele data</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Alleen synchroniseren via WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Alleen WLAN</string>
+    <string name="post_process_privacy_description">Uw scan en aanvullende afbeeldingsgegevens worden geüpload naar onze servers om uw model te verbeteren. De gegevens worden via WLAN geüpload en na 90 dagen van onze servers verwijderd.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Maak verbinding met WLAN om het model te verbeteren</string>
+    <string name="viewer_hint_improve_promo_description">"We uploaden dit model en aanvullende afbeeldingsgegevens naar onze servers via WLAN.
+
+Vanwege de ruimte die aanvullende afbeeldingsgegevens innemen op uw apparaat, worden alleen de gegevens van de laatste vijf scans opgeslagen. Oudere modellen kunnen niet worden verbeterd."</string>
+</resources>

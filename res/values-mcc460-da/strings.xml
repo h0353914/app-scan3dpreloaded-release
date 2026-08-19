@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Hjælp os med at gøre scanningsprogrammet i 3D-skaber bedre ved at sende billeddata fra dine scanninger til Sony Mobile. Dataene overføres kun via WLAN og fjernes fra vores servere efter 90 dage. Du kan når helst framelde dig via indstillinger for backup og synkronisering</string>
+    <string name="dialog_data_traffic_body">3D-skaber skal have adgang til WLAN og mobildata for at fortsætte</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Synkroniser kun via WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Kun WLAN</string>
+    <string name="post_process_privacy_description">Din scanning og yderligere billeddata overføres til vores servere for at forbedre din model. Dataene overføres kun via WLAN og fjernes fra vores servere efter 90 dage.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Opret forbindelse til WLAN for at forbedre din model</string>
+    <string name="viewer_hint_improve_promo_description">"Vi overfører denne model og yderligere billeddata til vores servere via WLAN.
+
+På grund af den plads, som de ekstra billeddata optager på din enhed, er det kun data fra de sidste fem scanninger, der gemmes. Ældre modeller kan ikke forbedres."</string>
+</resources>

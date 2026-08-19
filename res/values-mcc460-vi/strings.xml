@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">Giúp chúng tôi cải tiến công cụ quét của 3D Creator bằng cách cung cấp dữ liệu ảnh từ bản quét của bạn cho Sony Mobile. Dữ liệu này sẽ chỉ được tải lên qua WLAN và sẽ bị xóa khỏi máy chủ của chúng tôi sau 90 ngày. Bạn có thể chọn không đồng ý vào bất cứ lúc nào qua cài đặt Sao lưu và đồng bộ hóa</string>
+    <string name="dialog_data_traffic_body">Trình tạo 3D cần quyền truy cập WLAN và dữ liệu di động để tiếp tục</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Chỉ đồng bộ hóa qua WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">Chỉ WLAN</string>
+    <string name="post_process_privacy_description">Dữ liệu quét và dữ liệu hình ảnh bổ sung sẽ được tải lên các máy chủ của chúng tôi để cải thiện mô hình của bạn. Dữ liệu sẽ chỉ được tải lên qua WLAN và sẽ bị xóa khỏi máy chủ của chúng tôi sau 90 ngày.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Hãy kết nối với WLAN để cải thiện mô hình của bạn</string>
+    <string name="viewer_hint_improve_promo_description">"Chúng tôi sẽ tải mô hình này và dữ liệu hình ảnh bổ sung lên máy chủ của mình qua WLAN.
+
+Do dữ liệu hình ảnh bổ sung chiếm dung lượng trên thiết bị của bạn nên chỉ có dữ liệu từ năm bản quét mới nhất được lưu lại. Không thể cải thiện các mô hình cũ hơn."</string>
+</resources>

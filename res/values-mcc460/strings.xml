@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_sync_opt_in_description">"Help us to improve 3D Creator's scanning engine by providing Sony Mobile with image data from your scans. The data will be uploaded only via WLAN and will be removed from our servers after 90 days. You can opt out at any time via the Backup and sync settings."</string>
+    <string name="dialog_data_traffic_body">3D Creator needs access to WLAN and mobile data to proceed</string>
+    <string name="gallery_preference_network_sync_over_wifi_summary">Only sync over WLAN</string>
+    <string name="gallery_preference_network_sync_over_wifi_title">WLAN only</string>
+    <string name="post_process_privacy_description">Your scan and additional image data will be uploaded to our servers to improve your model. The data will be uploaded over WLAN only and will be removed from our servers after 90 days.</string>
+    <string name="viewer_dialog_improve_text_connect_wifi">Connect to WLAN in order to improve your model</string>
+    <string name="viewer_hint_improve_promo_description">"We will upload this model and additional image data to our servers via WLAN.
+
+Due to the amount of space that the additional image data takes up on your device, only data from the five latest scans are saved. Older models cannot be improved."</string>
+</resources>

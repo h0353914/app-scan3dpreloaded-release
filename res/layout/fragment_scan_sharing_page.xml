@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/sharing_tab_no_cards_text" android:gravity="center" android:id="@id/emptyPage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sharing_tab_no_cards" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/snackbar_permissions_layout" />
+</RelativeLayout>
