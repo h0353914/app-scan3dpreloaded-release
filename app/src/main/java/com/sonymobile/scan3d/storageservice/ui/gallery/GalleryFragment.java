@@ -252,7 +252,6 @@ public class GalleryFragment extends SyncFragment implements SwipeRefreshLayout.
 
     @Override // androidx.fragment.app.Fragment
     public void onPrepareOptionsMenu(Menu menu) {
-        MenuItem menuItemFindItem;
         super.onPrepareOptionsMenu(menu);
         if (this.mIsPicker) {
             for (int i = 0; i < menu.size(); i++) {
@@ -260,11 +259,6 @@ public class GalleryFragment extends SyncFragment implements SwipeRefreshLayout.
                 item.setVisible(item.getItemId() == R.id.sort);
             }
         }
-        Context context = getContext();
-        if (context == null || Config.isGooglePlayEnabled(context) || (menuItemFindItem = menu.findItem(R.id.menu_galler_backup_sync)) == null) {
-            return;
-        }
-        menuItemFindItem.setVisible(false);
     }
 
     @Override // androidx.fragment.app.Fragment
@@ -274,27 +268,17 @@ public class GalleryFragment extends SyncFragment implements SwipeRefreshLayout.
 
     @Override // androidx.fragment.app.Fragment
     public boolean onOptionsItemSelected(MenuItem menuItem) {
-        int itemId = menuItem.getItemId();
-        if (itemId == 16908332) {
-            getActivity().finish();
-            return true;
-        }
-        if (itemId == R.id.sort) {
-            SortOrderDialog.newInstance(this.mSortType, this).show(getFragmentManager(), SortOrderDialog.class.getName());
-            return true;
-        }
-        switch (itemId) {
-            case R.id.menu_galler_backup_sync /* 2131296542 */:
-                if (AccountUtils.isSignedIn(getActivity())) {
-                    showFragment(new BackupSyncSettings());
-                } else {
-                    signIn();
-                }
+        switch (menuItem.getItemId()) {
+            case 16908332:
+                getActivity().finish();
                 return true;
-            case R.id.menu_gallery_help_tips /* 2131296543 */:
+            case R.id.sort:
+                SortOrderDialog.newInstance(this.mSortType, this).show(getFragmentManager(), SortOrderDialog.class.getName());
+                return true;
+            case R.id.menu_gallery_help_tips:
                 startActivity(new Intent(getActivity(), (Class<?>) QuickTipCategoriesActivity.class));
                 return true;
-            case R.id.menu_gallery_settings /* 2131296544 */:
+            case R.id.menu_gallery_settings:
                 showFragment(new SettingsFragment());
                 return true;
             default:

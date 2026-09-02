@@ -93,17 +93,7 @@ public enum AccountUtils {
     }
 
     public static boolean isSignedIn(Context context) {
-        boolean zIsSignedin;
-        if (getAccountName(context) == null) {
-            zIsSignedin = false;
-        } else if (getUserData(context, KEY_AUTH_TOKEN) != null) {
-            zIsSignedin = AuthActivity.isSignedin(context);
-        } else {
-            removeAccount(context);
-            zIsSignedin = false;
-        }
-        DebugLog.d(TAG, "isSignedIn(): " + zIsSignedin);
-        return zIsSignedin;
+        return false;
     }
 
     public void registerListener(Context context, AccountListener accountListener) {

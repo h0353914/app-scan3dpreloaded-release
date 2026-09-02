@@ -203,31 +203,17 @@ public class TabPageShare extends TabPageBase implements YesNoQuestionFragment.O
 
     @Override // com.sonymobile.scan3d.viewer.sharing.tabs.TabPageBase
     protected List<Plugin> getPlugins() {
-        int i;
         Context context = getContext();
         List<Plugin> arrayList = new ArrayList<>();
         int scanType = this.mFileSet.getScanType();
         Shareable shareable = new Shareable(getArguments().getBundle("shareable"));
         boolean zIsGooglePlayEnabled = Config.isGooglePlayEnabled(context);
         Shareable.Type shareType = getShareable().getShareType();
-        if (zIsGooglePlayEnabled) {
-            LocalPlugin webViewerSharePlugin = new WebViewerSharePlugin();
-            if (webViewerSharePlugin.isEnabled(shareType, context, scanType)) {
-                i = 1;
-                arrayList.add(0, webViewerSharePlugin);
-            } else {
-                i = 0;
-            }
-        } else {
-            i = 0;
-        }
         addPlugin(arrayList, new FileSharePlugin(), shareType, scanType);
-        addPlugin(arrayList, new FaceBlendPlugin(), shareType, scanType);
         addPlugin(arrayList, new PropsPlugin(), shareType, scanType);
         if (this.mFileSet.isImprovement()) {
             addPlugin(arrayList, new FileShareAdvPlugin(), shareType, scanType);
         }
-        addPlugin(arrayList, new ShareAsVideoPlugin(), shareType, scanType);
         addPlugins(arrayList, SharingConstants.Category.SHARE, scanType, shareable.getScanFormat());
         addPlugins(arrayList, SharingConstants.Category.GAMING, scanType);
         addPlugin(arrayList, new WallpaperPlugin(), shareType, scanType);
@@ -235,7 +221,7 @@ public class TabPageShare extends TabPageBase implements YesNoQuestionFragment.O
         if (zIsGooglePlayEnabled) {
             addPlugin(arrayList, new FindMorePlugin(), shareType, scanType);
         }
-        rearrangePluginList(arrayList, i);
+        rearrangePluginList(arrayList, 0);
         return arrayList;
     }
 

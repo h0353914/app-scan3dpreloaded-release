@@ -105,7 +105,6 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
     private View mPermissionsContainer;
     private Handler mPermissionsHandler;
     private ToggleButton mTextureToggle;
-    private View mWebviewButton;
 
     @Override // com.sonymobile.scan3d.viewer.fragments.BaseViewerFragment
     public int getContentLayout() {
@@ -190,8 +189,6 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
         viewFindViewById.setOnClickListener((UserInputReducer.InputReducer) view -> onNavigationClick());
         viewFindViewById.setContentDescription(getString(getNavigationAccessibility()));
         this.mNameView = (TextView) viewOnCreateView.findViewById(R.id.viewer_name);
-        this.mWebviewButton = viewOnCreateView.findViewById(R.id.webicon_parent);
-        this.mWebviewButton.setOnClickListener(this);
         View viewFindViewById2 = viewOnCreateView.findViewById(R.id.overflow_menu_parent);
         viewFindViewById2.setOnClickListener(this);
         viewFindViewById2.setContentDescription(getString(R.string.accessibility_overflow_menu));
@@ -202,10 +199,8 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
         this.mAnimationViewSwitcher.setOnClickListener(this);
         this.mFileSetChangeRunnable = () -> {
             if (this.mModelContainer != null) {
-                this.mWebviewButton.setVisibility(this.mMeshHolderFragment.getFileSet().isVisible() ? 0 : 8);
+                this.mMeshHolderFragment.getFileSet();
                 updateAnimationState();
-            } else {
-                this.mWebviewButton.setVisibility(8);
             }
         };
         this.mPermissionsContainer = viewOnCreateView.findViewById(R.id.permissions_container);
@@ -297,13 +292,9 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
             case REQUEST_CODE_PRIVACY_AGREEMENT /* 8004 */:
                 if (i2 == -1) {
                     AccountUtils.acceptPostProcessing(getContext());
-                    startImprovementJob();
                 }
                 break;
             case REQUEST_CODE_SIGN_IN /* 8005 */:
-                if (i2 == -1) {
-                    startImprovementJob();
-                }
                 break;
         }
     }
@@ -366,7 +357,6 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
             IFileSet fileSet = this.mMeshHolderFragment.getFileSet();
             View view = getView();
             if (view != null) {
-                view.findViewById(R.id.action_improve).setVisibility((fileSet.isImprovable(getContext()) && Config.isGooglePlayEnabled(getContext())) ? 0 : 8);
                 if (fileSet.isRiggable()) {
                     view.findViewById(R.id.action_animate).setVisibility(0);
                 } else {
@@ -456,9 +446,6 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
                     launchFaceMimic();
                     return;
                 }
-            case R.id.action_improve /* 2131296313 */:
-                startImprovementJob();
-                return;
             case R.id.action_share /* 2131296323 */:
                 HitEvent.SHARE_BUTTON_CLICKED.send(getContext());
                 SharingFragment sharingFragmentNewInstance = SharingFragment.newInstance(this.mMeshHolderFragment.getFileSet(), this.mSphanRenderer.getViewMatrix(), SharingFragment.Tab.SHARE);
@@ -556,6 +543,7 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
     @Override // androidx.loader.app.LoaderManager.LoaderCallbacks
     public void onLoadFinished(@NonNull Loader<Cursor> loader, Cursor cursor) {
         this.mImprovements = Factory.createImprovementRecords(cursor);
+        getActivity().reportFullyDrawn();
         notifyLoadFinished();
     }
 
@@ -580,11 +568,9 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
             }
         });
         viewGroup.findViewById(R.id.action_share).setOnClickListener(this);
-        viewGroup.findViewById(R.id.action_improve).setOnClickListener(this);
         viewGroup.findViewById(R.id.action_edit).setOnClickListener(this);
         viewGroup.findViewById(R.id.action_animate).setOnClickListener(this);
         viewGroup.findViewById(R.id.action_face_mimic).setOnClickListener(this);
-        updateImproveDrawable();
     }
 
     private void showUnshareDialog() {
@@ -682,9 +668,7 @@ public class ViewerFragment extends BaseAnimationFragment implements YesNoQuesti
     }
 
     private void handleHints() {
-        getView().findViewById(R.id.action_improve).setEnabled(this.mImprovements.isEmpty());
-        updateImproveDrawable();
-        if (handleOngoingImprovement() || handleViewerHint() || handleImprovementHint() || handlePromoDismissedHint()) {
+        if (handleViewerHint() || handlePromoDismissedHint()) {
             this.mHintView.showHint();
         } else {
             this.mHintView.hideHint();

@@ -51,7 +51,6 @@
     <item type="id" name="action_edit" />
     <item type="id" name="action_face_mimic" />
     <item type="id" name="action_image" />
-    <item type="id" name="action_improve" />
     <item type="id" name="action_menu_divider" />
     <item type="id" name="action_menu_presenter" />
     <item type="id" name="action_mode_bar" />
@@ -229,7 +228,6 @@
     <item type="id" name="menu_delete_animation" />
     <item type="id" name="menu_details" />
     <item type="id" name="menu_edit_name" />
-    <item type="id" name="menu_galler_backup_sync" />
     <item type="id" name="menu_gallery_help_tips" />
     <item type="id" name="menu_gallery_settings" />
     <item type="id" name="menu_unshare" />

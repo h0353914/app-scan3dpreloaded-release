@@ -327,7 +327,7 @@ class SphinxEngine extends GLEngine implements CameraImageProvider.OnCameraStatu
 
     @Override // com.sonymobile.scan3d.CameraImageProvider.OnCameraStatusListener
     public void onOpen(CameraImageProvider cameraImageProvider) {
-        NativeLog.v(TAG, "Sphinx version: 3.0.A.0.22");
+        NativeLog.v(TAG, "Sphinx version: 3.0.A.0.36");
         notify(3, Integer.valueOf(getFocusType().ordinal()), null, null);
         this.mImageProvider.setEdgeEnhancement(this.mSettings.useEdgeEnhancement());
         this.mImageProvider.setNoiseReduction(this.mSettings.useNoiseReduction());

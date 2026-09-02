@@ -24,38 +24,72 @@ import os
 import zipfile
 
 # 目前判定為「有資源」的依賴（group:artifact:version）。
-# 這份清單來自對完整 debugRuntimeClasspath 依賴樹逐一解開 AAR 檢查 res/ 資料夾的結果
-# （2026-08-19 這次 session 的掃描結果，可用 check_aar_resources.py 重新驗證）。
 #
-# 注意：androidx.databinding:databinding-runtime/databinding-adapters:3.3.2 雖然也是
-# AAR，但解開後 res/ 底下只有 <id> 型別資源（dataBinding/onAttachStateChangeListener/
-# onDateChanged/textWatcher），這些名稱在 app/src/main/res/values/ids.xml 已有完全
-# 同名宣告。Android 資源系統允許同一個 id 資源被多處重複宣告（不像 attr/style/drawable
-# 那樣會因為「內容不同」而衝突），aapt2 不會因此報 Duplicate value 錯誤，所以刻意不放進
-# 這份清單、繼續讓它們以正常 AAR 座標宣告（配合 build.gradle.kts 的
-# resolutionStrategy.force 釘住 3.3.2，避免 AGP 自動注入更高版本連帶要求
-# compileSdk 31+ 的 lifecycle-runtime）。
+# 2026-09-02：原本這裡列了 18 個模組，一律 classes-only。逐一實測（見
+# app/build.gradle.kts dependencies{} 開頭的說明）發現這個假設過寬——大多數模組
+# 改回正常 AAR 座標都編得過，只有下面這 7 個真的會跟 app/src/main/res（從原始 APK
+# 反編譯出來，已經內含這些函式庫貢獻的資源）撞名（`./gradlew :app:assembleRelease`
+# 的 mergeReleaseResources 報 Duplicate value for resource 'attr/xxx'）：
 RES_MODULES = [
     "androidx.appcompat:appcompat:1.1.0",
     "androidx.appcompat:appcompat-resources:1.1.0",
-    "androidx.browser:browser:1.0.0",
-    "androidx.cardview:cardview:1.0.0",
-    "androidx.constraintlayout:constraintlayout:1.1.3",
     "androidx.coordinatorlayout:coordinatorlayout:1.0.0",
-    "androidx.core:core:1.1.0",
-    "androidx.media:media:1.0.0",
-    "androidx.preference:preference:1.1.0",
-    "androidx.recyclerview:recyclerview:1.0.0",
-    "androidx.transition:transition:1.1.0",
     "com.android.support:support-compat:26.1.0",
-    "com.android.support:support-media-compat:26.1.0",
-    "com.facebook.fresco:drawee:1.13.0",
-    "com.google.android.gms:play-services-auth:16.0.1",
     "com.google.android.gms:play-services-base:16.0.1",
-    "com.google.android.gms:play-services-basement:16.2.0",
     "com.google.android.material:material:1.0.0-rc01",
-    "com.google.firebase:firebase-messaging:17.3.4",
 ]
+# com.facebook.fresco:drawee:1.10.0 也移出這份清單、改回正常 AAR 座標：
+# SimpleDraweeView 建構子要讀自己的 com.facebook.drawee.R$styleable，跟
+# recyclerview/play-services-basement/core 同一種問題。drawee 的 29 個屬性
+# （placeholderImage/roundAsCircle 等）幾乎全部跟 app/src/main/res 撞名（drawee
+# 總共只有 29 個屬性，撞了全部 29 個），已經把 app/src/main/res/values/attrs.xml、
+# public.xml 裡這些重複宣告拿掉，讓 drawee 的 AAR 資源當唯一來源。
+#
+# androidx.core:core:1.1.0 移出這份清單、改回正常 AAR 座標（見 build.gradle.kts）：
+# SwipeRefreshLayout 建構子會讀自己的 androidx.core.R$id，這個 class 只有正常解析
+# AAR 資源時才會由 AGP 產生，跟 recyclerview/play-services-basement 同一種問題。
+# core 原本因為跟 app/src/main/res 撞 2 個 attr（fontProviderFetchStrategy/
+# fontStyle）被迫 classes-only；改成直接把 app/src/main/res/values/attrs.xml、
+# public.xml 裡這兩個重複宣告拿掉，讓 core 的 AAR 資源當唯一來源——這兩個是標準
+# font-provider attr，任何版本的定義都一樣，拿掉重複宣告不影響行為。
+#
+# support-compat 跟 core 只在 10 個 AIDL 產生的樁類別（INotificationSideChannel/
+# ResultReceiver）逐位元組重複，其餘 ~480 個 class（包括 Pools$SynchronizedPool
+# 這種基礎工具類別）是 core 完全沒有、本專案舊命名空間程式碼真的需要的——一開始
+# 誤判成兩邊「內容重複」把 support-compat 整個排除掉，導致 Pools$SynchronizedPool
+# 這類真正需要的 class 也一起消失，執行期 ClassNotFoundException。support-compat
+# 放進 classes-only 合併；但 core 現在是正常 AAR（見上面），不在這份清單裡，
+# 上面迴圈的「先出現的優先」自動去重機制幫不上忙，所以下面 SKIP_ENTRIES 手動把
+# support-compat 這 10 個重疊 class 從合併進 jar 的內容裡拿掉，讓 core 的 AAR
+# 當這 10 個類別的唯一來源。
+# 其餘原本在清單裡的模組（recyclerview、browser、cardview、constraintlayout、media、
+# preference、transition、play-services-auth、play-services-basement、
+# firebase-messaging）改回 app/build.gradle.kts 的正常 implementation() 宣告，
+# 建置驗證沒有資源衝突。其中 recyclerview 和 play-services-basement 本來就不能是
+# classes-only——它們自己的程式碼在執行期會讀自己 AAR 的 R$styleable/R$string，
+# classes-only 只拿 classes.jar 不解析資源，這個 R 類別永遠不會被產生，一律
+# ClassNotFoundException（見 app/build.gradle.kts 同一段說明）。
+#
+# androidx.databinding:databinding-runtime/databinding-adapters:3.3.2 也是正常 AAR
+# 宣告（res/ 底下只有 <id> 型別資源，跟 app/src/main/res/values/ids.xml 同名不衝突，
+# 靠 build.gradle.kts 的 resolutionStrategy.force 釘住版本）。
+
+# 見上面 support-compat 那段說明：這 10 個 class 跟正常 AAR 的 androidx.core:core
+# 逐位元組重複，合併時要跳過，讓 core 當唯一來源。
+SKIP_ENTRIES: dict[str, set[str]] = {
+    "com.android.support:support-compat:26.1.0": {
+        "android/support/v4/app/INotificationSideChannel$Stub$Proxy.class",
+        "android/support/v4/app/INotificationSideChannel$Stub.class",
+        "android/support/v4/app/INotificationSideChannel.class",
+        "android/support/v4/os/IResultReceiver$Stub$Proxy.class",
+        "android/support/v4/os/IResultReceiver$Stub.class",
+        "android/support/v4/os/IResultReceiver.class",
+        "android/support/v4/os/ResultReceiver$1.class",
+        "android/support/v4/os/ResultReceiver$MyResultReceiver.class",
+        "android/support/v4/os/ResultReceiver$MyRunnable.class",
+        "android/support/v4/os/ResultReceiver.class",
+    },
+}
 
 CACHE_ROOT = os.path.expanduser("~/.gradle/caches/modules-2/files-2.1")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -99,10 +133,13 @@ def main() -> None:
             if m not in extracted:
                 continue
             import io
+            skip = SKIP_ENTRIES.get(m, set())
             with zipfile.ZipFile(io.BytesIO(extracted[m])) as inz:
                 for info in inz.infolist():
                     if info.is_dir():
                         continue
+                    if info.filename in skip:
+                        continue  # 跟正常 AAR 依賴撞名，讓那邊當唯一來源（見 SKIP_ENTRIES 說明）
                     if info.filename in seen:
                         dupes += 1
                         continue  # 保留第一次出現的版本（清單裡較新/較上層的優先）

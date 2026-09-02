@@ -39,7 +39,7 @@ public class Scan3DApp extends Application {
         if (SystemUtils.isDataAllowed(this) && SystemUtils.isGooglePlayServicesAvailable(this)) {
             SystemUtils.initFirebase(this);
         }
-        NativeLog.v("sculpt3d", "Version name is 3.0.A.0.22");
+        NativeLog.v("sculpt3d", "Version name is 3.0.A.0.36");
         registerActivityLifecycleCallbacks(new AppLifecycleTracker());
     }
 
@@ -107,3 +107,4 @@ public class Scan3DApp extends Application {
         }
     }
 }
+

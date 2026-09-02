@@ -10,7 +10,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.Scopes;
 import com.google.android.gms.common.api.Scope;
-import com.google.android.gms.drive.Drive;
 import com.sonymobile.scan3d.Scan3DApp;
 import com.sonymobile.scan3d.storageservice.Config;
 
@@ -32,7 +31,7 @@ abstract class AuthActivity extends Activity {
         }
         getWindow().getDecorView().setSystemUiVisibility(1792);
         if (this.mGoogleClientRequired) {
-            this.mClient = GoogleSignIn.getClient((Activity) this, new GoogleSignInOptions.Builder().requestScopes(Drive.SCOPE_APPFOLDER, new Scope[0]).requestServerAuthCode(Config.getSynchubServerClientId(this), true).requestEmail().requestId().requestProfile().build());
+            this.mClient = GoogleSignIn.getClient((Activity) this, new GoogleSignInOptions.Builder().requestScopes(new Scope("https://www.googleapis.com/auth/drive.appdata"), new Scope[0]).requestServerAuthCode(Config.getSynchubServerClientId(this), true).requestEmail().requestId().requestProfile().build());
         }
     }
 

@@ -193,7 +193,7 @@ public class SigninActivity extends PrivacyActivity implements UserInputReducer.
         this.mEmail = googleSignInAccount.getEmail();
         this.mDisplayName = googleSignInAccount.getDisplayName();
         DebugLog.d(TAG, "handleGoogleSignInResult code=" + this.mAuthCode + ", email=" + googleSignInAccount.getEmail());
-        DriveActions.handleDriveKey(this, googleSignInAccount).execute().addOnSuccessListener(this, this).addOnFailureListener(this, this);
+        DriveActions.handleDriveKey(this, DriveActionsUtil.getGoogleDrive(this, googleSignInAccount)).execute().addOnSuccessListener(this, this).addOnFailureListener(this, this);
     }
 
     private void disableButton() {

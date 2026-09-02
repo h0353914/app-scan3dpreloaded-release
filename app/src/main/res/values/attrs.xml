@@ -37,18 +37,6 @@
     <attr name="actionViewClass" format="string" />
     <attr name="activityChooserViewStyle" format="reference" />
     <attr name="actualImageResource" format="reference" />
-    <attr name="actualImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
     <attr name="actualImageUri" format="string" />
     <attr name="adjustable" format="boolean" />
     <attr name="alertDialogButtonGroupStyle" format="reference" />
@@ -80,7 +68,6 @@
         <enum name="uniform" value="1" />
     </attr>
     <attr name="background" format="reference" />
-    <attr name="backgroundImage" format="reference" />
     <attr name="backgroundSplit" format="reference|color" />
     <attr name="backgroundStacked" format="reference|color" />
     <attr name="backgroundTint" format="color" />
@@ -352,20 +339,6 @@
         <enum name="mini" value="1" />
         <enum name="normal" value="0" />
     </attr>
-    <attr name="fadeDuration" format="integer" />
-    <attr name="failureImage" format="reference" />
-    <attr name="failureImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
     <attr name="fastScrollEnabled" format="boolean" />
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
@@ -373,25 +346,7 @@
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="firstBaselineToTopHeight" format="dimension" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
-    <attr name="font" format="reference" />
     <attr name="fontFamily" format="string" />
-    <attr name="fontProviderAuthority" format="string" />
-    <attr name="fontProviderCerts" format="reference" />
-    <attr name="fontProviderFetchStrategy">
-        <enum name="async" value="1" />
-        <enum name="blocking" value="0" />
-    </attr>
-    <attr name="fontProviderFetchTimeout" format="integer">
-        <enum name="forever" value="-1" />
-    </attr>
-    <attr name="fontProviderPackage" format="string" />
-    <attr name="fontProviderQuery" format="string" />
-    <attr name="fontStyle">
-        <enum name="italic" value="1" />
-        <enum name="normal" value="0" />
-    </attr>
-    <attr name="fontVariationSettings" format="string" />
-    <attr name="fontWeight" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="fragment" format="string" />
     <attr name="gapBetweenBars" format="dimension" />
@@ -680,7 +635,6 @@
     <attr name="order" format="integer" />
     <attr name="orderingFromXml" format="boolean" />
     <attr name="overlapAnchor" format="boolean" />
-    <attr name="overlayImage" format="reference" />
     <attr name="paddingBottomNoButtons" format="dimension" />
     <attr name="paddingEnd" format="dimension" />
     <attr name="paddingStart" format="dimension" />
@@ -702,19 +656,6 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="persistent" format="boolean" />
-    <attr name="placeholderImage" format="reference" />
-    <attr name="placeholderImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
     <attr name="popupMenuStyle" format="reference" />
     <attr name="popupTheme" format="reference" />
     <attr name="popupWindowStyle" format="reference" />
@@ -729,22 +670,7 @@
     <attr name="preferenceStyle" format="reference" />
     <attr name="preferenceTheme" format="reference" />
     <attr name="preserveIconSpacing" format="boolean" />
-    <attr name="pressedStateOverlayImage" format="reference" />
     <attr name="pressedTranslationZ" format="dimension" />
-    <attr name="progressBarAutoRotateInterval" format="integer" />
-    <attr name="progressBarImage" format="reference" />
-    <attr name="progressBarImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
     <attr name="progressBarPadding" format="dimension" />
     <attr name="progressBarStyle" format="reference" />
     <attr name="queryBackground" format="reference" />
@@ -753,35 +679,8 @@
     <attr name="ratingBarStyle" format="reference" />
     <attr name="ratingBarStyleIndicator" format="reference" />
     <attr name="ratingBarStyleSmall" format="reference" />
-    <attr name="retryImage" format="reference" />
-    <attr name="retryImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
     <attr name="reverseLayout" format="boolean" />
     <attr name="rippleColor" format="color" />
-    <attr name="roundAsCircle" format="boolean" />
-    <attr name="roundBottomEnd" format="boolean" />
-    <attr name="roundBottomLeft" format="boolean" />
-    <attr name="roundBottomRight" format="boolean" />
-    <attr name="roundBottomStart" format="boolean" />
-    <attr name="roundTopEnd" format="boolean" />
-    <attr name="roundTopLeft" format="boolean" />
-    <attr name="roundTopRight" format="boolean" />
-    <attr name="roundTopStart" format="boolean" />
-    <attr name="roundWithOverlayColor" format="color" />
-    <attr name="roundedCornerRadius" format="dimension" />
-    <attr name="roundingBorderColor" format="color" />
-    <attr name="roundingBorderPadding" format="dimension" />
-    <attr name="roundingBorderWidth" format="dimension" />
     <attr name="scopeUris" format="reference|string" />
     <attr name="scrimAnimationDuration" format="integer" />
     <attr name="scrimBackground" format="reference|color" />
@@ -989,7 +888,6 @@
     <attr name="updatesContinuously" format="boolean" />
     <attr name="useCompatPadding" format="boolean" />
     <attr name="useSimpleSummaryProvider" format="boolean" />
-    <attr name="viewAspectRatio" format="float" />
     <attr name="viewInflaterClass" format="string" />
     <attr name="voiceIcon" format="reference" />
     <attr name="widgetLayout" format="reference" />
@@ -1003,4 +901,18 @@
     <attr name="windowMinWidthMajor" format="dimension|fraction" />
     <attr name="windowMinWidthMinor" format="dimension|fraction" />
     <attr name="windowNoTitle" format="boolean" />
+
+    <!-- apktool 反編譯編譯後 APK 時無法還原 declare-styleable 分組資訊
+         （aapt2 編譯結果只留下個別 attr，styleable 分組要從
+         R$styleable.smali 的常數索引手動比對回來），這裡依照原始
+         smali-3.0.A.0.22-a9 分支 smali/com/sonymobile/scan3d/R$styleable.smali
+         SplitScreenView 陣列的 6 個索引順序（0~5）手動補回。 -->
+    <declare-styleable name="SplitScreenView">
+        <attr name="handle_drawable" />
+        <attr name="offset" />
+        <attr name="padding_end" />
+        <attr name="padding_start" />
+        <attr name="text_left" />
+        <attr name="text_right" />
+    </declare-styleable>
 </resources>

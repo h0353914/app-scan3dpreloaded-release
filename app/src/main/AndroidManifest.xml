@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.sonymobile.scan3d" platformBuildVersionCode="28" platformBuildVersionName="9">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.sonymobile.scan3d" platformBuildVersionCode="28" platformBuildVersionName="9">
     <permission android:description="@string/permission_thermal_mitigation_description" android:label="@string/permission_thermal_mitigation_label" android:name="com.sonymobile.scan3d.permission.THERMAL_MITIGATION"/>
     <uses-permission android:name="com.sonymobile.scan3d.permission.THERMAL_MITIGATION"/>
     <uses-feature android:glEsVersion="0x00020000"/>
@@ -17,6 +17,17 @@
     <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
     <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/application_name" android:largeHeap="true" android:name="com.sonymobile.scan3d.Scan3DApp" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true">
         <uses-library android:name="com.sonyericsson.idd" android:required="false"/>
+        <!-- 原版最終編譯出來的 AndroidManifest（見 smali-3.0.A.0.36-a9 分支）完全沒有
+             FirebaseInitProvider，代表原版是主動移除 firebase-common AAR 自帶的這個
+             ContentProvider，改成完全由 Scan3DApp.onCreate() -> SystemUtils.initFirebase()
+             手動控制初始化時機。少了這條合併指令的話，在真的有 GMS 的裝置上
+             FirebaseInitProvider 會搶在 Application.onCreate() 之前自動建立
+             [DEFAULT] FirebaseApp，等 initFirebase() 再呼叫一次 initializeApp()
+             就會丟 IllegalStateException: FirebaseApp name [DEFAULT] already exists!。 -->
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            tools:node="remove"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
         <meta-data android:name="com.sonymobile.runtimeskinning.WALLPAPER_INFO" android:resource="@xml/wallpaper_info"/>
@@ -103,11 +114,6 @@
         <activity android:exported="true" android:name="com.sonymobile.scan3d.wallpaper.WallpaperPreviewer" android:theme="@style/SphinxAppTheme.Viewer"/>
         <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.sonymobile.scan3d.viewer.SelectImprovementActivity" android:theme="@style/SphinxAppTheme.Dialog.SelectionTheme"/>
         <receiver android:exported="false" android:name="com.sonymobile.scan3d.viewer.ProxyReceiver"/>
-        <service android:exported="true" android:name="com.sonymobile.scan3d.storageservice.authentication.EncryptionDriveEventService">
-            <intent-filter>
-                <action android:name="com.google.android.gms.drive.events.HANDLE_EVENT"/>
-            </intent-filter>
-        </service>
         <service android:enabled="true" android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"/>
         <service android:exported="false" android:name="com.sonymobile.scan3d.storageservice.network.firebase.MessagingService">
             <intent-filter>
@@ -123,7 +129,7 @@
         <receiver android:name="com.sonymobile.scan3d.expansionfile.RemoteAlarmReceiver"/>
         <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
-        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService" tools:replace="android:exported">
             <intent-filter android:priority="-500">
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>

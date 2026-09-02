@@ -883,7 +883,7 @@ public class FaceMimicActivity extends FragmentActivity {
                 });
             }
         });
-        if ("scan3dpreloaded".equals("labs")) {
+        if ("scan3d".equals("labs")) {
             SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
             boolean devEnabled = preferences.getBoolean(getString(R.string.pref_key_dev_enabled), false);
             if (devEnabled) {

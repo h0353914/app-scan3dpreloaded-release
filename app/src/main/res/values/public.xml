@@ -89,7 +89,6 @@
     <public type="attr" name="actionViewClass" id="0x7f040020" />
     <public type="attr" name="activityChooserViewStyle" id="0x7f040021" />
     <public type="attr" name="actualImageResource" id="0x7f040022" />
-    <public type="attr" name="actualImageScaleType" id="0x7f040023" />
     <public type="attr" name="actualImageUri" id="0x7f040024" />
     <public type="attr" name="adjustable" id="0x7f040025" />
     <public type="attr" name="alertDialogButtonGroupStyle" id="0x7f040026" />
@@ -111,7 +110,6 @@
     <public type="attr" name="autoSizeStepGranularity" id="0x7f040036" />
     <public type="attr" name="autoSizeTextType" id="0x7f040037" />
     <public type="attr" name="background" id="0x7f040038" />
-    <public type="attr" name="backgroundImage" id="0x7f040039" />
     <public type="attr" name="backgroundSplit" id="0x7f04003a" />
     <public type="attr" name="backgroundStacked" id="0x7f04003b" />
     <public type="attr" name="backgroundTint" id="0x7f04003c" />
@@ -297,9 +295,6 @@
     <public type="attr" name="fabCradleVerticalOffset" id="0x7f0400f0" />
     <public type="attr" name="fabCustomSize" id="0x7f0400f1" />
     <public type="attr" name="fabSize" id="0x7f0400f2" />
-    <public type="attr" name="fadeDuration" id="0x7f0400f3" />
-    <public type="attr" name="failureImage" id="0x7f0400f4" />
-    <public type="attr" name="failureImageScaleType" id="0x7f0400f5" />
     <public type="attr" name="fastScrollEnabled" id="0x7f0400f6" />
     <public type="attr" name="fastScrollHorizontalThumbDrawable" id="0x7f0400f7" />
     <public type="attr" name="fastScrollHorizontalTrackDrawable" id="0x7f0400f8" />
@@ -307,17 +302,7 @@
     <public type="attr" name="fastScrollVerticalTrackDrawable" id="0x7f0400fa" />
     <public type="attr" name="firstBaselineToTopHeight" id="0x7f0400fb" />
     <public type="attr" name="floatingActionButtonStyle" id="0x7f0400fc" />
-    <public type="attr" name="font" id="0x7f0400fd" />
     <public type="attr" name="fontFamily" id="0x7f0400fe" />
-    <public type="attr" name="fontProviderAuthority" id="0x7f0400ff" />
-    <public type="attr" name="fontProviderCerts" id="0x7f040100" />
-    <public type="attr" name="fontProviderFetchStrategy" id="0x7f040101" />
-    <public type="attr" name="fontProviderFetchTimeout" id="0x7f040102" />
-    <public type="attr" name="fontProviderPackage" id="0x7f040103" />
-    <public type="attr" name="fontProviderQuery" id="0x7f040104" />
-    <public type="attr" name="fontStyle" id="0x7f040105" />
-    <public type="attr" name="fontVariationSettings" id="0x7f040106" />
-    <public type="attr" name="fontWeight" id="0x7f040107" />
     <public type="attr" name="foregroundInsidePadding" id="0x7f040108" />
     <public type="attr" name="fragment" id="0x7f040109" />
     <public type="attr" name="gapBetweenBars" id="0x7f04010a" />
@@ -475,7 +460,6 @@
     <public type="attr" name="order" id="0x7f0401a2" />
     <public type="attr" name="orderingFromXml" id="0x7f0401a3" />
     <public type="attr" name="overlapAnchor" id="0x7f0401a4" />
-    <public type="attr" name="overlayImage" id="0x7f0401a5" />
     <public type="attr" name="paddingBottomNoButtons" id="0x7f0401a6" />
     <public type="attr" name="paddingEnd" id="0x7f0401a7" />
     <public type="attr" name="paddingStart" id="0x7f0401a8" />
@@ -491,8 +475,6 @@
     <public type="attr" name="passwordToggleTint" id="0x7f0401b2" />
     <public type="attr" name="passwordToggleTintMode" id="0x7f0401b3" />
     <public type="attr" name="persistent" id="0x7f0401b4" />
-    <public type="attr" name="placeholderImage" id="0x7f0401b5" />
-    <public type="attr" name="placeholderImageScaleType" id="0x7f0401b6" />
     <public type="attr" name="popupMenuStyle" id="0x7f0401b7" />
     <public type="attr" name="popupTheme" id="0x7f0401b8" />
     <public type="attr" name="popupWindowStyle" id="0x7f0401b9" />
@@ -507,11 +489,7 @@
     <public type="attr" name="preferenceStyle" id="0x7f0401c2" />
     <public type="attr" name="preferenceTheme" id="0x7f0401c3" />
     <public type="attr" name="preserveIconSpacing" id="0x7f0401c4" />
-    <public type="attr" name="pressedStateOverlayImage" id="0x7f0401c5" />
     <public type="attr" name="pressedTranslationZ" id="0x7f0401c6" />
-    <public type="attr" name="progressBarAutoRotateInterval" id="0x7f0401c7" />
-    <public type="attr" name="progressBarImage" id="0x7f0401c8" />
-    <public type="attr" name="progressBarImageScaleType" id="0x7f0401c9" />
     <public type="attr" name="progressBarPadding" id="0x7f0401ca" />
     <public type="attr" name="progressBarStyle" id="0x7f0401cb" />
     <public type="attr" name="queryBackground" id="0x7f0401cc" />
@@ -520,24 +498,8 @@
     <public type="attr" name="ratingBarStyle" id="0x7f0401cf" />
     <public type="attr" name="ratingBarStyleIndicator" id="0x7f0401d0" />
     <public type="attr" name="ratingBarStyleSmall" id="0x7f0401d1" />
-    <public type="attr" name="retryImage" id="0x7f0401d2" />
-    <public type="attr" name="retryImageScaleType" id="0x7f0401d3" />
     <public type="attr" name="reverseLayout" id="0x7f0401d4" />
     <public type="attr" name="rippleColor" id="0x7f0401d5" />
-    <public type="attr" name="roundAsCircle" id="0x7f0401d6" />
-    <public type="attr" name="roundBottomEnd" id="0x7f0401d7" />
-    <public type="attr" name="roundBottomLeft" id="0x7f0401d8" />
-    <public type="attr" name="roundBottomRight" id="0x7f0401d9" />
-    <public type="attr" name="roundBottomStart" id="0x7f0401da" />
-    <public type="attr" name="roundTopEnd" id="0x7f0401db" />
-    <public type="attr" name="roundTopLeft" id="0x7f0401dc" />
-    <public type="attr" name="roundTopRight" id="0x7f0401dd" />
-    <public type="attr" name="roundTopStart" id="0x7f0401de" />
-    <public type="attr" name="roundWithOverlayColor" id="0x7f0401df" />
-    <public type="attr" name="roundedCornerRadius" id="0x7f0401e0" />
-    <public type="attr" name="roundingBorderColor" id="0x7f0401e1" />
-    <public type="attr" name="roundingBorderPadding" id="0x7f0401e2" />
-    <public type="attr" name="roundingBorderWidth" id="0x7f0401e3" />
     <public type="attr" name="scopeUris" id="0x7f0401e4" />
     <public type="attr" name="scrimAnimationDuration" id="0x7f0401e5" />
     <public type="attr" name="scrimBackground" id="0x7f0401e6" />
@@ -688,7 +650,6 @@
     <public type="attr" name="updatesContinuously" id="0x7f040277" />
     <public type="attr" name="useCompatPadding" id="0x7f040278" />
     <public type="attr" name="useSimpleSummaryProvider" id="0x7f040279" />
-    <public type="attr" name="viewAspectRatio" id="0x7f04027a" />
     <public type="attr" name="viewInflaterClass" id="0x7f04027b" />
     <public type="attr" name="voiceIcon" id="0x7f04027c" />
     <public type="attr" name="widgetLayout" id="0x7f04027d" />

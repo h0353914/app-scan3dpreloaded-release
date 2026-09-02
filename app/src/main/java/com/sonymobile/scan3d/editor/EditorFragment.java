@@ -276,10 +276,12 @@ public class EditorFragment extends Fragment implements OnBackPressListener, Inp
         }
         runOnGLThenUIThread(mFxManager::updateModel, () -> {
             SaveModelTask task = new SaveModelTask(activity, mModel, name) {
+                private SphinxProgressDialog dialog;
+
                 @Override
                 protected void onPreExecute() {
                     super.onPreExecute();
-                    SphinxProgressDialog dialog = new SphinxProgressDialog(activity,
+                    dialog = new SphinxProgressDialog(activity,
                             R.string.editor_saving_model_progress, false);
                     dialog.show();
                 }
@@ -297,6 +299,7 @@ public class EditorFragment extends Fragment implements OnBackPressListener, Inp
                     } else {
                         uri = null;
                     }
+                    dialog.dismiss();
                     Intent intent = new Intent();
                     intent.setData(uri);
                     activity.setResult(Activity.RESULT_OK, intent);

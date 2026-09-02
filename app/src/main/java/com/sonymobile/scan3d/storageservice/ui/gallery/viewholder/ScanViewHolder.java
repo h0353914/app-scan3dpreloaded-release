@@ -35,7 +35,6 @@ public class ScanViewHolder extends RecyclerView.ViewHolder implements GalleryVi
     private IScanListener mScanListener;
     private final boolean mShowWebShare;
     private UploadIndicator mUploadedIndicator;
-    private final View mWebviewButton;
     private final UserInputReducer.InputReducer mWebviewButtonListener;
 
     public static RecyclerView.ViewHolder newInstance(Context context, ViewGroup viewGroup, IScanListener iScanListener, IOnScanMenuItemClickListener iOnScanMenuItemClickListener, boolean z) {
@@ -65,7 +64,6 @@ public class ScanViewHolder extends RecyclerView.ViewHolder implements GalleryVi
         this.mPreviewImage = (SimpleDraweeView) view.findViewById(R.id.preview_image);
         this.mUploadedIndicator = (UploadIndicator) view.findViewById(R.id.uploaded_indicator);
         this.mImprovementIndicator = (ImprovementIndicator) view.findViewById(R.id.improvement_indicator);
-        this.mWebviewButton = view.findViewById(R.id.webicon_parent);
         this.mPreviewName = (TextView) view.findViewById(R.id.preview_name);
         this.mScanListener = iScanListener;
         this.mOnScanMenuClicked = iOnScanMenuItemClickListener;
@@ -98,9 +96,6 @@ public class ScanViewHolder extends RecyclerView.ViewHolder implements GalleryVi
         this.mPreviewName.setText(name);
         this.mUploadedIndicator.onBound(fileSet, z);
         this.mImprovementIndicator.onBound(fileSet, scanItem.getImprovement());
-        this.mWebviewButton.setTag(R.id.TAG_URI_ID, fileSet);
-        this.mWebviewButton.setOnClickListener(this.mWebviewButtonListener);
-        this.mWebviewButton.setVisibility((fileSet.isVisible() && this.mShowWebShare) ? 0 : 8);
         this.mPreviewImage.setContentDescription(name);
         if (!fileSet.isRemote()) {
             initiateListeners(this.mScanListener, fileSet);
