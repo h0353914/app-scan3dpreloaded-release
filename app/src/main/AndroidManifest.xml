@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.sonymobile.scan3d" platformBuildVersionCode="28" platformBuildVersionName="9">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:versionCode="6291492" android:versionName="3.0.A.0.36" package="com.sonymobile.scan3d" platformBuildVersionCode="28" platformBuildVersionName="9">
     <permission android:description="@string/permission_thermal_mitigation_description" android:label="@string/permission_thermal_mitigation_label" android:name="com.sonymobile.scan3d.permission.THERMAL_MITIGATION"/>
     <uses-permission android:name="com.sonymobile.scan3d.permission.THERMAL_MITIGATION"/>
     <uses-feature android:glEsVersion="0x00020000"/>
@@ -26,7 +26,7 @@
              就會丟 IllegalStateException: FirebaseApp name [DEFAULT] already exists!。 -->
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="${applicationId}.firebaseinitprovider"
+            android:authorities="com.sonymobile.scan3d.firebaseinitprovider"
             tools:node="remove"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>

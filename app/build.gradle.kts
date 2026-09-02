@@ -105,8 +105,8 @@ tasks.withType(JavaCompile::class.java) {
 // com.google.android.vending.licensing 這幾個套件在 Maven 上沒有對應構件
 // （Android Q 已移除內建 org.apache.http.legacy；LVL/Downloader 從來沒發布到
 // Maven，一律是各 app 自己 vendor 原始碼），改成從 jadx 反編譯結果修好、
-// 存放於 vendor-stubs/src/ 底下，編譯時另外併入 classpath，不算在
-// PORTING_STATUS 的手刻進度內（純粹是編譯期需要的第三方原始碼引用）。
+// 存放於 vendor-stubs/src/ 底下，編譯時另外併入 classpath（純粹是編譯期
+// 需要的第三方原始碼引用，不算是這個 app 本身的手刻進度）。
 // androidx / play-services / firebase / fresco 依賴：原本這一整批「有帶 Android
 // 資源的 AAR」（18 個）都被改成只取 classes.jar、丟進
 // app/libs/resource-bearing-classes.jar（比照 camera/apps/CameraPanorama
@@ -122,7 +122,8 @@ tasks.withType(JavaCompile::class.java) {
 // 逐一實測 18 個模組改回正常 AAR 座標的結果（`./gradlew :app:assembleRelease`）：
 // 下面 6 個真的跟 app/src/main/res 撞資源名（mergeReleaseResources 報
 // Duplicate value for resource 'attr/xxx'），維持 classes-only、留在
-// tools_diff/merge_resource_bearing_classes.py 的 RES_MODULES 裡：
+// merge_resource_bearing_classes.py（一次性產生 libs/resource-bearing-classes.jar
+// 用的腳本，產出的 jar 已經在檔案裡，腳本本身跟編譯無關，已移除）的 RES_MODULES 裡：
 //   appcompat:1.1.0, appcompat-resources:1.1.0, coordinatorlayout:1.0.0,
 //   com.android.support:support-compat:26.1.0, play-services-base:16.0.1,
 //   material:1.0.0-rc01

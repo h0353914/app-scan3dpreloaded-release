@@ -1,0 +1,903 @@
+// app-scan3d (3D Creator, com.sonymobile.scan3d) 3.0.A.0.36 手刻版原始碼建置。
+// 取代原本 android_app_import 直接掛 proprietary blob apk 的做法：來源見
+// apps/app-scan3d/ submodule（java-3.0.A.0.36-a15 分支），跟 CameraPanorama 同一種
+// 「apps/<name> 子模組 + 本地 Android.bp 直接編原始碼」模式。
+//
+// static_libs 清單裡 111 個 app_scan3d_dep_* 模組是從 app/build.gradle.kts 用
+// `./gradlew :app:dependencies --configuration releaseRuntimeClasspath` 解析出的
+// 完整遞移依賴（不只是直接宣告的 ~60 個座標），逐一從 Gradle cache 複製對應的
+// .aar/.jar 到 app/libs/vendored/ 底下、用 java_import/android_library_import 匯入
+// （Soong 沒有 Maven 依賴解析，必須把整條遞移鏈都攤平列出來，否則編譯期會缺 class）。
+//
+// libScan3D.so 是未經二進位修改的原始版本（3.0.A.0.36 隨機版）。原本因為
+// ro.com.google.clientidbase device-property 檢查沒過，一度靠 NOP-patch 過
+// 的版本繞過；device/sony/poplardcm/lineage_poplardcm.mk 把
+// PRODUCT_GMS_CLIENTID_BASE 改成 android-sonymobile 修掉 root cause 之後，
+// 實機驗證這個原始版本可以正常執行到相機掃描介面，不用再靠二進位修改。
+
+cc_prebuilt_library_shared {
+    name: "app_scan3d_libgifimage",
+    stem: "libgifimage",
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["app/src/main/jniLibs/arm64-v8a/libgifimage.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "app_scan3d_libimagepipeline",
+    stem: "libimagepipeline",
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["app/src/main/jniLibs/arm64-v8a/libimagepipeline.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "app_scan3d_libitseez3d_animation",
+    stem: "libitseez3d_animation",
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["app/src/main/jniLibs/arm64-v8a/libitseez3d_animation.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "app_scan3d_libScan3D",
+    stem: "libScan3D",
+    compile_multilib: "64",
+    target: {
+        android_arm64: {
+            srcs: ["app/src/main/jniLibs/arm64-v8a/libScan3D.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    prefer: true,
+}
+
+java_import {
+    name: "app_scan3d_resource_bearing_classes",
+    jars: ["app/libs/resource-bearing-classes.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_android_arch_core_common",
+    jars: ["libs/vendored/android.arch.core_common-1.0.0.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_android_arch_lifecycle_common",
+    jars: ["libs/vendored/android.arch.lifecycle_common-1.0.0.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_android_arch_lifecycle_runtime",
+    aars: ["libs/vendored/android.arch.lifecycle_runtime-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_activity_activity",
+    aars: ["libs/vendored/androidx.activity_activity-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_androidx_annotation_annotation",
+    jars: ["libs/vendored/androidx.annotation_annotation-1.1.0.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_androidx_arch_core_core_common",
+    jars: ["libs/vendored/androidx.arch.core_core-common-2.1.0.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_arch_core_core_runtime",
+    aars: ["libs/vendored/androidx.arch.core_core-runtime-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_asynclayoutinflater_asynclayoutinflater",
+    aars: ["libs/vendored/androidx.asynclayoutinflater_asynclayoutinflater-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_browser_browser",
+    aars: ["libs/vendored/androidx.browser_browser-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_cardview_cardview",
+    aars: ["libs/vendored/androidx.cardview_cardview-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_androidx_collection_collection",
+    jars: ["libs/vendored/androidx.collection_collection-1.1.0.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_androidx_constraintlayout_constraintlayout_solver",
+    jars: ["libs/vendored/androidx.constraintlayout_constraintlayout-solver-1.1.3.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_constraintlayout_constraintlayout",
+    aars: ["libs/vendored/androidx.constraintlayout_constraintlayout-1.1.3.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_core_core",
+    aars: ["libs/vendored/androidx.core_core-1.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_cursoradapter_cursoradapter",
+    aars: ["libs/vendored/androidx.cursoradapter_cursoradapter-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_customview_customview",
+    aars: ["libs/vendored/androidx.customview_customview-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_databinding_databinding_adapters",
+    aars: ["libs/vendored/androidx.databinding_databinding-adapters-3.3.2.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_androidx_databinding_databinding_common",
+    jars: ["libs/vendored/androidx.databinding_databinding-common-3.3.2.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_databinding_databinding_runtime",
+    aars: ["libs/vendored/androidx.databinding_databinding-runtime-3.3.2.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_documentfile_documentfile",
+    aars: ["libs/vendored/androidx.documentfile_documentfile-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_drawerlayout_drawerlayout",
+    aars: ["libs/vendored/androidx.drawerlayout_drawerlayout-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_fragment_fragment",
+    aars: ["libs/vendored/androidx.fragment_fragment-1.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_interpolator_interpolator",
+    aars: ["libs/vendored/androidx.interpolator_interpolator-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_legacy_legacy_support_core_ui",
+    aars: ["libs/vendored/androidx.legacy_legacy-support-core-ui-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_legacy_legacy_support_core_utils",
+    aars: ["libs/vendored/androidx.legacy_legacy-support-core-utils-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_legacy_legacy_support_v4",
+    aars: ["libs/vendored/androidx.legacy_legacy-support-v4-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_common",
+    jars: ["libs/vendored/androidx.lifecycle_lifecycle-common-2.1.0.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_extensions",
+    aars: ["libs/vendored/androidx.lifecycle_lifecycle-extensions-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_livedata_core",
+    aars: ["libs/vendored/androidx.lifecycle_lifecycle-livedata-core-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_livedata",
+    aars: ["libs/vendored/androidx.lifecycle_lifecycle-livedata-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_process",
+    aars: ["libs/vendored/androidx.lifecycle_lifecycle-process-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_runtime",
+    aars: ["libs/vendored/androidx.lifecycle_lifecycle-runtime-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_service",
+    aars: ["libs/vendored/androidx.lifecycle_lifecycle-service-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_lifecycle_lifecycle_viewmodel",
+    aars: ["libs/vendored/androidx.lifecycle_lifecycle-viewmodel-2.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_loader_loader",
+    aars: ["libs/vendored/androidx.loader_loader-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_localbroadcastmanager_localbroadcastmanager",
+    aars: ["libs/vendored/androidx.localbroadcastmanager_localbroadcastmanager-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_media_media",
+    aars: ["libs/vendored/androidx.media_media-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_multidex_multidex",
+    aars: ["libs/vendored/androidx.multidex_multidex-2.0.1.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_palette_palette",
+    aars: ["libs/vendored/androidx.palette_palette-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_preference_preference",
+    aars: ["libs/vendored/androidx.preference_preference-1.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_print_print",
+    aars: ["libs/vendored/androidx.print_print-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_recyclerview_recyclerview",
+    aars: ["libs/vendored/androidx.recyclerview_recyclerview-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_savedstate_savedstate",
+    aars: ["libs/vendored/androidx.savedstate_savedstate-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_slidingpanelayout_slidingpanelayout",
+    aars: ["libs/vendored/androidx.slidingpanelayout_slidingpanelayout-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_swiperefreshlayout_swiperefreshlayout",
+    aars: ["libs/vendored/androidx.swiperefreshlayout_swiperefreshlayout-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_transition_transition",
+    aars: ["libs/vendored/androidx.transition_transition-1.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_vectordrawable_vectordrawable_animated",
+    aars: ["libs/vendored/androidx.vectordrawable_vectordrawable-animated-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_vectordrawable_vectordrawable",
+    aars: ["libs/vendored/androidx.vectordrawable_vectordrawable-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_versionedparcelable_versionedparcelable",
+    aars: ["libs/vendored/androidx.versionedparcelable_versionedparcelable-1.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_androidx_viewpager_viewpager",
+    aars: ["libs/vendored/androidx.viewpager_viewpager-1.0.0.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_amazonaws_aws_android_sdk_cognito",
+    jars: ["libs/vendored/com.amazonaws_aws-android-sdk-cognito-2.6.5.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_amazonaws_aws_android_sdk_core",
+    jars: ["libs/vendored/com.amazonaws_aws-android-sdk-core-2.6.5.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_amazonaws_aws_android_sdk_kms",
+    jars: ["libs/vendored/com.amazonaws_aws-android-sdk-kms-2.6.5.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_amazonaws_aws_android_sdk_s3",
+    jars: ["libs/vendored/com.amazonaws_aws-android-sdk-s3-2.6.5.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_amazonaws_aws_android_sdk_sqs",
+    jars: ["libs/vendored/com.amazonaws_aws-android-sdk-sqs-2.6.5.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_android_support_support_annotations",
+    jars: ["libs/vendored/com.android.support_support-annotations-26.1.0.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_android_support_support_core_ui",
+    aars: ["libs/vendored/com.android.support_support-core-ui-26.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_android_support_support_core_utils",
+    aars: ["libs/vendored/com.android.support_support-core-utils-26.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_android_support_support_fragment",
+    aars: ["libs/vendored/com.android.support_support-fragment-26.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_android_support_support_v4",
+    aars: ["libs/vendored/com.android.support_support-v4-26.1.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_animated_base",
+    aars: ["libs/vendored/com.facebook.fresco_animated-base-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_animated_drawable",
+    aars: ["libs/vendored/com.facebook.fresco_animated-drawable-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_animated_gif",
+    aars: ["libs/vendored/com.facebook.fresco_animated-gif-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_drawee",
+    aars: ["libs/vendored/com.facebook.fresco_drawee-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_fbcore",
+    aars: ["libs/vendored/com.facebook.fresco_fbcore-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_fresco",
+    aars: ["libs/vendored/com.facebook.fresco_fresco-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_imagepipeline_base",
+    aars: ["libs/vendored/com.facebook.fresco_imagepipeline-base-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_fresco_imagepipeline",
+    aars: ["libs/vendored/com.facebook.fresco_imagepipeline-1.10.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_soloader_annotation",
+    aars: ["libs/vendored/com.facebook.soloader_annotation-0.8.2.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_facebook_soloader_nativeloader",
+    jars: ["libs/vendored/com.facebook.soloader_nativeloader-0.8.2.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_facebook_soloader_soloader",
+    aars: ["libs/vendored/com.facebook.soloader_soloader-0.8.2.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_android_gms_play_services_auth_api_phone",
+    aars: ["libs/vendored/com.google.android.gms_play-services-auth-api-phone-16.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_android_gms_play_services_auth_base",
+    aars: ["libs/vendored/com.google.android.gms_play-services-auth-base-16.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_android_gms_play_services_auth",
+    aars: ["libs/vendored/com.google.android.gms_play-services-auth-16.0.1.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_android_gms_play_services_basement",
+    aars: ["libs/vendored/com.google.android.gms_play-services-basement-16.2.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_android_gms_play_services_drive",
+    aars: ["libs/vendored/com.google.android.gms_play-services-drive-16.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_android_gms_play_services_stats",
+    aars: ["libs/vendored/com.google.android.gms_play-services-stats-16.0.1.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_android_gms_play_services_tasks",
+    aars: ["libs/vendored/com.google.android.gms_play-services-tasks-16.0.1.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_api_client_google_api_client_android",
+    jars: ["libs/vendored/com.google.api-client_google-api-client-android-1.32.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_api_client_google_api_client",
+    jars: ["libs/vendored/com.google.api-client_google-api-client-2.0.0.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_apis_google_api_services_drive",
+    jars: ["libs/vendored/com.google.apis_google-api-services-drive-v3-rev20220815-2.0.0.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_auto_value_auto_value_annotations",
+    jars: ["libs/vendored/com.google.auto.value_auto-value-annotations-1.6.3.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_code_findbugs_jsr305",
+    jars: ["libs/vendored/com.google.code.findbugs_jsr305-3.0.2.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_code_gson_gson",
+    jars: ["libs/vendored/com.google.code.gson_gson-2.9.0.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_errorprone_error_prone_annotations",
+    jars: ["libs/vendored/com.google.errorprone_error_prone_annotations-2.11.0.jar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_firebase_firebase_common",
+    aars: ["libs/vendored/com.google.firebase_firebase-common-17.0.0.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_firebase_firebase_iid_interop",
+    aars: ["libs/vendored/com.google.firebase_firebase-iid-interop-16.0.1.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_firebase_firebase_iid",
+    aars: ["libs/vendored/com.google.firebase_firebase-iid-17.0.4.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_firebase_firebase_measurement_connector",
+    aars: ["libs/vendored/com.google.firebase_firebase-measurement-connector-17.0.1.aar"],
+    sdk_version: "current",
+}
+
+android_library_import {
+    name: "app_scan3d_dep_com_google_firebase_firebase_messaging",
+    aars: ["libs/vendored/com.google.firebase_firebase-messaging-17.3.4.aar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_guava_failureaccess",
+    jars: ["libs/vendored/com.google.guava_failureaccess-1.0.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_guava_guava",
+    jars: ["libs/vendored/com.google.guava_guava-31.1-jre.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_guava_listenablefuture",
+    jars: ["libs/vendored/com.google.guava_listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_http_client_google_http_client_android",
+    jars: ["libs/vendored/com.google.http-client_google-http-client-android-1.41.8.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_http_client_google_http_client_apache_v2",
+    jars: ["libs/vendored/com.google.http-client_google-http-client-apache-v2-1.42.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_http_client_google_http_client_gson",
+    jars: ["libs/vendored/com.google.http-client_google-http-client-gson-1.42.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_http_client_google_http_client",
+    jars: ["libs/vendored/com.google.http-client_google-http-client-1.42.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_j2objc_j2objc_annotations",
+    jars: ["libs/vendored/com.google.j2objc_j2objc-annotations-1.3.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_google_oauth_client_google_oauth_client",
+    jars: ["libs/vendored/com.google.oauth-client_google-oauth-client-1.34.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_googlecode_plist_dd_plist",
+    jars: ["libs/vendored/com.googlecode.plist_dd-plist-1.28.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_com_parse_bolts_bolts_tasks",
+    jars: ["libs/vendored/com.parse.bolts_bolts-tasks-1.4.0.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_commons_codec_commons_codec",
+    jars: ["libs/vendored/commons-codec_commons-codec-1.11.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_commons_io_commons_io",
+    jars: ["libs/vendored/commons-io_commons-io-2.6.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_commons_logging_commons_logging",
+    jars: ["libs/vendored/commons-logging_commons-logging-1.2.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_io_grpc_grpc_context",
+    jars: ["libs/vendored/io.grpc_grpc-context-1.27.2.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_io_opencensus_opencensus_api",
+    jars: ["libs/vendored/io.opencensus_opencensus-api-0.31.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_io_opencensus_opencensus_contrib_http_util",
+    jars: ["libs/vendored/io.opencensus_opencensus-contrib-http-util-0.31.1.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_org_apache_httpcomponents_httpclient",
+    jars: ["libs/vendored/org.apache.httpcomponents_httpclient-4.5.13.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_org_apache_httpcomponents_httpcore",
+    jars: ["libs/vendored/org.apache.httpcomponents_httpcore-4.4.15.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_org_apache_httpcomponents_httpmime",
+    jars: ["libs/vendored/org.apache.httpcomponents_httpmime-4.5.6.jar"],
+    sdk_version: "current",
+}
+
+java_import {
+    name: "app_scan3d_dep_org_checkerframework_checker_qual",
+    jars: ["libs/vendored/org.checkerframework_checker-qual-3.12.0.jar"],
+    sdk_version: "current",
+}
+
+android_app {
+    name: "app-scan3d-release",
+    owner: "sony",
+
+    srcs: [
+        "app/src/main/java/**/*.java",
+        "vendor-stubs/src/**/*.java",
+        "soong-stubs/src/**/*.java",
+    ],
+    resource_dirs: ["app/src/main/res"],
+    asset_dirs: ["app/src/main/assets"],
+    manifest: "app/src/main/AndroidManifest.xml",
+
+    static_libs: [
+        "app_scan3d_resource_bearing_classes",
+        "app_scan3d_dep_android_arch_core_common",
+        "app_scan3d_dep_android_arch_lifecycle_common",
+        "app_scan3d_dep_android_arch_lifecycle_runtime",
+        "app_scan3d_dep_androidx_activity_activity",
+        "app_scan3d_dep_androidx_annotation_annotation",
+        "app_scan3d_dep_androidx_arch_core_core_common",
+        "app_scan3d_dep_androidx_arch_core_core_runtime",
+        "app_scan3d_dep_androidx_asynclayoutinflater_asynclayoutinflater",
+        "app_scan3d_dep_androidx_browser_browser",
+        "app_scan3d_dep_androidx_cardview_cardview",
+        "app_scan3d_dep_androidx_collection_collection",
+        "app_scan3d_dep_androidx_constraintlayout_constraintlayout_solver",
+        "app_scan3d_dep_androidx_constraintlayout_constraintlayout",
+        "app_scan3d_dep_androidx_core_core",
+        "app_scan3d_dep_androidx_cursoradapter_cursoradapter",
+        "app_scan3d_dep_androidx_customview_customview",
+        "app_scan3d_dep_androidx_databinding_databinding_adapters",
+        "app_scan3d_dep_androidx_databinding_databinding_common",
+        "app_scan3d_dep_androidx_databinding_databinding_runtime",
+        "app_scan3d_dep_androidx_documentfile_documentfile",
+        "app_scan3d_dep_androidx_drawerlayout_drawerlayout",
+        "app_scan3d_dep_androidx_fragment_fragment",
+        "app_scan3d_dep_androidx_interpolator_interpolator",
+        "app_scan3d_dep_androidx_legacy_legacy_support_core_ui",
+        "app_scan3d_dep_androidx_legacy_legacy_support_core_utils",
+        "app_scan3d_dep_androidx_legacy_legacy_support_v4",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_common",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_extensions",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_livedata_core",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_livedata",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_process",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_runtime",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_service",
+        "app_scan3d_dep_androidx_lifecycle_lifecycle_viewmodel",
+        "app_scan3d_dep_androidx_loader_loader",
+        "app_scan3d_dep_androidx_localbroadcastmanager_localbroadcastmanager",
+        "app_scan3d_dep_androidx_media_media",
+        "app_scan3d_dep_androidx_multidex_multidex",
+        "app_scan3d_dep_androidx_palette_palette",
+        "app_scan3d_dep_androidx_preference_preference",
+        "app_scan3d_dep_androidx_print_print",
+        "app_scan3d_dep_androidx_recyclerview_recyclerview",
+        "app_scan3d_dep_androidx_savedstate_savedstate",
+        "app_scan3d_dep_androidx_slidingpanelayout_slidingpanelayout",
+        "app_scan3d_dep_androidx_swiperefreshlayout_swiperefreshlayout",
+        "app_scan3d_dep_androidx_transition_transition",
+        "app_scan3d_dep_androidx_vectordrawable_vectordrawable_animated",
+        "app_scan3d_dep_androidx_vectordrawable_vectordrawable",
+        "app_scan3d_dep_androidx_versionedparcelable_versionedparcelable",
+        "app_scan3d_dep_androidx_viewpager_viewpager",
+        "app_scan3d_dep_com_amazonaws_aws_android_sdk_cognito",
+        "app_scan3d_dep_com_amazonaws_aws_android_sdk_core",
+        "app_scan3d_dep_com_amazonaws_aws_android_sdk_kms",
+        "app_scan3d_dep_com_amazonaws_aws_android_sdk_s3",
+        "app_scan3d_dep_com_amazonaws_aws_android_sdk_sqs",
+        "app_scan3d_dep_com_android_support_support_annotations",
+        "app_scan3d_dep_com_android_support_support_core_ui",
+        "app_scan3d_dep_com_android_support_support_core_utils",
+        "app_scan3d_dep_com_android_support_support_fragment",
+        "app_scan3d_dep_com_android_support_support_v4",
+        "app_scan3d_dep_com_facebook_fresco_animated_base",
+        "app_scan3d_dep_com_facebook_fresco_animated_drawable",
+        "app_scan3d_dep_com_facebook_fresco_animated_gif",
+        "app_scan3d_dep_com_facebook_fresco_drawee",
+        "app_scan3d_dep_com_facebook_fresco_fbcore",
+        "app_scan3d_dep_com_facebook_fresco_fresco",
+        "app_scan3d_dep_com_facebook_fresco_imagepipeline_base",
+        "app_scan3d_dep_com_facebook_fresco_imagepipeline",
+        "app_scan3d_dep_com_facebook_soloader_annotation",
+        "app_scan3d_dep_com_facebook_soloader_nativeloader",
+        "app_scan3d_dep_com_facebook_soloader_soloader",
+        "app_scan3d_dep_com_google_android_gms_play_services_auth_api_phone",
+        "app_scan3d_dep_com_google_android_gms_play_services_auth_base",
+        "app_scan3d_dep_com_google_android_gms_play_services_auth",
+        "app_scan3d_dep_com_google_android_gms_play_services_basement",
+        "app_scan3d_dep_com_google_android_gms_play_services_drive",
+        "app_scan3d_dep_com_google_android_gms_play_services_stats",
+        "app_scan3d_dep_com_google_android_gms_play_services_tasks",
+        "app_scan3d_dep_com_google_api_client_google_api_client_android",
+        "app_scan3d_dep_com_google_api_client_google_api_client",
+        "app_scan3d_dep_com_google_apis_google_api_services_drive",
+        "app_scan3d_dep_com_google_auto_value_auto_value_annotations",
+        "app_scan3d_dep_com_google_code_findbugs_jsr305",
+        "app_scan3d_dep_com_google_code_gson_gson",
+        "app_scan3d_dep_com_google_errorprone_error_prone_annotations",
+        "app_scan3d_dep_com_google_firebase_firebase_common",
+        "app_scan3d_dep_com_google_firebase_firebase_iid_interop",
+        "app_scan3d_dep_com_google_firebase_firebase_iid",
+        "app_scan3d_dep_com_google_firebase_firebase_measurement_connector",
+        "app_scan3d_dep_com_google_firebase_firebase_messaging",
+        "app_scan3d_dep_com_google_guava_failureaccess",
+        "app_scan3d_dep_com_google_guava_guava",
+        "app_scan3d_dep_com_google_guava_listenablefuture",
+        "app_scan3d_dep_com_google_http_client_google_http_client_android",
+        "app_scan3d_dep_com_google_http_client_google_http_client_apache_v2",
+        "app_scan3d_dep_com_google_http_client_google_http_client_gson",
+        "app_scan3d_dep_com_google_http_client_google_http_client",
+        "app_scan3d_dep_com_google_j2objc_j2objc_annotations",
+        "app_scan3d_dep_com_google_oauth_client_google_oauth_client",
+        "app_scan3d_dep_com_googlecode_plist_dd_plist",
+        "app_scan3d_dep_com_parse_bolts_bolts_tasks",
+        "app_scan3d_dep_commons_codec_commons_codec",
+        "app_scan3d_dep_commons_io_commons_io",
+        "app_scan3d_dep_commons_logging_commons_logging",
+        "app_scan3d_dep_io_grpc_grpc_context",
+        "app_scan3d_dep_io_opencensus_opencensus_api",
+        "app_scan3d_dep_io_opencensus_opencensus_contrib_http_util",
+        "app_scan3d_dep_org_apache_httpcomponents_httpclient",
+        "app_scan3d_dep_org_apache_httpcomponents_httpcore",
+        "app_scan3d_dep_org_apache_httpcomponents_httpmime",
+        "app_scan3d_dep_org_checkerframework_checker_qual",
+    ],
+
+    jni_libs: [
+        "app_scan3d_libgifimage",
+        "app_scan3d_libimagepipeline",
+        "app_scan3d_libitseez3d_animation",
+        "app_scan3d_libScan3D",
+    ],
+    use_embedded_native_libs: true,
+    compile_multilib: "64",
+
+    platform_apis: true,
+    certificate: "platform",
+    min_sdk_version: "26",
+    target_sdk_version: "30",
+
+    optimize: {
+        enabled: false,
+    },
+    dex_preopt: {
+        enabled: false,
+    },
+    enforce_uses_libs: false,
+}

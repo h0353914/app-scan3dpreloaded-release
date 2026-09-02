@@ -276,7 +276,7 @@ Be sure to allow enough space to walk around your model."</string>
     <string name="editor_title">Edit</string>
     <string name="editor_toolbar_save_button">SAVE AS</string>
     <string name="expand_button_title">Advanced</string>
-    <string name="expansion_provider_authority">com.sonymobile.scan3d.expansionprovider</string>
+    <string name="expansion_provider_authority" translatable="false">com.sonymobile.scan3d.expansionprovider</string>
     <string name="explanatory_text_face_blend_another_model_picker">Select another model</string>
     <string name="explanatory_text_face_blend_picker">Select another model to use in Face blend</string>
     <string name="explanatory_text_face_blend_picker_whats_new">Select a model to use in face blend</string>
@@ -305,7 +305,7 @@ Be sure to allow enough space to walk around your model."</string>
     <string name="face_mimic_lost_face">I can’t see your face</string>
     <string name="failed_creating_video">Could not create video</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="file_provider_authority">com.sonymobile.scan3d.files</string>
+    <string name="file_provider_authority" translatable="false">com.sonymobile.scan3d.files</string>
     <string name="file_set_example_scan_face">Face scan example</string>
     <string name="file_set_example_scan_food">Food scan example</string>
     <string name="file_set_example_scan_freeform">Freeform scan example</string>
@@ -704,7 +704,7 @@ The light indicator has to show more than two rays during scan"</string>
     <string name="state_unknown">Starting...</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="storage_permissons_needed">To save a video or image, you need to grant 3D Creator with storage access permission.</string>
-    <string name="storage_provider_authority">com.sonymobile.scan3d.storageprovider</string>
+    <string name="storage_provider_authority" translatable="false">com.sonymobile.scan3d.storageprovider</string>
     <string name="storage_service_confirm_signout_message_txt">Are you sure you want to sign out? Note that all backed up scans will be removed from this device.</string>
     <string name="storage_service_confirm_signout_title_txt">Sign out</string>
     <string name="storage_service_dialog_button_delete_txt">DELETE</string>

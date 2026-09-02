@@ -28,7 +28,14 @@ public final class MediaStoreUtil {
             values.put("duration", Long.valueOf(Long.parseLong(duration)));
         } catch (Throwable th) {
         }
-        retriever.release();
+        try {
+            retriever.release();
+        } catch (Exception e) {
+            // MediaMetadataRetriever.release() only declares "throws IOException" on newer
+            // platform API levels (compileSdk 30's android.jar, used by the Gradle build of
+            // this same source, does not) -- catch the unchecked-safe Exception supertype so
+            // this compiles under both; nothing meaningful to recover here either way.
+        }
         return context.getContentResolver().insert(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, values);
     }
 }

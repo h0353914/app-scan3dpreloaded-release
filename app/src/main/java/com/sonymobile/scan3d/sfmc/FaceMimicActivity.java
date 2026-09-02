@@ -893,7 +893,14 @@ public class FaceMimicActivity extends FragmentActivity {
         MediaMetadataRetriever retriever = new MediaMetadataRetriever();
         retriever.setDataSource(this, getResourceUri(R.raw.start_rec));
         String duration = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION);
-        retriever.release();
+        try {
+            retriever.release();
+        } catch (Exception e) {
+            // MediaMetadataRetriever.release() only declares "throws IOException" on newer
+            // platform API levels (compileSdk 30's android.jar, used by the Gradle build of
+            // this same source, does not) -- catch the unchecked-safe Exception supertype so
+            // this compiles under both; nothing meaningful to recover here either way.
+        }
         mRecordingStartSoundDuration = Integer.parseInt(duration);
         setState(UiState.LOADING_MODEL);
     }
